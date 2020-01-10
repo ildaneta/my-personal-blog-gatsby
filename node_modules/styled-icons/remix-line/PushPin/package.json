@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "main": "./PushPin.js",
+  "module": "./PushPin.esm.js",
+  "types": "./PushPin.d.ts"
+}
