@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const SidebarWrapper = styled.aside`
   align-items: center;
-  border-right: 1px solid #f1558a;
+  border-right: 1px solid #f7a5a6;
   background: #282a36;
   display: flex;
   flex-direction: column;
@@ -11,4 +11,4 @@ export const SidebarWrapper = styled.aside`
   padding: 2rem;
   text-align: center;
   width: 20rem;
-`
+`;

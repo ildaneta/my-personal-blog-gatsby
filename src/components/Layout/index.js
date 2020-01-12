@@ -1,9 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { LayoutWrapper, LayoutMain } from './style'
-import GlobalStyle from '../../styles/global'
-import Sidebar from '../Sidebar/index'
+import { LayoutWrapper, LayoutMain } from './style';
+import GlobalStyle from '../../styles/global';
+import Sidebar from '../Sidebar/index';
+import MenuBar from '../MenuBar/index';
 
 const Layout = ({ children }) => {
   return (
@@ -11,12 +12,13 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Sidebar />
       <LayoutMain>{children}</LayoutMain>
+      <MenuBar />
     </LayoutWrapper>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;
