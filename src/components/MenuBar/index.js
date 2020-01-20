@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from 'styled-icons/feather/Grid';
-import { List } from 'styled-icons/fa-solid/List';
-import { FileText2 as CV } from 'styled-icons/icomoon/FileText2';
+// import { List } from 'styled-icons/fa-solid/List';
+// import { FileText2 as CV } from 'styled-icons/icomoon/FileText2';
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2';
 import { CodeSSlash as Skills } from 'styled-icons/remix-fill/CodeSSlash';
 import { HomeHeart as Home } from 'styled-icons/boxicons-regular/HomeHeart';
@@ -36,11 +36,11 @@ const MenuBar = () => (
         </MenuBarItem>
       </MenuBarLink>
 
-      <MenuBarLink to="/cv" title="Curriculum">
+      {/* <MenuBarLink to="/cv" title="Curriculum">
         <MenuBarItem>
           <CV className="cv" />
         </MenuBarItem>
-      </MenuBarLink>
+      </MenuBarLink> */}
     </MenuBarGroup>
     <MenuBarGroup>
       <MenuBarItem title="Mudar o tema">

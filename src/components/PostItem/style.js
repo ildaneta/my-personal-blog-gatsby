@@ -11,35 +11,37 @@ export const PostItemLink = styled(Link)`
 `;
 
 export const PostItemWrapper = styled.section`
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid #f7a5a6;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   width: 100%;
+  margin-left: 1rem;
 `;
 
 export const PostItemTag = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 3px;
   background: ${props => (props.background ? props.background : '#f7a5a6')};
   color: #fff;
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
-  min-height: 90px;
-  min-width: 90px;
+  margin-left: 1.5rem;
+  margin-bottom: 15px;
+  flex-basis: auto;
+  width: 90px;
+  height: 40px;
 `;
 
 export const PostItemInfo = styled.div`
-  display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
 `;
 
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
+  line-height: 1.2;
 `;
 
 export const PostItemTitle = styled.h1`

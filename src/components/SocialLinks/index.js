@@ -1,8 +1,7 @@
 import React from 'react';
+import links from './content';
 
 import Icons from './icons';
-import Links from './content';
-
 import {
   SocialLinksWrapper,
   SocialLinksList,
@@ -14,7 +13,7 @@ import {
 const SocialLinks = () => (
   <SocialLinksWrapper>
     <SocialLinksList>
-      {Links.map((link, index) => {
+      {links.map((link, index) => {
         const Icon = Icons[link.label];
 
         return (

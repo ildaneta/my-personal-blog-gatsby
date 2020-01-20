@@ -10,11 +10,11 @@ const links = [
   {
     label: 'Skills',
     url: '/skills'
-  },
-  {
-    label: 'Curriculum',
-    url: '/cv'
   }
+  // {
+  //   label: 'Curriculum',
+  //   url: '/cv'
+  // }
 ];
 
 export default links;

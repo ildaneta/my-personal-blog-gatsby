@@ -1,4 +1,4 @@
-const Links = [
+const links = [
   {
     label: 'Github',
     url: 'https://github.com/ildasilva'
@@ -6,7 +6,11 @@ const Links = [
   {
     label: 'Linkedin',
     url: 'https://www.linkedin.com/in/ilda-silva-neta/'
+  },
+  {
+    label: 'Email',
+    url: 'mailto:iildaemanoely@gmail.com'
   }
 ];
 
-export default Links;
+export default links;
