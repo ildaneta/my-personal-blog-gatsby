@@ -1,0 +1,9 @@
+/coverage/
+/src/
+/.editorconfig
+/.gitignore
+/.travis.yml
+/mocha.opts
+/tsconfig.build.json
+/tsconfig.json
+/tslint.json

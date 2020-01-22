@@ -21,6 +21,8 @@ background: #569832;
 - PUT - Alterar uma informação
 - DELETE - Deletar uma informação
 
+![](/static/assets/img/lake.jpg)
+
 http://minhaapi.com/users/1
 
 **users** - É o recurso/rota

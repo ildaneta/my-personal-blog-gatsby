@@ -44,6 +44,8 @@ Toda resposta que o backend retorna para o frontend é acompanhada de um código
   - Se inicia com 5xx - Server Error (ocorreu algum erro no servidor, não conseguindo levar a requisição para o frontend)
     - 500 - INTERNAL SERVER ERROR
 
+![](/static/assets/img/desert.jpg)
+
 ### Route params x Query params x Request body
 
 - Query params - parâmetros que são passados após o **?** e que o parâmetro é nomeado

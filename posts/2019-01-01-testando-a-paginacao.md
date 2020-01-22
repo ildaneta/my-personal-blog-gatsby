@@ -21,9 +21,7 @@ background: #569832;
 - PUT - Alterar uma informação
 - DELETE - Deletar uma informação
 
-http://minhaapi.com/users/1
-
-**users** - É o recurso/rota
+![Desert image](/static/assets/img/desert.jpg)
 
 **1** - É o parâmetro que especifica qual recurso será alterado ou deletado
 

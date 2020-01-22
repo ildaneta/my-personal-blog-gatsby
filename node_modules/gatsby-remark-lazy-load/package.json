@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-remark-lazy-load",
+  "version": "1.0.2",
+  "description": "This plugin lazy loads image processed by gatsby-remark-images plugin",
+  "main": "index.js",
+  "homepage": "https://github.com/1kohei1/gatsby-remark-lazy-load",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1kohei1/gatsby-remark-lazy-load.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gatsby-remark-images",
+    "lazyload",
+    "markdown",
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-transformer-remark"
+  ],
+  "author": "Kohei Arai",
+  "license": "ISC",
+  "dependencies": {
+    "unist-util-visit-parents": "^2.0.1"
+  }
+}
