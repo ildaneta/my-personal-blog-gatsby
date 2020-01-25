@@ -14,7 +14,6 @@ export const PostItemWrapper = styled.section`
   border-bottom: 1px solid #f7a5a6;
   padding: 2rem 2rem;
   width: 100%;
-  margin-left: 1rem;
 `;
 
 export const PostItemTag = styled.div`

@@ -3,15 +3,19 @@ import { graphql } from 'gatsby';
 
 import Layout from '../Layout';
 import SEO from '../seo.js';
+import RecommendedPosts from '../RecommendedPosts';
 
 import * as s from '../Post/style';
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data, pageContext }) => {
   const title = data.markdownRemark.frontmatter.title;
   const html = data.markdownRemark.html;
   const date = data.markdownRemark.frontmatter.date;
   const timeToRead = data.markdownRemark.timeToRead;
   const description = data.markdownRemark.frontmatter.description;
+
+  const next = pageContext.nextPost;
+  const previous = pageContext.previousPost;
 
   return (
     // Integrando o post com o layout através das tags Layout e SEO
@@ -27,6 +31,7 @@ const BlogPost = ({ data }) => {
       <s.MainContent>
         <div dangerouslySetInnerHTML={{ __html: html }}></div>
       </s.MainContent>
+      <RecommendedPosts next={next} previous={previous} />
     </Layout>
   );
 };

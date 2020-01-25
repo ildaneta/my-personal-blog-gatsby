@@ -7,6 +7,6 @@ export const LayoutWrapper = styled.section`
 export const LayoutMain = styled.main`
   background: #191921;
   min-height: 100vh;
-  padding: 10px 3.75rem 0 23rem;
+  padding: 10px 3.75rem 0 21rem;
   width: 100%;
 `;

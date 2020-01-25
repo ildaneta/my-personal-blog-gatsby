@@ -35,20 +35,17 @@ const MenuBar = () => (
           <Skills />
         </MenuBarItem>
       </MenuBarLink>
-
-      {/* <MenuBarLink to="/cv" title="Curriculum">
-        <MenuBarItem>
-          <CV className="cv" />
-        </MenuBarItem>
-      </MenuBarLink> */}
     </MenuBarGroup>
+
     <MenuBarGroup>
       <MenuBarItem title="Mudar o tema">
         <Lightbulb className="light" />
       </MenuBarItem>
+
       <MenuBarItem title="Grid/Lista">
         <Grid />
       </MenuBarItem>
+
       <MenuBarItem title="Ir para o topo">
         <ArrowUp />
       </MenuBarItem>

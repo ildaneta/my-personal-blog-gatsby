@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import propTypes from 'prop-types';
 
-import { PaginationWrapper } from './style';
+import { PaginationWrapper, ArrowLeft, ArrowRight } from './style';
 
 const Pagination = ({
   isFirst,
@@ -13,11 +13,20 @@ const Pagination = ({
   nextPage
 }) => (
   <PaginationWrapper>
-    {!isFirst && <Link to={prevPage}>página anterior</Link>}
+    {!isFirst && (
+      <Link to={prevPage}>
+        <ArrowLeft /> página anterior
+      </Link>
+    )}
     <p>
       {currentPage} de {numPages}
     </p>
-    {!isLast && <Link to={nextPage}>próxima página</Link>}
+    {!isLast && (
+      <Link to={nextPage}>
+        próxima página
+        <ArrowRight />
+      </Link>
+    )}
   </PaginationWrapper>
 );
 
