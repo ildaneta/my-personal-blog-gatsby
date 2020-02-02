@@ -7,42 +7,42 @@ export const PaginationWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  border-top: 1px solid #f7a5a6;
-  color: #fff;
+  border-top: 1px solid var(--rose);
+  color: var(--white);
   padding: 1.5rem 3rem;
 
   a {
-    color: #f7a5a6;
+    color: var(--colorLetters);
     text-decoration: none;
     transition: color 0.5s;
     cursor: pointer;
 
     &:hover {
-      color: #fff;
+      color: var(--hover);
     }
   }
 
   p {
-    color: #f7a5a6;
+    color: var(--colorLetters);
   }
 `;
 
 export const ArrowLeft = styled(ArrowBackIos)`
-  color: #f7a5a6;
+  color: var(--colorLetters);
   width: 12px;
   margin-right: 5px;
 
   &:hover {
-    color: #fff;
+    color: var(--hover);
   }
 `;
 
 export const ArrowRight = styled(ArrowForwardIos)`
-  color: #f7a5a6;
+  color: var(--colorLetters);
   width: 12px;
   margin-left: 5px;
 
   &:hover {
-    color: #fff;
+    color: var(--hover);
   }
 `;

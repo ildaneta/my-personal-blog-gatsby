@@ -4,16 +4,16 @@ import { ArrowRight } from 'styled-icons/remix-line/ArrowRight';
 import { ArrowLeft } from 'styled-icons/remix-line/ArrowLeft';
 
 export const RecommendedWrapper = styled.section`
-  border-bottom: 1px solid #f7a5a6;
-  border-top: 1px solid #f7a5a6;
-  background: #191921;
+  border-bottom: 1px solid var(--rose);
+  border-top: 1px solid var(--rose);
+  background: var(--background);
   display: flex;
   justify-content: space-around;
 `;
 
 export const RecommendedLink = styled(Link)`
-  background: #191921;
-  color: #f7a5a6;
+  background: var(--background);
+  color: var(--colorLetters);
   display: flex;
   padding: 2rem;
   text-decoration: none;
@@ -23,11 +23,12 @@ export const RecommendedLink = styled(Link)`
   line-height: 21px;
 
   &:hover {
-    background: #38444d;
+    background: var(--hoverRecommended);
+    color: var(--white);
   }
 
   &.previous {
-    border-right: 1px solid #f7a5a6;
+    border-right: 1px solid var(--rose);
     justify-content: flex-start;
     align-items: center;
   }
@@ -39,13 +40,23 @@ export const RecommendedLink = styled(Link)`
 `;
 
 export const ArrowLeftt = styled(ArrowLeft)`
-  color: #f7a5a6;
+  color: var(--colorLetters);
   width: 19px;
   margin-right: 5px;
+
+  &:hover {
+    background: var(--hover);
+    color: var(--hover);
+  }
 `;
 
 export const ArrowRightt = styled(ArrowRight)`
-  color: #f7a5a6;
+  color: var(--colorLetters);
   width: 19px;
   margin-left: 5px;
+
+  &:hover {
+    background: var(--hover);
+    background: var(--hover);
+  }
 `;

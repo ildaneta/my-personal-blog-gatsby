@@ -3,7 +3,7 @@ category: COMP
 date: 2020-01-01 09:55:10
 title: Testando mais um post
 description: Descubra os benefícios de ter o seu próprio blog e conseguir alavancar sua carreira e nunca mais utilizá-lo.
-background: #569832;
+background: '#f26'
 ---
 
 # API REST

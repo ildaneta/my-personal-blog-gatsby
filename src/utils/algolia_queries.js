@@ -7,6 +7,7 @@ const postQuery = `{
           slug
         }
         frontmatter {
+          background
           title
           category
           date_timestamp: date

@@ -3,7 +3,7 @@ category: JS
 date: 2020-01-05 09:55:10
 title: Realizando outro teste
 description: Descubra os benefícios de ter o seu próprio blog e conseguir alavancar sua carreira e nunca mais utilizá-lo.
-background: #569832;
+background: 'var(--rose)'
 ---
 
 # API REST

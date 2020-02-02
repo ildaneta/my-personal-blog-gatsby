@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     line-height: 1;
-    background: #191921;
+    background: var(--background);
     font-size: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
@@ -60,5 +60,36 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: auto;
   }
-`
-export default GlobalStyle
+
+  body{
+    --white: #fff;
+    --rose: #f7a5a6;
+    --background: #191921;
+    --mediumBackground: #282a36;
+    --colorLetters: #fcf2f2;
+    --colorIcons: #fcf2f2;
+    --hover: #f7a5a6;
+    --hoverRecommended: #22242d;
+    --linkColor: #f7a5a6;
+    --searchColor: #dbdbdb;
+    --placeholderSearch: #dbdbdb;
+    --inputColorSearch: #f7a5a6;
+  }
+
+  body.light{
+    --white: #fff;
+    --rose: #f7a5a6;
+    --background: #fff;
+    --mediumBackground: #fcf2f2;
+    --colorLetters: #333;
+    --colorIcons: #333;
+    --hover: #f77394;
+    --hoverRecommended: #f77394;
+    --linkColor: #f77394;
+    --searchColor: #f77394;
+    --placeholderSearch: #333;
+    --inputColorSearch: #f77394;
+  }
+
+`;
+export default GlobalStyle;

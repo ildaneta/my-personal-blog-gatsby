@@ -2,17 +2,18 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 export const ProfileWrapper = styled.section`
-  color: #f8f8f8;
+  color: var(--colorLetters);
   display: flex;
   flex-direction: column;
 `;
 export const ProfileLink = styled(Link)`
-  color: #e2e0e0;
+  color: var(--colorLetters);
   text-decoration: none;
   transition: color 0.5s;
+  font-weight: 400;
 
   &:hover {
-    color: #f7a5a6;
+    color: var(--hover);
   }
 `;
 
@@ -29,6 +30,6 @@ export const ProfilePosition = styled.small`
 
 export const ProfileDescription = styled.p`
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
 `;

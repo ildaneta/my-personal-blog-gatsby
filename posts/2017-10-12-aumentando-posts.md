@@ -3,7 +3,7 @@ category: HTML
 date: 2017-10-12 11:01:10
 title: Aumentando posts por página
 description: Descubra os benefícios de ter o seu próprio blog e conseguir alavancar sua carreira e nunca mais utilizá-lo.
-background: #569832;
+background: '#e56932'
 ---
 
 # API REST

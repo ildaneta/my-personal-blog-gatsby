@@ -3,7 +3,7 @@ category: HTML
 date: 2019-01-01 11:01:10
 title: Testando a paginação
 description: Descubra os benefícios de ter o seu próprio blog e conseguir alavancar sua carreira e nunca mais utilizá-lo.
-background: #569832;
+background: '#7d669e'
 ---
 
 # API REST

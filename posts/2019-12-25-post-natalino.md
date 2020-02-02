@@ -3,7 +3,7 @@ category: COMP
 date: 2019-12-25 12:55:10
 title: Post natalino
 description: Descubra os benefícios de ter o seu próprio blog e conseguir alavancar sua carreira e nunca mais utilizá-lo.
-background: #569832;
+background: '#7d669e'
 ---
 
 # API REST

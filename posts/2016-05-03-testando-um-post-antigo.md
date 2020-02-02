@@ -3,7 +3,7 @@ category: COMP
 date: 2016-05-03 19:55:10
 title: Testando um post antigo
 description: Descubra os benefícios de ter o seu próprio blog e conseguir alavancar sua carreira e nunca mais utilizá-lo.
-background: #569832;
+background: '#e85698'
 ---
 
 # API REST
