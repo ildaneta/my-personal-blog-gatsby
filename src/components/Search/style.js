@@ -28,6 +28,22 @@ export const SearchWrapper = styled.section`
     }
   }
 
+  body#grid & {
+    .ais-Hits-list {
+      background-color: var(--rose);
+      border-bottom: 1px solid var(--rose);
+      border-top: 1px solid var(--rose);
+      display: grid;
+      grid-area: card;
+      grid-gap: 1px;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      margin-top: 2rem;
+    }
+    .ais-Hits-item {
+      background-color: var(--background);
+    }
+  }
+
   .ais-SearchBox-form {
     display: flex;
     border: 1px solid var(--searchColor);

@@ -7,17 +7,17 @@
 
 Detab: tabs → spaces.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install detab
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var detab = require('detab')
 
 console.log(detab('\tfoo\nbar\tbaz'))
@@ -46,8 +46,8 @@ bar     baz
 
 ### `detab(value[, size=4])`
 
-Replace tabs with spaces in `value` (`string`), being smart about which
-column the tab is at and which `size` (`number`, default: `4`) should be used.
+Replace tabs with spaces in `value` (`string`), being smart about which column
+the tab is at and which `size` (`number`, default: `4`) should be used.
 
 ## License
 

@@ -7,17 +7,17 @@
 
 Parse and stringify space-separated tokens according to the [spec][].
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install space-separated-tokens
 ```
 
 ## Usage
 
-```javascript
+```js
 var spaceSeparated = require('space-separated-tokens')
 
 spaceSeparated.parse(' foo\tbar\nbaz  ')
@@ -35,7 +35,7 @@ Parse space-separated tokens to an array of strings, according to the [spec][].
 
 ###### Parameters
 
-*   `value` (`string`) — space-separated tokens.
+*   `value` (`string`) — space-separated tokens
 
 ###### Returns
 
@@ -43,12 +43,12 @@ Parse space-separated tokens to an array of strings, according to the [spec][].
 
 ### `spaceSeparated.stringify(values)`
 
-Compile an array of strings to space-separated tokens.
-Note that it’s not possible to specify empty or white-space only values.
+Serialize an array of strings to space-separated tokens.
+Note that it’s not possible to specify empty or whitespace only values.
 
 ###### Parameters
 
-*   `values` (`Array.<string>`) — List of tokens.
+*   `values` (`Array.<string>`) — List of tokens
 
 ###### Returns
 

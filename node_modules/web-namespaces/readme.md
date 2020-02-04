@@ -6,17 +6,17 @@
 
 Map of web namespaces.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install web-namespaces
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var webNamespaces = require('web-namespaces')
 
 console.log(webNamespaces)

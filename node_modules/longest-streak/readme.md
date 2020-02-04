@@ -7,15 +7,15 @@
 
 Count the longest repeating streak of a character.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install longest-streak
 ```
 
-## Usage
+## Use
 
 ```js
 var longestStreak = require('longest-streak')

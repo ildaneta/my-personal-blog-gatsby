@@ -7,17 +7,17 @@
 
 Handle values based on a property.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install zwitch
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var zwitch = require('zwitch')
 
 var handle = zwitch('type')
@@ -77,13 +77,14 @@ Options can be omitted and added later to `one`.
 
 #### `one(value[, rest...])`
 
-Handle one value.  Based on the bound `key`, a respective handler will
-be invoked.  If `value` is not an object, or doesn’t have a `key`
-property, the special “invalid” handler will be invoked.  If `value`
-has an unknown `key`, the special “unknown” handler will be invoked.
+Handle one value.  Based on the bound `key`, a respective handler will be
+invoked.
+If `value` is not an object, or doesn’t have a `key` property, the special
+“invalid” handler will be invoked.
+If `value` has an unknown `key`, the special “unknown” handler will be invoked.
 
-All arguments, and the context object, are passed through to the
-[handler][], and it’s result is returned.
+All arguments, and the context object, are passed through to the [handler][],
+and it’s result is returned.
 
 #### `one.handlers`
 
@@ -91,13 +92,14 @@ Map of [handler][]s (`Object.<string, Function>`).
 
 #### `one.invalid`
 
-Special [`handler`][handler] invoked if a value doesn’t have a `key`
-property.  If not set, `undefined` is returned for invalid values.
+Special [`handler`][handler] invoked if a value doesn’t have a `key` property.
+If not set, `undefined` is returned for invalid values.
 
 #### `one.unknown`
 
 Special [`handler`][handler] invoked if a value does not have a matching
-handler.  If not set, `undefined` is returned for unknown values.
+handler.
+If not set, `undefined` is returned for unknown values.
 
 ### `function handler(value[, rest...])`
 

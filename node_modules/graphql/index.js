@@ -729,6 +729,12 @@ Object.defineProperty(exports, "specifiedRules", {
     return _validation.specifiedRules;
   }
 });
+Object.defineProperty(exports, "ExecutableDefinitionsRule", {
+  enumerable: true,
+  get: function get() {
+    return _validation.ExecutableDefinitionsRule;
+  }
+});
 Object.defineProperty(exports, "FieldsOnCorrectTypeRule", {
   enumerable: true,
   get: function get() {
@@ -877,6 +883,48 @@ Object.defineProperty(exports, "VariablesInAllowedPositionRule", {
   enumerable: true,
   get: function get() {
     return _validation.VariablesInAllowedPositionRule;
+  }
+});
+Object.defineProperty(exports, "LoneSchemaDefinitionRule", {
+  enumerable: true,
+  get: function get() {
+    return _validation.LoneSchemaDefinitionRule;
+  }
+});
+Object.defineProperty(exports, "UniqueOperationTypesRule", {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueOperationTypesRule;
+  }
+});
+Object.defineProperty(exports, "UniqueTypeNamesRule", {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueTypeNamesRule;
+  }
+});
+Object.defineProperty(exports, "UniqueEnumValueNamesRule", {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueEnumValueNamesRule;
+  }
+});
+Object.defineProperty(exports, "UniqueFieldDefinitionNamesRule", {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueFieldDefinitionNamesRule;
+  }
+});
+Object.defineProperty(exports, "UniqueDirectiveNamesRule", {
+  enumerable: true,
+  get: function get() {
+    return _validation.UniqueDirectiveNamesRule;
+  }
+});
+Object.defineProperty(exports, "PossibleTypeExtensionsRule", {
+  enumerable: true,
+  get: function get() {
+    return _validation.PossibleTypeExtensionsRule;
   }
 });
 Object.defineProperty(exports, "GraphQLError", {

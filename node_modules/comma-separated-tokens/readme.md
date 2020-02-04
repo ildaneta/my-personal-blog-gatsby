@@ -7,17 +7,17 @@
 
 Parse and stringify comma-separated tokens according to the [spec][].
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install comma-separated-tokens
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var commaSeparated = require('comma-separated-tokens')
 
 commaSeparated.parse(' a ,b,,d d ') //=> ['a', 'b', '', 'd d']
@@ -35,8 +35,7 @@ to the [spec][].
 
 Compile an array of strings to comma-separated tokens (`string`).
 Handles empty items at start or end correctly.
-Note that it’s not possible to specify initial or final
-white-space per value.
+Note that it’s not possible to specify initial or final whitespace per value.
 
 ##### `options`
 

@@ -8,12 +8,23 @@ export const PostItemLink = styled(Link)`
   &:hover {
     color: var(--hover);
   }
+
+  body#grid & {
+    background-color: var(--background);
+  }
 `;
 
 export const PostItemWrapper = styled.section`
   border-bottom: 1px solid var(--rose);
   padding: 2rem 2rem;
   width: 100%;
+
+  body#grid & {
+    border: var(--rose);
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const PostItemTag = styled.div`
@@ -22,7 +33,7 @@ export const PostItemTag = styled.div`
   justify-content: center;
   border-radius: 3px;
   background: ${props => props.background};
-  color: var(--colorLetters);
+  color: var(--white);
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -47,6 +58,11 @@ export const PostItemTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
+
+  body#grid & {
+    line-height: 1.1;
+    margin: 0.8rem 0;
+  }
 `;
 
 export const PostItemDescription = styled.p`

@@ -7,17 +7,17 @@
 
 Count characters.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install ccount
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var ccount = require('ccount')
 
 ccount('foo(bar(baz)', '(') // => 2

@@ -5,18 +5,17 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-[`Array#forEach()`][foreach] with the possibility to change the next
-position.
+[`Array#forEach()`][foreach] with the possibility to change the next position.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install array-iterate
 ```
 
-## Usage
+## Use
 
 ```js
 var iterate = require('array-iterate')
@@ -53,8 +52,8 @@ Yields:
 
 ### `iterate(values, callback[, context])`
 
-Functions just like [`Array#forEach()`][foreach], but when `callback`
-returns a `number`, iterates over the item at `number` next.
+Works just like [`Array#forEach()`][foreach], but when `callback` returns a
+`number`, iterates over the item at `number` next.
 
 ###### Parameters
 

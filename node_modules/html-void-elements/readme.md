@@ -4,24 +4,25 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-List of known void HTML elements.  Includes ancient (for example,
-`nextid` and `basefont`) and modern (for example, `img` and
-`meta`) tag-names from both W3C and WHATWG.
+List of known void HTML elements.
+Includes ancient (such as `nextid` and `basefont`) and modern (such as `img` and
+`meta`) tag names from the HTML living standard.
 
-**Note**: there’s one special case: `menuitem`.  W3C specifies it to be
-void, but WHATWG doesn’t.  I suggest using the void form.
+**Note**: there’s one special case: `menuitem`.
+W3C specifies it to be void, but WHATWG doesn’t.
+I suggest using the void form.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install html-void-elements
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var htmlVoidElements = require('html-void-elements')
 
 console.log(htmlVoidElements)
@@ -59,7 +60,7 @@ Yields:
 
 ### `htmlVoidElements`
 
-`Array.<string>` — List of lower-case tag-names.
+`Array.<string>` — List of lower-case tag names.
 
 ## License
 

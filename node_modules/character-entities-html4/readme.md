@@ -6,15 +6,15 @@
 
 HTML4 character entity information.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install character-entities-html4
 ```
 
-## Usage
+## Use
 
 ```js
 var characterEntities = require('character-entities-html4')
@@ -33,7 +33,7 @@ Mapping between (case-sensitive) character entity names to replacements.
 
 ## Support
 
-See [w3.org][html].
+See [`w3.org`][html].
 
 ## Related
 

@@ -39,7 +39,8 @@
     "react-icons": "^3.8.0",
     "react-instantsearch-dom": "^6.3.0",
     "styled-components": "^4.4.1",
-    "styled-icons": "^9.1.0"
+    "styled-icons": "^9.1.0",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
@@ -57,11 +58,9 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
+  "repository": "https://github.com/gatsbyjs/gatsby-starter-default",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "main": "index.js"
 }

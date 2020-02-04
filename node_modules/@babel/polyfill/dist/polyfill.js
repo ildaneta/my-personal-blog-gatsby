@@ -247,7 +247,7 @@ module.exports = function (it) {
 };
 
 },{"28":28}],18:[function(_dereq_,module,exports){
-var core = module.exports = { version: '2.6.10' };
+var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 },{}],19:[function(_dereq_,module,exports){
