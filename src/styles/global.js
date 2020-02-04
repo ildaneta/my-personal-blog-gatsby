@@ -61,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
     height: auto;
   }
 
-  body{
+  body.dark{
     --white: #fff;
     --rose: #f7a5a6;
     --background: #191921;
@@ -81,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
     --rose: #f7a5a6;
     --background: #fff;
     --mediumBackground: #fcf2f2;
-    --colorLetters: #333;
+    --colorLetters: #363636;
     --colorIcons: #333;
     --hover: #f77394;
     --hoverRecommended: #f77394;

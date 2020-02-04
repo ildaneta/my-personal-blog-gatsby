@@ -18,6 +18,11 @@ export const MenuBarWrapper = styled.aside`
 export const MenuBarGroup = styled.div`
   display: flex;
   flex-direction: column;
+
+  .lightBulb {
+    width: 25px;
+    height: 27px;
+  }
 `;
 
 export const MenuBarLink = styled(Link)`
@@ -32,6 +37,14 @@ export const MenuBarItem = styled.span`
   padding: 1.1rem;
   position: relative;
   width: 3.75rem;
+
+  &.light {
+    color: var(--hover);
+
+    &:hover {
+      color: var(--rose);
+    }
+  }
 
   &:hover {
     color: var(--hover);

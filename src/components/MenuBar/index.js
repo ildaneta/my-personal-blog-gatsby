@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Grid } from 'styled-icons/feather/Grid';
-// import { List } from 'styled-icons/fa-solid/List';
+import { FormatListBulleted as List } from 'styled-icons/material/FormatListBulleted';
 // import { FileText2 as CV } from 'styled-icons/icomoon/FileText2';
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2';
 import { CodeSSlash as Skills } from 'styled-icons/remix-fill/CodeSSlash';
 import { HomeHeart as Home } from 'styled-icons/boxicons-regular/HomeHeart';
-import { GoLightBulb as Lightbulb } from 'react-icons/go';
+import { LightBulb } from 'styled-icons/octicons/LightBulb';
+import { Lightbulb } from 'styled-icons/fa-solid/Lightbulb';
 import { ArrowUpward as ArrowUp } from 'styled-icons/material/ArrowUpward';
 
 import {
@@ -15,42 +16,73 @@ import {
   MenuBarItem
 } from './style';
 
-const MenuBar = () => (
-  <MenuBarWrapper>
-    <MenuBarGroup>
-      <MenuBarLink to="/" title="Ir para Home">
-        <MenuBarItem>
-          <Home className="home" />
+const MenuBar = () => {
+  const [theme, setTheme] = useState(null);
+  const [display, setDisplay] = useState(null);
+
+  const isDarkMode = theme === 'dark';
+  const isListMode = display === 'list';
+
+  // the same of DidMount
+  useEffect(() => {
+    setTheme(window.__theme);
+    setDisplay(window.__display);
+
+    window.__onThemeChange = () => setTheme(window.__theme);
+    window.__onDisplayChange = () => setDisplay(window.__display);
+  }, []);
+
+  return (
+    <MenuBarWrapper>
+      <MenuBarGroup>
+        <MenuBarLink to="/" title="Ir para Home">
+          <MenuBarItem>
+            <Home className="home" />
+          </MenuBarItem>
+        </MenuBarLink>
+
+        <MenuBarLink to="/search/" title="Pesquisar">
+          <MenuBarItem>
+            <Search className="search" />
+          </MenuBarItem>
+        </MenuBarLink>
+
+        <MenuBarLink to="/skills/" title="Skills">
+          <MenuBarItem>
+            <Skills />
+          </MenuBarItem>
+        </MenuBarLink>
+      </MenuBarGroup>
+
+      <MenuBarGroup>
+        <MenuBarItem
+          title="Mudar o tema"
+          onClick={() => {
+            window.__setPreferredTheme(isDarkMode ? 'light' : 'dark');
+          }}
+          className={theme}
+        >
+          {isDarkMode ? (
+            <LightBulb className="light" />
+          ) : (
+            <Lightbulb className="light" className="lightBulb" />
+          )}
         </MenuBarItem>
-      </MenuBarLink>
 
-      <MenuBarLink to="/search/" title="Pesquisar">
-        <MenuBarItem>
-          <Search className="search" />
+        <MenuBarItem
+          title="Mudar visualização"
+          onClick={() => {
+            window.__setPreferredDisplay(isListMode ? 'grid' : 'list');
+          }}
+        >
+          {isListMode ? <Grid /> : <List className="list" />}
         </MenuBarItem>
-      </MenuBarLink>
 
-      <MenuBarLink to="/skills/" title="Skills">
-        <MenuBarItem>
-          <Skills />
+        <MenuBarItem title="Ir para o topo">
+          <ArrowUp />
         </MenuBarItem>
-      </MenuBarLink>
-    </MenuBarGroup>
-
-    <MenuBarGroup>
-      <MenuBarItem title="Mudar o tema">
-        <Lightbulb className="light" />
-      </MenuBarItem>
-
-      <MenuBarItem title="Grid/Lista">
-        <Grid />
-      </MenuBarItem>
-
-      <MenuBarItem title="Ir para o topo">
-        <ArrowUp />
-      </MenuBarItem>
-    </MenuBarGroup>
-  </MenuBarWrapper>
-);
-
+      </MenuBarGroup>
+    </MenuBarWrapper>
+  );
+};
 export default MenuBar;
