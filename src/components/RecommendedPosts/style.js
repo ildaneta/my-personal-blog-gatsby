@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+
 import { ArrowRight } from 'styled-icons/remix-line/ArrowRight';
 import { ArrowLeft } from 'styled-icons/remix-line/ArrowLeft';
 
@@ -13,7 +14,7 @@ export const RecommendedWrapper = styled.section`
   justify-content: space-around;
 `;
 
-export const RecommendedLink = styled(Link)`
+export const RecommendedLink = styled(AniLink)`
   background: var(--background);
   color: var(--colorLetters);
   display: flex;

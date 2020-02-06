@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import getThemeColor from '../../utils/getThemeColor';
+
 import { Grid } from 'styled-icons/feather/Grid';
 import { FormatListBulleted as List } from 'styled-icons/material/FormatListBulleted';
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2';
@@ -34,19 +36,40 @@ const MenuBar = () => {
   return (
     <MenuBarWrapper>
       <MenuBarGroup>
-        <MenuBarLink to="/" title="Ir para Home">
+        <MenuBarLink
+          cover
+          direction="left"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/"
+          title="Ir para Home"
+        >
           <MenuBarItem>
             <Home className="home" />
           </MenuBarItem>
         </MenuBarLink>
 
-        <MenuBarLink to="/search/" title="Pesquisar">
+        <MenuBarLink
+          cover
+          direction="left"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/search/"
+          title="Pesquisar"
+        >
           <MenuBarItem>
             <Search className="search" />
           </MenuBarItem>
         </MenuBarLink>
 
-        <MenuBarLink to="/skills/" title="Skills">
+        <MenuBarLink
+          cover
+          direction="left"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/skills/"
+          title="Skills"
+        >
           <MenuBarItem>
             <Skills />
           </MenuBarItem>

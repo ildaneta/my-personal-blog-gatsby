@@ -7,9 +7,11 @@ module.exports = {
     title: `Ilda Neta`,
     position: `Desenvolvedora Front-end`,
     description: `Busco através da escrita demonstrar minhas paixões por tecnologia, soft skills e assuntos comportamentais.`,
-    author: `Ilda Neta`
+    author: `Ilda Neta`,
+    siteURL: `https://localhost:8000/`
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     // needs to be the first to work with gatsby-remark-images

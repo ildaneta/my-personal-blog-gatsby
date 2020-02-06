@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-transition-link/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
