@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
+
 import { Link } from 'gatsby';
 import { ArrowRight } from 'styled-icons/remix-line/ArrowRight';
 import { ArrowLeft } from 'styled-icons/remix-line/ArrowLeft';
@@ -37,6 +39,12 @@ export const RecommendedLink = styled(Link)`
     justify-content: flex-end;
     align-items: center;
   }
+
+  ${media.lessThan('large')`
+    padding: 2rem 1rem;
+    line-height: 1.3;
+    font-size: .9rem;
+  `}
 `;
 
 export const ArrowLeftt = styled(ArrowLeft)`

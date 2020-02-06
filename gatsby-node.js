@@ -70,6 +70,9 @@ exports.createPages = ({ graphql, actions }) => {
   `).then(result => {
     const posts = result.data.allMarkdownRemark.edges;
 
+    const postsPerPage = 15;
+    const numPages = Math.ceil(posts.length / postsPerPage);
+
     posts.forEach(({ node, next, previous }) => {
       createPage({
         path: node.fields.slug,
@@ -81,8 +84,6 @@ exports.createPages = ({ graphql, actions }) => {
         }
       });
     });
-    const postsPerPage = 6;
-    const numPages = Math.ceil(posts.length / postsPerPage);
 
     Array.from({ length: numPages }).forEach((_, index) => {
       createPage({

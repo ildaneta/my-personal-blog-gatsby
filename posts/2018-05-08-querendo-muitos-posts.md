@@ -1,7 +1,7 @@
 ---
 category: HTML
 date: 2018-05-08 10:10:10
-title: QUerendo muitos posts
+title: Querendo muitos posts
 description: Descubra os benefícios de ter o seu próprio blog e conseguir alavancar sua carreira e nunca mais utilizá-lo.
 background: '#7d669e'
 ---

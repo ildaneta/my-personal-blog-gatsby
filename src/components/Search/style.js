@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const SearchWrapper = styled.section`
   background: var(--background);
@@ -6,6 +7,11 @@ export const SearchWrapper = styled.section`
   flex-direction: column;
   width: 100%;
   transition: opacity 0.4s;
+
+  ${media.lessThan('large')`
+    padding: 0.5rem 1rem;
+  `}
+
   .ais-InstantSearch__root {
     display: flex;
     flex-direction: column;
@@ -16,9 +22,15 @@ export const SearchWrapper = styled.section`
   .ais-Stats {
     padding: 0.5rem 3rem;
   }
+
   .ais-SearchBox {
     padding-top: 6rem;
+
+    ${media.lessThan('large')`
+      padding-top: 1rem;
+    `}
   }
+
   .ais-Stats {
     color: var(--colorLetters);
     margin-top: -12px;
@@ -39,6 +51,7 @@ export const SearchWrapper = styled.section`
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       margin-top: 2rem;
     }
+
     .ais-Hits-item {
       background-color: var(--background);
     }
@@ -46,7 +59,7 @@ export const SearchWrapper = styled.section`
 
   .ais-SearchBox-form {
     display: flex;
-    border: 1px solid var(--searchColor);
+    border: 1px solid var(--rose);
     border-radius: 2px;
 
     .ais-SearchBox-input {
@@ -71,7 +84,7 @@ export const SearchWrapper = styled.section`
       margin-left: -44px;
       border-left: none;
       border-right: none;
-      border-left: 1px solid var(--searchColor);
+      border-left: 1px solid var(--rose);
       padding-left: 12px;
       width: 44px;
       cursor: pointer;

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Grid } from 'styled-icons/feather/Grid';
 import { FormatListBulleted as List } from 'styled-icons/material/FormatListBulleted';
-// import { FileText2 as CV } from 'styled-icons/icomoon/FileText2';
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2';
 import { CodeSSlash as Skills } from 'styled-icons/remix-fill/CodeSSlash';
 import { HomeHeart as Home } from 'styled-icons/boxicons-regular/HomeHeart';
@@ -71,6 +70,7 @@ const MenuBar = () => {
 
         <MenuBarItem
           title="Mudar visualização"
+          className="display"
           onClick={() => {
             window.__setPreferredDisplay(isListMode ? 'grid' : 'list');
           }}

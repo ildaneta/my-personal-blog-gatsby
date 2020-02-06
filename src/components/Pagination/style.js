@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 import { ArrowBackIos } from 'styled-icons/material/ArrowBackIos';
 import { ArrowForwardIos } from 'styled-icons/material/ArrowForwardIos';
 
@@ -10,6 +11,11 @@ export const PaginationWrapper = styled.div`
   border-top: 1px solid var(--rose);
   color: var(--white);
   padding: 1.5rem 3rem;
+
+  ${media.lessThan('large')`
+    font-size: .8rem;
+    padding: 1rem;
+  `}
 
   a {
     color: var(--colorLetters);

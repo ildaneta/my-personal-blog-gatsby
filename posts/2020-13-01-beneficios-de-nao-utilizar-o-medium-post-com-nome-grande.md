@@ -1,7 +1,7 @@
 ---
 category: HTML
 date: 2020-01-13 11:01:10
-title: Benefícios de não utilizar o Medium Post com nome grande
+title: Benefícios de não utilizar o Medium 
 description: Descubra os benefícios de ter o seu próprio blog e conseguir alavancar sua carreira e nunca mais utilizá-lo.
 background: '#f563'
 ---
