@@ -15,6 +15,7 @@ const BlogPost = ({ data, pageContext }) => {
   const timeToRead = data.markdownRemark.timeToRead;
   const description = data.markdownRemark.frontmatter.description;
   const url = data.markdownRemark.fields.slug;
+  const image = data.markdownRemark.frontmatter.image;
 
   const next = pageContext.nextPost;
   const previous = pageContext.previousPost;
@@ -22,7 +23,7 @@ const BlogPost = ({ data, pageContext }) => {
   return (
     // Integrando o post com o layout através das tags Layout e SEO
     <Layout>
-      <SEO title={title} />
+      <SEO title={title} description={description} image={image} />
       <s.PostHeader>
         <s.PostDate>
           {date} • {timeToRead} min de leitura
@@ -49,6 +50,7 @@ export const query = graphql`
         title
         description
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+        image
       }
       html
       timeToRead

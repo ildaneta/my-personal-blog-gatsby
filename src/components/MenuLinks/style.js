@@ -11,6 +11,7 @@ export const MenuLinksWrapper = styled.nav`
 export const MenuLinksList = styled.ul`
   font-size: 1.3rem;
   font-weight: 400;
+  font-family: 'Didact Gothic', sans-serif;
 `;
 
 export const MenuLinksItem = styled.li`

@@ -8,7 +8,7 @@ module.exports = {
     position: `Desenvolvedora Front-end`,
     description: `Busco através da escrita demonstrar minhas paixões por tecnologia, soft skills e assuntos comportamentais.`,
     author: `Ilda Neta`,
-    siteURL: `https://localhost:8000/`
+    siteURL: `https://ildaneta.netlify.com/`
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -75,17 +75,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ilda Neta`,
+        short_name: `Ilda neta`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`
-        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#191921;`,
+        theme_color: `#191921;`,
+        display: `minimal-ui`,
+        // favicon
+        icon: `src/images/avatar.png` // This path is relative to the root of the site.
       }
-    }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`
   ]
 };

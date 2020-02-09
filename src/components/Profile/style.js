@@ -27,8 +27,8 @@ export const ProfileLink = styled(AniLink)`
 
 export const ProfileAuthor = styled.h1`
   font-size: 1.6rem;
-  margin: 0.5rem auto 1.5rem;
-  font-family: 'Montserrat Alternates', sans-serif;
+  margin: 0.9rem auto 1.5rem;
+  font-family: 'Didact Gothic', sans-serif;
   color: var(--colorLetters);
   transition: color 0.5s;
   cursor: default;
@@ -45,8 +45,8 @@ export const ProfileAuthor = styled.h1`
 
 export const ProfilePosition = styled.small`
   display: block;
-  font-size: 1.2rem;
-  font-family: 'Fahkwang', sans-serif;
+  font-size: 1.4rem;
+  font-family: 'Didact Gothic', sans-serif;
   margin-top: 3px;
   color: var(--colorLetters);
   cursor: default;
