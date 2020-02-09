@@ -25,4 +25,24 @@ collections:
           format: 'YYYY-MM-DD hh:mm:ss',
         }
       - { label: 'image', name: 'thumbnail', widget: 'image' }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          options: ['Comp', 'CSS', 'JS', 'Book', 'HTML', 'Dev'],
+        }
+      - {
+          label: 'Background',
+          name: 'background',
+          widget: 'select',
+          options:
+            [
+              { label: 'Comp', value: '#f26' },
+              { label: 'CSS', value: '#7d669e' },
+              { label: 'JS', value: '#f7a5a6' },
+              { label: 'Book', value: '#e261e0' },
+              { label: 'HTML', value: '#f77394' },
+              { label: 'Dev', value: '#CD4C51' },
+            ],
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
