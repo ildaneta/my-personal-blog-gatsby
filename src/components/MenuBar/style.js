@@ -49,6 +49,11 @@ export const MenuBarLink = styled(AniLink)`
       color: var(--colorLetters);
     }
   }
+
+  .skills {
+    width: 27px;
+    height: 27px;
+  }
 `;
 
 export const MenuBarItem = styled.span`

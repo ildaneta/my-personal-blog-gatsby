@@ -20,10 +20,10 @@ export const PostTitle = styled.h1`
   margin: 1rem auto;
 
   ${media.lessThan('large')`
+    line-height: 2.8rem;
     font-size: 2.5rem;
     line-height: 1.1;
     padding: 0 1rem;
-    line-height: 1.9rem;
   `}
 `;
 

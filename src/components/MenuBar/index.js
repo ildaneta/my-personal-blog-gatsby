@@ -71,7 +71,7 @@ const MenuBar = () => {
           title="Skills"
         >
           <MenuBarItem>
-            <Skills />
+            <Skills className="skills" />
           </MenuBarItem>
         </MenuBarLink>
       </MenuBarGroup>
