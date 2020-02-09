@@ -7,6 +7,7 @@ export const PostItemLink = styled(AniLink)`
   color: var(--colorLetters);
   display: flex;
   text-decoration: none;
+
   &:hover {
     color: var(--hover);
   }
@@ -18,7 +19,6 @@ export const PostItemLink = styled(AniLink)`
   ${media.lessThan('large')`
     align-items: flex-start;
     flex-direction: column;
-    padding: 2rem 1rem;
   `}
 `;
 
@@ -52,12 +52,10 @@ export const PostItemTag = styled.div`
   height: 40px;
 
   ${media.lessThan('large')`
-    border-radius: 0;
     font-size: 1rem;
     min-height: auto;
     min-width: auto;
-    padding: .2rem .5rem;
-    margin-bottom: .7rem;
+    margin-left: 0;
   `}
 `;
 

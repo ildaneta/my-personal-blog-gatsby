@@ -38,7 +38,7 @@ export const ProfileAuthor = styled.h1`
   }
 
   ${media.lessThan('large')`
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 0 0 0 10px;
   `}
 `;
@@ -57,7 +57,7 @@ export const ProfilePosition = styled.small`
   }
 
   ${media.lessThan('large')`
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: 0.2rem;
   `}
 `;
