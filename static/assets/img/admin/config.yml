@@ -15,7 +15,6 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - {
@@ -25,24 +24,24 @@ collections:
           format: 'YYYY-MM-DD hh:mm:ss',
         }
       - { label: 'image', name: 'thumbnail', widget: 'image' }
-        - {
-        label: "Category",
-        name: "category",
-        widget: "select",
-        options: ["jekyll", "css", "js", "html", "svg", "dev", "misc"]
-      }
       - {
-        label: "Background",
-        name: "background",
-        widget: "select",
-        options: [
-          { label: "Jekyll", value: "#B31917" },
-          { label: 'CSS', value: '#2DA0C3' },
-          { label: 'JS', value: '#D6BA32' },
-          { label: 'HTML', value: '#EB7728' },
-          { label: 'SVG', value: '#7D669E' },
-          { label: 'Dev', value: '#637a91' },
-          { label: 'Misc', value: '#7AAB13' },
-        ]
-      }
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          options: ['comp', 'css', 'js', 'resenha', 'html', 'dev'],
+        }
+      - {
+          label: 'Background',
+          name: 'background',
+          widget: 'select',
+          options:
+            [
+              { label: 'Comp', value: '#f26' },
+              { label: 'CSS', value: '#7d669e' },
+              { label: 'JS', value: '#f7a5a6' },
+              { label: 'Resenha', value: '#e261e0' },
+              { label: 'HTML', value: '#f77394' },
+              { label: 'Dev', value: '#CD4C51' },
+            ],
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
