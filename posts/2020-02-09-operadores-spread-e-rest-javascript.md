@@ -7,6 +7,10 @@ thumbnail: assets/img/0_bpYAhsqPDn2CO78u.png
 category: JS
 background: '#f7a5a6'
 ---
+![javascript spread e rest operator](assets/img/0_bpYAhsqPDn2CO78u.png)
+
+
+
 Através do bootcamp do qual sou aluna, aprendi sobre os operadores REST e SPREAD, ambas features do ES6.
 
 Porém apareceu uma publicação em minha timeline do linkedin onde o autor falou um pouco do REST, e ao visualizar os comentários percebi que vários desenvolvedores pareciam ainda não conhecer essa maravilhosidade, e então resolvi escrever esse artigo para ajudarmos ainda mais desenvolvedor@s.
