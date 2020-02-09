@@ -9,25 +9,23 @@ background: '#f7a5a6'
 ---
 ![javascript spread e rest operator](assets/img/0_bpYAhsqPDn2CO78u.png)
 
-
-
 Através do bootcamp do qual sou aluna, aprendi sobre os operadores REST e SPREAD, ambas features do ES6.
 
 Porém apareceu uma publicação em minha timeline do linkedin onde o autor falou um pouco do REST, e ao visualizar os comentários percebi que vários desenvolvedores pareciam ainda não conhecer essa maravilhosidade, e então resolvi escrever esse artigo para ajudarmos ainda mais desenvolvedor@s.
 
 # SPREAD
 
-Basicamente o operador spread`...`serve para que possamos copiar dados de um array ou objeto e para passarmos um array inteiro como parâmetro para uma função, porém quando a função não espera um array mas sim argumentos separados.
+Basicamente o operador spread `...` serve para que possamos copiar dados de um array ou objeto e para passarmos um array inteiro como parâmetro para uma função, porém quando a função não espera um array mas sim argumentos separados.
 
 > OMG parece genial não? Mas como utilizá-lo?
 
 ![](assets/img/1_EQ_i83oYjj81VyZDlt9G1A.png)
 
-Partindo do código acima, podemos observar que temos a variável **dataUser**que é um array com os dados de um usuário.
+Partindo do código acima, podemos observar que temos a variável **dataUser** que é um array com os dados de um usuário.
 
 Suponhamos que queremos criar uma novo array **newUser** que possua os mesmos dados do **dataUser**, mais dados adicionais, então utilizamos o spread [***…nameArray***, dadosAdicionais].
 
-Então, dando um`console.log`em nossos 2 arrays, vemos que **dataUser** possui 4 posições e **newUser** possui 6, pois ele possui tudo de dataUser mais o estado civil e a cidade como dados adicionais.
+Então, dando um `console.log` em nossos 2 arrays, vemos que **dataUser** possui 4 posições e **newUser** possui 6, pois ele possui tudo de dataUser mais o estado civil e a cidade como dados adicionais.
 
 Podemos também apenas copiar os dados do array ou objeto que queremos e colocá-los em uma nova variável, nada nos impede:
 
@@ -52,7 +50,7 @@ Podemos também combinar (um ou mais) arrays ou (um ou mais) objetos:
 
 ![](assets/img/1_QbBux4m49yEFZwPkn2gJMg.png)
 
-Perceba que no exemplo acima, utilizei o spread também no`console.log`, assim ele já mostra meu array **fullName** ‘*espalhado*’.
+Perceba que no exemplo acima, utilizei o spread também no `console.log`, assim ele já mostra meu array **fullName** ‘*espalhado*’.
 
 # REST
 
