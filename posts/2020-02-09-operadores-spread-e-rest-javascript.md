@@ -9,29 +9,27 @@ background: '#f7a5a6'
 ---
 ![javascript spread e rest operator](assets/img/0_bpYAhsqPDn2CO78u.png)
 
-
-
 Através do bootcamp do qual sou aluna, aprendi sobre os operadores REST e SPREAD, ambas features do ES6.
 
 Porém apareceu uma publicação em minha timeline do linkedin onde o autor falou um pouco do REST, e ao visualizar os comentários percebi que vários desenvolvedores pareciam ainda não conhecer essa maravilhosidade, e então resolvi escrever esse artigo para ajudarmos ainda mais desenvolvedor@s.
 
 # SPREAD
 
-Basicamente o operador spread`...`serve para que possamos copiar dados de um array ou objeto e para passarmos um array inteiro como parâmetro para uma função, porém quando a função não espera um array mas sim argumentos separados.
+Basicamente o operador spread `...` serve para que possamos copiar dados de um array ou objeto e para passarmos um array inteiro como parâmetro para uma função, porém quando a função não espera um array mas sim argumentos separados.
 
 > OMG parece genial não? Mas como utilizá-lo?
 
-![](assets/img/1_EQ_i83oYjj81VyZDlt9G1A.png)
+![exemplo 01](assets/img/1_EQ_i83oYjj81VyZDlt9G1A.png)
 
-Partindo do código acima, podemos observar que temos a variável **dataUser**que é um array com os dados de um usuário.
+Partindo do código acima, podemos observar que temos a variável **dataUser** que é um array com os dados de um usuário.
 
 Suponhamos que queremos criar uma novo array **newUser** que possua os mesmos dados do **dataUser**, mais dados adicionais, então utilizamos o spread [***…nameArray***, dadosAdicionais].
 
-Então, dando um`console.log`em nossos 2 arrays, vemos que **dataUser** possui 4 posições e **newUser** possui 6, pois ele possui tudo de dataUser mais o estado civil e a cidade como dados adicionais.
+Então, dando um `console.log` em nossos 2 arrays, vemos que **dataUser** possui 4 posições e **newUser** possui 6, pois ele possui tudo de dataUser mais o estado civil e a cidade como dados adicionais.
 
 Podemos também apenas copiar os dados do array ou objeto que queremos e colocá-los em uma nova variável, nada nos impede:
 
-![](assets/img/1_m7MTzUcZgBM7ahbXhZVMnQ.png)
+![exemplo 02](assets/img/1_m7MTzUcZgBM7ahbXhZVMnQ.png)
 
 Com isso, os objetos **dataUser** e **newUser** possuirão os mesmos conteúdos.
 
@@ -40,19 +38,19 @@ Utilizando o exemplo abaixo, nossa função **sum** espera por três parâmetros
 
 Se não tívessemos o spread, teríamos as duas opções abaixo para enviar parâmetros a nossa função, sendo a opção 2 a ‘pior’ forma digamos.
 
-![](assets/img/1_g5hU573WYJl5gCLaqf7epQ.png)
+![exemplo 03](assets/img/1_g5hU573WYJl5gCLaqf7epQ.png)
 
 Com o spread precisaríamos apenas:
 
-![](assets/img/1_pdEGJ8AtvxFhzYVJcBXGsQ.png)
+![exemplo 04](assets/img/1_pdEGJ8AtvxFhzYVJcBXGsQ.png)
 
 O que o spread faz no exemplo acima é “quebrar o array” onde cada posição se torna uma variável do argumento.
 
 Podemos também combinar (um ou mais) arrays ou (um ou mais) objetos:
 
-![](assets/img/1_QbBux4m49yEFZwPkn2gJMg.png)
+![exemplo 05](assets/img/1_QbBux4m49yEFZwPkn2gJMg.png)
 
-Perceba que no exemplo acima, utilizei o spread também no`console.log`, assim ele já mostra meu array **fullName** ‘*espalhado*’.
+Perceba que no exemplo acima, utilizei o spread também no `console.log`, assim ele já mostra meu array **fullName** ‘*espalhado*’.
 
 # REST
 
@@ -62,12 +60,12 @@ Seguindo a linha do spread, o rest possui a mesma forma declarativa para utiliza
 
 Vamos aos exemplos:
 
-![](assets/img/1_yOOJMxG6QxD3Rkd_tUm3lQ.png)
+![exemplo 06](assets/img/1_yOOJMxG6QxD3Rkd_tUm3lQ.png)
 
 Conforme acima, o array **numbers** possui números, porém se quisermos utilizar alguns números em variáveis separadas, basta criarmos um novo array passando o nome que essas variáveis passarão a ter e o restante dos dados que não quisermos em variáveis separadas, podemos transformá-los em outro array.\
 Nesse caso, o **restNumbers** é um array derivado de **numbers** que possui o restante dos números que não separamos.
 
-![](assets/img/1_t3X5RFnj7hVnYhJg78lQtA.png)
+![exemplo 07](assets/img/1_t3X5RFnj7hVnYhJg78lQtA.png)
 
 Os nomes que daremos as nossas variáveis devem seguir a ordem da posição dos itens do array, nesse caso, name equivale a posição\[0] de **person**, assim como yearBirth equivale a posição\[1] e assim sucessivamente.
 
