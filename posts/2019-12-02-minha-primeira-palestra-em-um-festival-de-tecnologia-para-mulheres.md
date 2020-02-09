@@ -6,7 +6,7 @@ description: >-
 date: 2019-12-02T11:01:10.000Z
 thumbnail: assets/img/femtec.jpeg
 category: Comp
-background: '#f563'
+background: '#f26'
 ---
 ![Palestrantes do FEMTEC (bloco Solutis)](assets/img/femtec.jpeg)
 
