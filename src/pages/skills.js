@@ -22,10 +22,10 @@ const SkillsPage = () => (
   <Layout>
     <SEO title="Skills" />
     <SkillsHeader>Skills</SkillsHeader>
-    <SkillsSubTitle>Hard Skills</SkillsSubTitle>
     <SkillsLink href="https://ildaneta.netlify.com/about">
       Visite o Sobre Mim
     </SkillsLink>
+    <SkillsSubTitle>Hard Skills</SkillsSubTitle>
     <SkillsList>
       {links.map((link, index) => {
         const Icon = Icons[link.label];

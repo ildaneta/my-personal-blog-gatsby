@@ -22,7 +22,7 @@ export const SkillsLink = styled.a`
     transition: opacity 0.5s;
     font-weight: 300;
     border-bottom: 1px solid var(--linkColor);
-    margin: 3rem;
+    margin-left: 3rem;
     font-size: 1.3rem;
     font-weight: 400;
 
@@ -37,9 +37,7 @@ export const SkillsLink = styled.a`
 export const SkillsList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-  margin-bottom: 1.8rem;
+  margin: 1rem 2.5rem 0 2.5rem;
 
   svg {
     color: var(--iconColor);
@@ -78,7 +76,7 @@ export const SkillsLinkIcon = styled.a`
 `;
 
 export const SkillsSubTitle = styled.h2`
-  padding: 0.5rem 3rem;
+  padding: 2rem 3rem 0.2rem 3rem;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 1.9rem;
   font-weight: 500;
