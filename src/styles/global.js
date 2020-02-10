@@ -81,6 +81,7 @@ const GlobalStyle = createGlobalStyle`
     --placeholderSearch: #dbdbdb;
     --inputColorSearch: #f7a5a6;
     --iconColor: #363636;
+    --backgroundIcons: #e5e3e3
   }
 
   body.light{
@@ -97,6 +98,7 @@ const GlobalStyle = createGlobalStyle`
     --placeholderSearch: #333;
     --inputColorSearch: #f77394;
     --iconColor: #363636;
+    --backgroundIcons: #fcf2f2;
   }
 
 `;

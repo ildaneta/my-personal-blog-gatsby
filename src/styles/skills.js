@@ -39,20 +39,21 @@ export const SkillsList = styled.ul`
   flex-wrap: wrap;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
-  margin-top: 20px;
-  margin-bottom: 3rem;
+  margin-bottom: 1.8rem;
+
   svg {
     color: var(--iconColor);
     width: 40px;
     height: 40px;
-    margin: 0.6rem 3rem;
   }
 `;
 
-export const SkillsItem = styled.li``;
+export const SkillsItem = styled.li`
+  cursor: pointer;
+`;
 
 export const SkillsWrapper = styled.div`
-  background: var(--rose);
+  background: var(--backgroundIcons);
   margin-left: 10px;
   margin-top: 10px;
   width: 60px;
@@ -69,4 +70,51 @@ export const SkillsLinkIcon = styled.a`
   width: 60px;
   justify-content: center;
   align-items: center;
+
+  .img {
+    width: 40px;
+    height: 40px;
+  }
+`;
+
+export const SkillsSubTitle = styled.h2`
+  padding: 0.5rem 3rem;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: var(--colorLetters);
+`;
+
+export const SkillsP = styled.p`
+  padding: 1rem 3rem;
+
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--colorLetters);
+  &:hover {
+    color: var(--hover);
+  }
+`;
+
+export const Div = styled.div`
+  margin-bottom: 0.5rem;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    width: 225px;
+    height: 4px;
+    content: '';
+    display: block;
+    position: absolute;
+    background: var(--backgroundIcons);
+    bottom: 0;
+    margin-left: 3rem;
+  }
+`;
+
+export const SoftSkillsWrapper = styled.div`
+  margin-top: 20px;
+  margin-bottom: 30px;
 `;

@@ -10,6 +10,7 @@ import {
   ProfilePosition,
   ProfileDescription
 } from './style';
+
 import Avatar from '../Avatar';
 
 const Profile = () => {

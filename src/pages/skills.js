@@ -11,13 +11,18 @@ import {
   SkillsList,
   SkillsItem,
   SkillsWrapper,
-  SkillsLinkIcon
+  SkillsLinkIcon,
+  SkillsSubTitle,
+  SkillsP,
+  Div,
+  SoftSkillsWrapper
 } from '../styles/skills';
 
 const SkillsPage = () => (
   <Layout>
     <SEO title="Skills" />
     <SkillsHeader>Skills</SkillsHeader>
+    <SkillsSubTitle>Hard Skills</SkillsSubTitle>
     <SkillsLink href="https://ildaneta.netlify.com/about">
       Visite o Sobre Mim
     </SkillsLink>
@@ -27,19 +32,44 @@ const SkillsPage = () => (
 
         return (
           <SkillsWrapper key={link}>
-            <SkillsLinkIcon
-              href="#"
-              title={link.label}
-              rel="noopener noreferrer"
-            >
-              <SkillsItem>
+            <SkillsItem>
+              <SkillsLinkIcon
+                href="#"
+                title={link.label}
+                rel="noopener noreferrer"
+              >
                 <Icon />
-              </SkillsItem>
-            </SkillsLinkIcon>
+              </SkillsLinkIcon>
+            </SkillsItem>
           </SkillsWrapper>
         );
       })}
     </SkillsList>
+
+    <SkillsSubTitle>Soft Skills</SkillsSubTitle>
+
+    <SoftSkillsWrapper>
+      <Div>
+        <SkillsP>Empatia</SkillsP>
+      </Div>
+      <Div>
+        <SkillsP>Liderança</SkillsP>
+      </Div>
+      <Div>
+        <SkillsP>Adaptabilidade </SkillsP>
+      </Div>
+      <Div>
+        <SkillsP>Comunicação clara</SkillsP>
+      </Div>
+
+      <Div>
+        <SkillsP>Trabalho em equipe</SkillsP>
+      </Div>
+
+      <Div>
+        <SkillsP>Inteligência emocional</SkillsP>
+      </Div>
+    </SoftSkillsWrapper>
   </Layout>
 );
 
