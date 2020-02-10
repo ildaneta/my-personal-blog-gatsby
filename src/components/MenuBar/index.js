@@ -58,7 +58,7 @@ const MenuBar = () => {
           title="Pesquisar"
         >
           <MenuBarItem>
-            <Search className="search" />
+            <Search className="search active" />
           </MenuBarItem>
         </MenuBarLink>
 

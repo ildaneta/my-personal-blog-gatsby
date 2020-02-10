@@ -5,7 +5,7 @@ export const PostHeader = styled.header`
   color: var(--colorLetters);
   margin: auto;
   max-width: 70rem;
-  padding: 5rem 5rem 0;
+  padding: 2rem 3rem 0;
 
   ${media.lessThan('large')`
     padding: 3rem 0 0;
@@ -15,9 +15,11 @@ export const PostHeader = styled.header`
 
 export const PostTitle = styled.h1`
   font-size: 2.8rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 0 1.4rem;
   margin: 1rem auto;
+  font-family: 'Didact Gothic', sans-serif;
+  line-height: 3.2rem;
 
   ${media.lessThan('large')`
     line-height: 2.8rem;
@@ -31,6 +33,8 @@ export const PostDescription = styled.h2`
   font-size: 1.6rem;
   font-weight: 200;
   padding: 0 1.4rem;
+  font-family: 'Didact Gothic', sans-serif;
+  line-height: 1.8rem;
 
   ${media.lessThan('large')`
     font-size: 1.6rem;
