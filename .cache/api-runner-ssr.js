@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Ilda Neta","short_name":"Ilda neta","start_url":"/","background_color":"#191921;","theme_color":"#191921;","display":"minimal-ui","icon":"src/images/avatar.png"},
+      options: {"plugins":[],"name":"Ilda Neta","short_name":"Ilda neta","start_url":"/","background_color":"#191921;","theme_color":"#191921;","display":"minimal-ui","icon":"src/images/favicon.png"},
     },{
       plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},

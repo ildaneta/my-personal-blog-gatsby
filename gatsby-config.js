@@ -82,7 +82,7 @@ module.exports = {
         theme_color: `#191921;`,
         display: `minimal-ui`,
         // favicon
-        icon: `src/images/avatar.png` // This path is relative to the root of the site.
+        icon: `src/images/favicon.png` // This path is relative to the root of the site.
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

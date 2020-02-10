@@ -20,7 +20,7 @@ function SEO({ description, lang, meta, title, image }) {
   );
 
   const url = site.siteMetadata.siteURL;
-  const ogImage = `${url}${image || '/static/assets/img/lake.jpg'}`;
+  const ogImage = `${url}${image || '/static/assets/img/share.png'}`;
   const metaDescription = description || site.siteMetadata.description;
 
   return (
