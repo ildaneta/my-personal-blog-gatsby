@@ -19,8 +19,8 @@ function SEO({ description, lang, meta, title, image }) {
     `
   );
 
-  const url = site.siteMetadata.siteURL;
-  const ogImage = `${url}${image || '/static/assets/img/share.png'}`;
+  // const url = site.siteMetadata.siteURL;
+  const ogImage = image || '/static/assets/img/share.png';
   const metaDescription = description || site.siteMetadata.description;
 
   return (
@@ -32,8 +32,16 @@ function SEO({ description, lang, meta, title, image }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `aplication-name`,
+          content: 'Ilda Neta Blog'
+        },
+        {
           name: `description`,
           content: metaDescription
+        },
+        {
+          property: `og: image`,
+          content: ogImage
         },
         {
           property: `og:title`,
@@ -42,10 +50,6 @@ function SEO({ description, lang, meta, title, image }) {
         {
           property: `og:description`,
           content: metaDescription
-        },
-        {
-          property: `og: image`,
-          content: ogImage
         },
         {
           property: `og:type`,
