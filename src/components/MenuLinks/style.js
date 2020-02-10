@@ -19,7 +19,6 @@ export const MenuLinksItem = styled.li`
 
   .active {
     color: var(--hover);
-    font-weight: 400;
     border-bottom: 1px solid var(--hover);
   }
 `;
