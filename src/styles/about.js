@@ -11,7 +11,7 @@ export const AboutHeader = styled.h1`
 `;
 
 export const AboutDescription = styled.p`
-  padding: 2rem 3rem 0;
+  padding: 0 3rem 1.5rem 3rem;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
@@ -31,4 +31,23 @@ export const AboutLink = styled.a`
     border-bottom: 2px dotted var(--linkColor);
     color: var(--linkColor);
   }
+`;
+
+export const AboutSubTitle = styled.h2`
+  padding: 2rem 3rem;
+  margin: 1rem auto;
+  line-height: 2.6rem;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--colorLetters);
+`;
+
+export const AboutLinksList = styled.ul`
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 200px;
+  margin: 2rem;
 `;
