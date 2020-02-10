@@ -72,7 +72,7 @@ const GlobalStyle = createGlobalStyle`
     --rose: #f7a5a6;
     --background: #191921;
     --mediumBackground: #282a36;
-    --colorLetters: #fcf2f2;
+    --colorLetters: #e5e3e3;
     --colorIcons: #fcf2f2;
     --hover: #f7a5a6;
     --hoverRecommended: #22242d;

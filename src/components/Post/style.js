@@ -137,7 +137,7 @@ export const MainContent = styled.section`
     color: var(--white);
     border-left: 0.3rem solid var(--rose);
     padding: 0 1.875rem;
-    margin: 3.125rem auto;
+    margin: 0.1px 0.5rem;
   }
 
   hr {
