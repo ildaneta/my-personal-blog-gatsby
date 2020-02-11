@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import getThemeColor from '../../utils/getThemeColor';
+import scrollToTop from '../../utils/scrollToTop';
 
 import { Grid } from 'styled-icons/feather/Grid';
 import { FormatListBulleted as List } from 'styled-icons/material/FormatListBulleted';
@@ -101,7 +102,7 @@ const MenuBar = () => {
           {isListMode ? <Grid /> : <List className="list" />}
         </MenuBarItem>
 
-        <MenuBarItem title="Ir para o topo">
+        <MenuBarItem title="Ir para o topo" onClick={scrollToTop}>
           <ArrowUp />
         </MenuBarItem>
       </MenuBarGroup>
