@@ -4,7 +4,7 @@ title: Como me preparei para trabalhar na Cubos e o que aprendi no processo
 description: >-
   Nesse artigo que originalmente foi publicado no Blog da Cubos, compartilho com
   vocês meu processo de preparação para trabalhar nessa empresa e os
-  aprendizados que teve ao longo do caminho. Acompanhe!
+  aprendizados que tive ao longo do caminho. Acompanhe!
 date: '2020-02-12 06:25:47'
 thumbnail: assets/img/image.png
 category: Comp
