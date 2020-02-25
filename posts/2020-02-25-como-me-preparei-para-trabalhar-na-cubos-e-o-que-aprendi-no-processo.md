@@ -6,7 +6,7 @@ description: >-
   vocês meu processo de preparação para trabalhar nessa empresa e os
   aprendizados que tive ao longo do caminho. Acompanhe!
 date: '2020-02-12 06:25:47'
-thumbnail: assets/img/image.png
+thumbnail: assets/img/Untitled-05.jpg
 category: Comp
 background: '#f26'
 ---
