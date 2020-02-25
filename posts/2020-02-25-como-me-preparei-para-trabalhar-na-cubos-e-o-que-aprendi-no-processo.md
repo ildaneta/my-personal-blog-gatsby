@@ -3,13 +3,15 @@ layout: post
 title: Como me preparei para trabalhar na Cubos e o que aprendi no processo
 description: >-
   Nesse artigo que originalmente foi publicado no Blog da Cubos, compartilho com
-  vocês meu processo de preparação para trabalhar na Cubos e os aprendizados que
-  teve ao longo do caminho. Acompanhe!
+  vocês meu processo de preparação para trabalhar nessa empresa e os
+  aprendizados que teve ao longo do caminho. Acompanhe!
 date: '2020-02-12 06:25:47'
 thumbnail: assets/img/image.png
 category: Comp
 background: '#f26'
 ---
+![Ilda Neta, desenvolvedora front-end](assets/img/image.png)
+
 Atuando na área de tecnologia há quase seis anos, chegou um momento em que tive que refletir sobre meu momento profissional. Creio que passaremos por isso pelo menos uma vez na vida. E quando esse momento chegou, tive que tomar uma grande decisão, onde me encontrava com a seguinte dúvida: deixaria de ser da área de tecnologia ou estudaria para aprender tudo novamente do zero para me tornar uma programadora?
 
 Por vários fatores, dentre eles a grande quantidade de oportunidades na área de programação, decidi que agora seria o meu momento de ser o que sempre quis: **uma programadora!**
