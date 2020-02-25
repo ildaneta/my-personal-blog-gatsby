@@ -102,13 +102,14 @@ Hoje me acho mais consciente das escolhas que faço, não sendo levada somente p
 
 Esse vídeo motivacional me ajudou a repensar em minhas escolhas:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EjMjs6ob9sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/EjMjs6ob9sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > E como diz Deivison Pedroza: A vida é feita de escolhas e elas podem determinar como vai ser o seu amanhã.\
 > Por isso, é tão importante pensar em tudo que faz.\
 > Um caminho errado pode levar você a um destino obscuro. E, muitas vezes, sem volta.\
 > E nessa caminhada cada escolha importa.
 
+\
 Cada escolha importa, e a soma delas ditarão as regras de nossa vida.
 
 Como ajuda na reflexão, deixo essa música que foi o nome do álbum do A-ha de 2012: [Lifelines - A-ha](https://www.youtube.com/watch?v=xQ5gR_FAwSk), pois ela trata muito do que dissemos ao longo desse artigo, sobre nosso destino, onde o compositor reflete sobre o que faria se pudesse voltar no tempo.
