@@ -32,11 +32,11 @@ Sempre tive uma certa facilidade em aprender, com isso eu não sentia necessidad
 
 Porém, fui perdendo o hábito de estudar ao longo do tempo, e percebi que estive equivocada durante muitos anos.
 
-Estar na área de TI é muito mais do que apenas gostar de tecnologia, você tem que AMAR estudar, aprender constantemente, se manter atualizad@ e estar por dentro do que ocorre ao seu redor.
+Estar na área de TI é muito mais do que apenas gostar de tecnologia, você tem que AMAR estudar, aprender constantemente, se manter atualizado(a) e estar por dentro do que ocorre ao seu redor.
 
 Então com certeza um dos maiores conselhos que eu daria a mim mesma é: estude o máximo que puder, faça dos seus estudos algo divertido, sem monotonia, e busque aprender sempre mais sobre qualquer coisa, sobre comidas, política, assuntos comportamentais…
 
-## 3. Construir planos, objetivos e ser don@ do seu próprio destino
+## 3. Construir planos, objetivos e ser dono(a) do seu próprio destino
 
 Durante muito tempo eu acreditava que o destino era como uma sorte, algo que poderia acontecer sem que eu planejasse e seria em sua maioria coisas boas.
 
@@ -104,8 +104,6 @@ Esse vídeo motivacional me ajudou a repensar em minhas escolhas:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EjMjs6ob9sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
 > E como diz Deivison Pedroza: A vida é feita de escolhas e elas podem determinar como vai ser o seu amanhã.\
 > Por isso, é tão importante pensar em tudo que faz.\
 > Um caminho errado pode levar você a um destino obscuro. E, muitas vezes, sem volta.\
@@ -119,4 +117,4 @@ Como ainda não temos esse poder, podemos planejar e repensar sobre o destino qu
 
 E se você pudesse se dar conselhos enquanto mais jovem, o que diria a si mesmo?
 
-Um bom natal a tod@s e ótimos planejamentos pessoais!
+Um bom natal a todos(as) e ótimos planejamentos pessoais!
