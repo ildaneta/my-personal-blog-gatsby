@@ -5,13 +5,14 @@ import SEO from '../components/seo';
 import links from '../components/Skills/content';
 import Icons from '../components/Skills/icons';
 
+import { Code } from 'styled-icons/material/Code';
+
 import {
   SkillsHeader,
   SkillsLink,
   SkillsList,
   SkillsItem,
   SkillsWrapper,
-  SkillsLinkIcon,
   SkillsSubTitle,
   SkillsP,
   Div,
@@ -33,13 +34,7 @@ const SkillsPage = () => (
         return (
           <SkillsWrapper key={link}>
             <SkillsItem>
-              <SkillsLinkIcon
-                href="#"
-                title={link.label}
-                rel="noopener noreferrer"
-              >
-                <Icon />
-              </SkillsLinkIcon>
+              <Icon title={link.label} />
             </SkillsItem>
           </SkillsWrapper>
         );
@@ -50,7 +45,10 @@ const SkillsPage = () => (
 
     <SoftSkillsWrapper>
       <Div>
-        <SkillsP>Empatia</SkillsP>
+        <SkillsP>
+          {/* <Code /> */}
+          Empatia
+        </SkillsP>
       </Div>
       <Div>
         <SkillsP>Liderança</SkillsP>

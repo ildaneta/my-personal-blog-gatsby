@@ -41,10 +41,13 @@ const AboutPage = () => (
       requisitos, criação e execução de testes e implantação.
     </AboutDescription>
     <AboutDescription>
-      Atuando como desenvolvedora front-end sou responsável pela criação do
-      Dashboard gerencial da própria Cubos, onde juntamente com o back-end e
-      designer, criaremos um produto interno totalmente novo e performático,
-      auxiliando a empresa a gerenciar seus colaboradores e a reduzir custos.
+      Atuando como desenvolvedora front-end sou responsável pela criação de um
+      módulo de investimentos do nosso produto em parceria com o Banco Máxima,
+      que se chama BBNK. O BBNK é um white label bancário, onde alguns itens do
+      banco podem ser customizáveis a partir do desejo do cliente. O módulo de
+      investimentos que estou criando juntamente com mais um front-end, é
+      voltado para a Renda Fixa, para que o dinheiro do cliente fique rendendo
+      na conta até que ele liquide todo o valor.
     </AboutDescription>
     <AboutDescription>
       Cursei Sistemas de Informação na{' '}

@@ -19,7 +19,6 @@ import { Slack } from 'styled-icons/fa-brands/Slack';
 import { Ubuntu } from 'styled-icons/fa-brands/Ubuntu';
 import { Wordpress } from 'styled-icons/fa-brands/Wordpress';
 import { Yarn } from 'styled-icons/fa-brands/Yarn';
-// import WebpackImage from '../images/webpack.png';
 
 const Icons = {
   Algolia,
