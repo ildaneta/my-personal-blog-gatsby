@@ -1,7 +1,7 @@
 const links = [
   {
     label: 'Github',
-    url: 'https://github.com/ildasilva'
+    url: 'https://github.com/ildaneta'
   },
   {
     label: 'Linkedin',
