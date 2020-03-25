@@ -20,7 +20,8 @@ function SEO({ description, lang, meta, title, thumbnail }) {
   );
 
   // const url = site.siteMetadata.siteURL;
-  const ogImage = thumbnail || 'https://ildaneta.netlify.com/assets/img/IN.png';
+  const ogImage =
+    thumbnail || 'https://ildaneta.netlify.com/assets/img/share.png';
   const metaDescription = description || site.siteMetadata.description;
 
   return (
