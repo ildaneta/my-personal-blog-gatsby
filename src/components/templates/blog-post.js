@@ -15,7 +15,7 @@ const BlogPost = ({ data, pageContext }) => {
   const timeToRead = data.markdownRemark.timeToRead;
   const description = data.markdownRemark.frontmatter.description;
   const url = data.markdownRemark.fields.slug;
-  const image = data.markdownRemark.frontmatter.image;
+  const image = data.markdownRemark.frontmatter.thumbnail;
 
   const next = pageContext.nextPost;
   const previous = pageContext.previousPost;
@@ -26,7 +26,7 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO
         title={title}
         description={description}
-        image={`https://ildaneta.netlify.com${post.frontmatter.thumbnail}`}
+        image={`https://ildaneta.netlify.com${image}`}
       />
       <s.PostHeader>
         <s.PostDate>
