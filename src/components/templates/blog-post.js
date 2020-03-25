@@ -26,7 +26,7 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO
         title={title}
         description={description}
-        thumbnail={`https://ildaneta.netlify.com${image}`}
+        thumbnail={`https://ildaneta.netlify.com/${image}`}
       />
       <s.PostHeader>
         <s.PostDate>
