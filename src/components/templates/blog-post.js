@@ -23,7 +23,11 @@ const BlogPost = ({ data, pageContext }) => {
   return (
     // Integrando o post com o layout através das tags Layout e SEO
     <Layout>
-      <SEO title={title} description={description} image={image} />
+      <SEO
+        title={title}
+        description={description}
+        image={`https://ildaneta.netlify.com${post.frontmatter.thumbnail}`}
+      />
       <s.PostHeader>
         <s.PostDate>
           {date} • {timeToRead} min de leitura
