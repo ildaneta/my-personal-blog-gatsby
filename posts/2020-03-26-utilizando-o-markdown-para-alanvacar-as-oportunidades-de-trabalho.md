@@ -9,11 +9,11 @@ thumbnail: assets/img/IN (1).png
 category: Dev
 background: '#CD4C51'
 ---
-Diariamente recebo mensagens privadas no LinkedIn onde os(as) desenvolvedores(as) me perguntam sobre dicas que podem auxiliá-los a terem melhores oportunidades laborais, então nessas situações eu sempre peço o Github para dar uma olhada, e  visualizo alguns erros que estão se tornando bem comuns.
+Diariamente recebo mensagens privadas no LinkedIn onde os(as) desenvolvedores(as) me perguntam sobre dicas que podem auxiliá-los a terem melhores oportunidades laborais, então nessas situações, eu sempre solicito o Github para dar uma conferida, e acabo visualizando alguns erros que estão se tornando bem comuns.
 
-O primeiro deles é deixar a maioria dos repositórios ocultos, talvez porque se sinta um pouco envergonhado(a) dos seus códigos, o que não podemos ter, visto que todo conhecimento adquirido é válido, e o mais importante é demonstrarmos que estamos querendo aprender e evoluir.
+O primeiro deles é deixar a maioria dos repositórios ocultos, talvez porque se sinta um pouco envergonhado(a) dos seus códigos, sentimento que não podemos ter, visto que todo conhecimento adquirido é válido, e o mais importante é demonstrarmos que estamos querendo aprender e evoluir.
 
-O 2º erro e mais comum de todos, que vejo como muito significativo, é não colocar Readmes nos repositórios. Então se você se encaixa nesse 2º erro mais comum, esse artigo é pra você.
+O 2º erro e mais comum de todos, que vejo como muito significativo, é não colocar Readmes nos repositórios. Então se você se encaixa nesse 2º falho mais comum, esse artigo é pra você.
 
 ## O que é o Markdown?
 
@@ -23,17 +23,17 @@ Nesse artigo não entraremos tão a fundo em como escrever em Markdown, mas como
 
 Quando estamos em um processo seletivo, temos que ter em mente que cada pequeno detalhe a mais ou cada pequeno diferencial, nos fazem ganhar pontos extras, e no final desse processo, a soma desses pontos extras podem resultar em uma contratação ou pelo menos que cheguemos em uma fase final, pois o importante não é só sermos efetivados, é todo o aprendizado que temos por trás de um processo seletivo.
 
-Aos nos candidatarmos em uma determinada vaga, por sermos de TI a primeira coisa que os recrutadores irão olhar serão nosso Github e LinkedIn, por isso, temos que ter em mente que esse(a) recrutador(a) talvez não entenda nada de código, então ao entrar em nosso portfólio de códigos (Github) eles devem conseguir entender qual o objetivo daquele repositório, e para isso é necessário ter uma mini documentação, que são os Readmes.
+Aos nos candidatarmos em uma determinada vaga, por sermos de TI a primeira coisa que os recrutadores irão olhar será em nosso Github e LinkedIn, por isso, temos que ter em mente que esse(a) recrutador(a) talvez não entenda nada de código, então ao entrar em nosso portfólio de códigos (Github) eles devem conseguir entender qual o objetivo daquele repositório, e para isso é necessário ter uma mini documentação, que são os Readmes.
 
-Os Readmes são arquivos de texto que utilizam o Markdown como linguagem de marcação, e esses arquivos servem para que você crie acessibilidade a todos(as) que estão visualizando nossos repositórios, ou seja, com essa documentação, quem visualizá-los conseguirá entender o que te motivou a criar aquele projeto, como instalá-lo, como rodar o projeto, as tecnologias utilizadas, o resultado final... São muitas opções, e toda informação a mais e com relevância que for colocada nesse Readme, pode ser um ponto extra a mais que você poderá ganhar.
+Os Readmes são arquivos de texto que aceita o Markdown como linguagem de marcação, e esses arquivos servem para que você crie acessibilidade a todos(as) que estão visualizando nossos repositórios, ou seja, com essa documentação, quem visualizá-los conseguirá entender o que te motivou a criar aquele projeto, como instalá-lo, como rodar, as tecnologias utilizadas, o resultado final... São muitas opções, e toda informação a mais e com relevância que for colocada nesse Readme, pode ser um ponto extra a mais que você poderá ganhar.
 
 Como eu já disse [nesse artigo](https://ildaneta.netlify.com/posts/como-me-preparei-para-trabalhar-na-cubos-e-o-que-aprendi-no-processo/), os(as) recrutadores(as) não estão preocupados no primeiro momento se nossos códigos são escritos da melhor forma, ou se já temos um conhecimento avançado em determinada linguagem, pois nessa etapa eles(as) estão apenas triando nosso currículo, e irão analisar se iremos passar de fase ou não, pois se passarmos de fase, ou formos um perfil realmente atrativo, aí sim chegará o momento técnico, onde algum desenvolvedor irá analisar o que você codou.
 
-Temos que ter em mente que uma empresa buscará soft skills em você a todo momento, pois são elas que nos diferenciam dos demais. Então quando você coloca uma documentação, mostra que você é um(a) dev atencioso(a), que é detalhista ao ponto de escrever documentações para que todos(as) que visualizem seu portfólio tenham um entendimento do que está sendo feito, e não apenas desenvolvedores(as).
+Temos que ter em mente que uma empresa buscará soft skills em você a todo momento, pois são elas que nos diferenciam dos demais. Então quando você coloca uma documentação, mostra que você é um(a) dev atencioso(a), que é detalhista ao ponto de escrever documentações para que todos(as) que vejam e analisem seu portfólio tenham um entendimento do que está sendo feito, e não apenas desenvolvedores(as).
 
-Nesse processo cada pequeno detalhe importa, pois no final, a soma de todos os pequenos detalhes que você tem ao longo da seleção é o que te destaca dos demais.
+Nesse processo cada pequeno detalhe importa, pois no final, a soma de todos as pequenas particularidades que você tem ao longo da seleção é o que te destaca dos demais.
 
-Perceba que não estou dizendo que apenas com isso você será contratado(a), até porque não podemos possuir uma verdade e certeza absoluta de nada na vida, mas eu venho aprendendo que você ser detalhista e demonstrar amor ao que faz, mostra aos demais que você não fez nada correndo, e que está se empenhando a dar o seu máximo, com isso, você consegue também demonstrar que possui organização e empatia por todos que acessarão seu portfólio.
+Perceba que não estou dizendo que apenas com isso você será contratado(a), até porque não podemos possuir uma verdade e certeza absoluta de nada na vida, mas eu venho aprendendo que ser detalhista e demonstrar amor ao que faz, comprova aos demais que você não fez nada correndo, e que está se empenhando a dar o seu máximo, com isso, você consegue também demonstrar que possui organização e empatia por todos que acessarão seu portfólio.
 
 Como exemplo mostro o Readme que fiz para meu repositório do blog, é um Readme simples, porém consigo dar mais detalhes do projeto e ainda mostrar o resultado final.
 
