@@ -9,6 +9,8 @@ thumbnail: assets/img/IN (1).png
 category: Dev
 background: '#CD4C51'
 ---
+![Markdown](assets/img/IN (1).png "Markdown")
+
 Diariamente recebo mensagens privadas no LinkedIn onde os(as) desenvolvedores(as) me perguntam sobre dicas que podem auxiliá-los a terem melhores oportunidades laborais, então nessas situações, eu sempre solicito o Github para dar uma conferida, e acabo visualizando alguns erros que estão se tornando bem comuns.
 
 O primeiro deles é deixar a maioria dos repositórios ocultos, talvez porque se sinta um pouco envergonhado(a) dos seus códigos, sentimento que não podemos ter, visto que todo conhecimento adquirido é válido, e o mais importante é demonstrarmos que estamos querendo aprender e evoluir.
