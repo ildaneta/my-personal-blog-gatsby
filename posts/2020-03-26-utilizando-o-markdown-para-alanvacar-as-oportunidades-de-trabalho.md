@@ -17,13 +17,13 @@ O segundo erro e mais comum de todos, que vejo como muito significativo, é não
 
 ## O que é o Markdown?
 
-O Markdown é uma linguagem que foi criada em 2004 por John Gruber e Aaron Swarts, com a finalidade de simplificar a estruturação de um texto com símbolos como**\#**,**\>**,**+**,**\-**, e assim podemos criar um texto ou artigo de blog, com uma linguagem que nos dará marcações bem similares ao HTML, mas escrito de uma forma bem menos verbosa, mais simplificada e visualmente mais legível.
+O Markdown é uma linguagem que foi criada em 2004 por John Gruber e Aaron Swarts, com a finalidade de simplificar a estruturação de um texto com símbolos como **\#**,**\>**,**+**,**\-**, e assim podemos criar um texto ou artigo de blog, com uma linguagem que nos dará marcações bem similares ao HTML, mas escrito de uma forma bem menos verbosa, mais simplificada e visualmente mais legível.
 
 Nesse artigo não entraremos tão a fundo em como escrever em Markdown, mas como podemos utilizá-lo para que ele nos destaque em processos seletivos, fazendo com que nossas oportunidades sejam alavancadas.
 
 Quando estamos em um processo de seleção, temos que ter em mente que cada pequeno detalhe a mais ou cada pequeno diferencial, nos fazem ganhar pontos extras, e no final desse processo, a soma desses pontos extras podem resultar em uma contratação ou pelo menos que cheguemos em uma fase final, pois o importante não é só sermos efetivados, é todo o aprendizado que temos por trás de um processo seletivo.
 
-Aos nos candidatarmos em uma determinada vaga, por sermos de TI os(as) recrutadores(as) sempre olharão nosso Github e LinkedIn, por isso, temos que ter em mente que esse(a) recrutador(a) talvez não entenda nada de código, então ao entrar em nosso portfólio de códigos (Github) eles devem conseguir entender qual o objetivo daquele repositório, e para isso é necessário ter uma mini documentação, que são os ***Readmes.md***.
+Aos nos candidatarmos em uma determinada vaga, por sermos de TI os(as) recrutadores(as) sempre olharão nosso Github e LinkedIn, por isso, temos que ter em mente que esse(a) recrutador(a) talvez não entenda nada de código, então ao entrar em nosso portfólio (Github) eles devem conseguir entender qual o objetivo daquele repositório, e para isso é necessário ter uma mini documentação, que são os ***Readmes.md***.
 
 Os Readmes são arquivos de texto que aceitam o Markdown como linguagem de marcação, e esses arquivos servem para que você crie acessibilidade a todos(as) que estão visualizando nossos repositórios, ou seja, com essa documentação, quem visualizá-los conseguirá entender o que te motivou a criar aquele projeto, como instalá-lo, como rodar, as tecnologias utilizadas, o resultado final... São muitas opções, e toda informação a mais e com relevância que for colocada nesse Readme, pode ser um ponto extra a mais que você poderá ganhar.
 
