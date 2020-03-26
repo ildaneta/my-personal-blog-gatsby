@@ -48,6 +48,6 @@ E aqui mostro um trecho do código do Markdown do vídeo acima:
 Se você deseja saber mais sobre o Markdown e como utilizá-lo em suas documentações, deixo abaixo esses links para que você comece a aplicá-lo da melhor forma:
 
 * [Como fazer um Readme bonitão - Raul Esteves](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8) 
-* [Aprenda Mardkown - Fernando Daciuk](https://blog.da2k.com.br/2015/02/08/aprenda-markdown/)
+* [Aprenda Markdown - Fernando Daciuk](https://blog.da2k.com.br/2015/02/08/aprenda-markdown/)
 
 Espero que o objetivo do artigo tenha sido claro, porém, caso fique alguma dúvida ou se simplesmente você quiser bater um papo comigo, me mande uma mensagem no LinkedIn, adorarei respondê-lo(la).
