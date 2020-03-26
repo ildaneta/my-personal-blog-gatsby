@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Utilizando o Markdown para alanvacar as oportunidades de trabalho
+title: Utilizando o Markdown para alavancar suas oportunidades de trabalho
 description: >-
   Nesse artigo vamos entender um pouco mais sobre o Markdown e como ele pode nos
   auxiliar a alavancarmos nossas oportunidades de emprego.
