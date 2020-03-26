@@ -5,11 +5,11 @@ description: >-
   Nesse artigo vamos entender um pouco mais sobre o Markdown e como ele pode nos
   auxiliar a alavancarmos nossas oportunidades de emprego.
 date: '2020-03-26 06:41:32'
-thumbnail: assets/img/Design sem nome (1).png
+thumbnail: assets/img/teste.png
 category: Dev
 background: '#CD4C51'
 ---
-![Markdown](assets/img/Design sem nome (1).png)
+![Markdown](assets/img/teste.png)
 
 Diariamente recebo mensagens privadas no LinkedIn onde os(as) desenvolvedores(as) me perguntam sobre dicas que podem auxiliá-los a terem melhores oportunidades laborais, então nessas situações, eu sempre solicito o Github para dar uma conferida, e acabo visualizando alguns erros que estão se tornando bem comuns.
 
