@@ -10,8 +10,6 @@ background: '#f26'
 ---
 ![Palestrantes do FEMTEC (bloco Solutis)](assets/img/femtec.jpeg)
 
-
-
 Sempre tive uma vontade grandiosa de participar de eventos de tecnologia, me sentir mais engajada na comunidade, porém estava passando por uma fase na qual quase desisti de atuar na área, por n fatores, mas que posso contar em melhores detalhes em outro artigo (caso desejem).
 
 Sou recém moradora de Salvador, sendo assim, ainda conheço e me relaciono com poucas pessoas daqui, porém, por ser aluna do [bootcamp da Rocketseat](https://rocketseat.com.br/gostack), descobri na comunidade que eles seriam apoiadores desse evento e a partir de então conheci o [FEMTEC.](http://www.femtecba.com.br/)
@@ -26,17 +24,17 @@ Foi um misto de sentimentos, pois nunca havia estado em nenhum evento de tecnolo
 
 Resolvi contar um pouco da minha experiência na área, pois apesar de possuir 23 anos já atuo na área desde os 18, contabilizando então mais de 5 anos de atuação na área de tecnologia, onde já passei pela área de levantamento e desenvolvimento de requisitos, realização de testes, implantação remota e presencial em clientes (onde estive presencialmente em grandes clientes como a Rede Globo e na sede do Carrefour em São Paulo), suporte e meu planejamento para mudança de área, pois na época do evento estava realizando um processo de seleção para atuar como desenvolvedora front-end (consegui ser selecionada e atuar como front-end, mas isso é assunto para outro post).
 
-Como era um evento focado em **mulheres** e **LGBTQIAP+** achei que seria interessante falar também sobre como podemos lutar contra o ***Complexo de Inferioridade***, onde nós mulheres e minorias somos @s maiores atingid@s por esse complexo, fazendo-nos duvidar de nossa própria capacidade e ainda pior, é um complexo que nos faz sentir que somos inferiores aos que estão ao nosso redor.
+Como era um evento focado em **mulheres** e **LGBTQIAP+,** achei que seria interessante falar também sobre como podemos lutar contra o ***Complexo de Inferioridade***, onde nós mulheres e minorias somos as maiores atingidas por esse complexo, fazendo-nos duvidar de nossa própria capacidade e ainda pior, é um complexo que nos faz sentir que somos inferiores aos que estão ao nosso redor.
 
 Com certeza foi uma das maiores e melhores experiências da minha vida, onde aprendi, ensinei e cresci muito. Tinham várias mulheres de todas as idades que estavam ali em busca de ajuda, aprendizado, amizade e aquela forcinha a mais para entrar em uma área muito desafiadora e, que apesar de termos como primeira programadora da história uma mulher, ainda somos minoria.
 
 ![Um dos slides que contavam como foi minha trajetória para aprender a programar](assets/img/slide_femtec.png "Um dos slides que contavam como foi minha trajetória para aprender a programar")
 
-Pude compartilhar como iniciei minha carreira na área de TI, minhas dificuldades, aprendizados, a decisão de mudar e me tornar uma programadora, como ter mais foco, propósitos, como vencer o complexo de inferioridade e, por fim dicas para que el@s pudessem sempre estar em contato com a comunidade, seja com podcasts, artigos, eventos, e pude compartilhar também a história de Ada Lovelace, a primeira programadora da história.
+Pude compartilhar como iniciei minha carreira na área de TI, minhas dificuldades, aprendizados, a decisão de mudar e me tornar uma programadora, como ter mais foco, propósitos, como vencer o complexo de inferioridade e, por fim dicas para que elas pudessem sempre estar em contato com a comunidade, seja com podcasts, artigos, eventos, e pude compartilhar também a história de Ada Lovelace, a primeira programadora da história.
 
 ![Slide sobre Ada Lovelace](assets/img/ada.png)
 
-A história de Ada com certeza me fascina e futuramente dedicarei um artigo a ela, uma mulher forte, inteligente, muito a frente de sua época e acima de tudo, uma mulher matemática que aos poucos está sendo reconhecida pelo seu enorme legado na área de exatas e principalmente na computação.
+A história de Ada com certeza me fascina, e futuramente dedicarei um artigo a ela, uma mulher forte, inteligente, muito a frente de sua época e acima de tudo, uma mulher matemática que aos poucos está sendo reconhecida pelo seu enorme legado na área de exatas e principalmente na computação.
 
 Esse evento foi mágico e único, além de me fazer entender o quão grandiosa a comunidade de tecnologia é e o quanto nos agrega participar desses eventos.
 
