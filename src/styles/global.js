@@ -82,6 +82,7 @@ const GlobalStyle = createGlobalStyle`
     --inputColorSearch: #f7a5a6;
     --iconColor: #363636;
     --backgroundIcons: #e5e3e3
+    --colorLettersComments: #fff;
   }
 
   body.light{
@@ -99,6 +100,7 @@ const GlobalStyle = createGlobalStyle`
     --inputColorSearch: #f77394;
     --iconColor: #363636;
     --backgroundIcons: #fcf2f2;
+    --colorLettersComments: #363636;
   }
 
 `;
