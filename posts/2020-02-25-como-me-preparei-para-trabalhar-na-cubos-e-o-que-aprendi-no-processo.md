@@ -38,9 +38,9 @@ A Cubos é bem ativa em suas redes sociais, então não perdi a oportunidade e c
 
 A partir disso, comecei a saber como era o fit cultural da empresa, quais frentes de negócio eles seguiam, os valores que a empresa possuía e até os valores que eram mais absorvidos pelos colaboradores. Dentre os valores da empresa, o que mais me chamou a atenção foi: ser um hub de conhecimentos (mais para frente irei explicar esse termo).
 
-### 3. Estudar muito e deixar com que seus estudos sejam perceptíveis
+### 3. Estudar muito e deixar com que seus esforços sejam perceptíveis
 
-Nós programadores temos a oportunidade de termos experiência sem necessariamente estarmos trabalhando em uma empresa. Mas como isso funciona?
+Nós programadores temos a oportunidade de possuirmos experiência sem necessariamente estarmos trabalhando em uma empresa. Mas como isso funciona?
 
 Os cursos que geralmente fazemos sempre têm um projetinho no final, projetos esses que às vezes podem passar como bobos para nós, mas que é de suma importância deixá-los visíveis em nosso Github, que é uma plataforma open source, gratuita e que serve como um grande portfólio para nós desenvolvedores.
 
