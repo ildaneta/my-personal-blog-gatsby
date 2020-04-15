@@ -68,6 +68,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body.dark{
+    --colorLettersComments: #fff;
     --white: #fff;
     --rose: #f7a5a6;
     --background: #191921;
@@ -82,10 +83,10 @@ const GlobalStyle = createGlobalStyle`
     --inputColorSearch: #f7a5a6;
     --iconColor: #363636;
     --backgroundIcons: #e5e3e3
-    --colorLettersComments: #fff;
   }
 
   body.light{
+    --colorLettersComments: #363636;
     --white: #fff;
     --rose: #f7a5a6;
     --background: #fff;
@@ -100,7 +101,6 @@ const GlobalStyle = createGlobalStyle`
     --inputColorSearch: #f77394;
     --iconColor: #363636;
     --backgroundIcons: #fcf2f2;
-    --colorLettersComments: #363636;
   }
 
 `;

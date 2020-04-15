@@ -6,6 +6,11 @@ export const CommentsWrapper = styled.section`
   max-width: 70rem;
   padding: 2rem;
 
+  ${media.lessThan('large')`
+    padding: 3rem 1.4rem 0;
+    max-width: 100%;
+  `}
+
   /* Retirando as propagandas do disqus*/
   iframe[src*='ads-iframe'] {
     display: none;
@@ -22,12 +27,6 @@ export const CommentsWrapper = styled.section`
     a {
       color: var(--hover) !important;
     }
-
-    p {
-      color: var(--colorLettersComments) !important;
-    }
-
-    /* color: var(--colorLettersComments); */
   }
 `;
 
@@ -39,6 +38,5 @@ export const CommentsTitle = styled.h2`
 
   ${media.lessThan('large')`
     font-size: 1.375rem;
-    color: var(--colorLettersComments);
   `}
 `;
