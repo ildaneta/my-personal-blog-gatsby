@@ -4,4 +4,4 @@ _drafts
 .cache
 .vscode
 public
-.env
+.env*
