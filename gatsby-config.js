@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Ilda Neta`,
     position: `Desenvolvedora Front-end`,
-    description: `Busco através da escrita demonstrar minhas paixões por tecnologia, soft skills e assuntos comportamentais.`,
+    description: `Uma desenvolvedora minimalista, que busca através da escrita demonstrar suas paixões por tecnologia, soft skills e educação financeira.`,
     author: `Ilda Neta`,
     siteURL: `https://ildaneta.netlify.com/`
   },
