@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import getThemeColor from '../../utils/getThemeColor';
 import scrollToTop from '../../utils/scrollToTop';
 
-import { Grid } from 'styled-icons/feather/Grid';
-import { FormatListBulleted as List } from 'styled-icons/material/FormatListBulleted';
-import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2';
-import { CodeSSlash as Skills } from 'styled-icons/remix-fill/CodeSSlash';
-import { HomeHeart as Home } from 'styled-icons/boxicons-regular/HomeHeart';
-import { LightBulb } from 'styled-icons/octicons/LightBulb';
-import { Lightbulb } from 'styled-icons/fa-solid/Lightbulb';
-import { ArrowUpward as ArrowUp } from 'styled-icons/material/ArrowUpward';
+import { Grid } from '@styled-icons/feather/Grid';
+import { FormatListBulleted as List } from '@styled-icons/material/FormatListBulleted';
+import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2';
+import { CodeSSlash as Skills } from '@styled-icons/remix-fill/CodeSSlash';
+import { HomeHeart as Home } from '@styled-icons/boxicons-regular/HomeHeart';
+import { LightBulb } from '@styled-icons/octicons/LightBulb';
+import { Lightbulb } from '@styled-icons/fa-solid/Lightbulb';
+import { ArrowUpward as ArrowUp } from '@styled-icons/material/ArrowUpward';
 
 import {
   MenuBarWrapper,
@@ -88,8 +88,8 @@ const MenuBar = () => {
           {isDarkMode ? (
             <LightBulb className="light" />
           ) : (
-            <Lightbulb className="light" className="lightBulb" />
-          )}
+              <Lightbulb className="light" className="lightBulb" />
+            )}
         </MenuBarItem>
 
         <MenuBarItem

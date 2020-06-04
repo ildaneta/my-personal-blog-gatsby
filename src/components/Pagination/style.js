@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { ArrowBackIos } from 'styled-icons/material/ArrowBackIos';
-import { ArrowForwardIos } from 'styled-icons/material/ArrowForwardIos';
+import { ArrowBackIos } from '@styled-icons/material/ArrowBackIos';
+import { ArrowForwardIos } from '@styled-icons/material/ArrowForwardIos';
 
 export const PaginationWrapper = styled.div`
   display: flex;
