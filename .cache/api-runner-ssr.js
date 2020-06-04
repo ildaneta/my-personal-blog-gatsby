@@ -1,17 +1,17 @@
 var plugins = [{
-      plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-transition-link/gatsby-ssr'),
+      plugin: require('C:/Users/ildas/Documents/my-personal-blog-gatsby/node_modules/gatsby-plugin-transition-link/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('C:/Users/ildas/Documents/my-personal-blog-gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/ildas/Documents/my-personal-blog-gatsby/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('C:/Users/ildas/Documents/my-personal-blog-gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Ilda Neta","short_name":"Ilda neta","start_url":"/","background_color":"#191921;","theme_color":"#191921;","display":"minimal-ui","icon":"src/images/favicon.png"},
     },{
-      plugin: require('/home/ildaemanoely/my-personal-blog-gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('C:/Users/ildas/Documents/my-personal-blog-gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
