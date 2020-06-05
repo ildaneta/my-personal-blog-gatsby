@@ -20,7 +20,7 @@ export const SearchWrapper = styled.section`
   }
   .ais-SearchBox,
   .ais-Stats {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 1rem;
   }
 
   .ais-SearchBox {
@@ -93,6 +93,7 @@ export const SearchWrapper = styled.section`
         height: 1.2rem;
         width: 1.2rem;
         fill: var(--searchColor);
+        margin: auto;
 
         &:hover {
           fill: var(--rose);

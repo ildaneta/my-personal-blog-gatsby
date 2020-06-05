@@ -33,6 +33,10 @@ export const PostItemWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
   }
+
+  ${media.lessThan('large')`
+      padding: 1rem;
+    `}
 `;
 
 export const PostItemTag = styled.div`

@@ -9,6 +9,10 @@ export const SkillsHeader = styled.h1`
   font-size: 2.8rem;
   font-weight: 600;
   color: var(--colorLetters);
+
+  ${media.lessThan('large')`
+      padding: 0 1rem 1rem;
+    `}
 `;
 
 export const SkillsLink = styled.a`
@@ -22,7 +26,7 @@ export const SkillsLink = styled.a`
     transition: opacity 0.5s;
     font-weight: 300;
     border-bottom: 1px solid var(--linkColor);
-    margin-left: 3rem;
+    margin-left: 1rem;
     font-size: 1.3rem;
     font-weight: 400;
 
@@ -44,6 +48,10 @@ export const SkillsList = styled.ul`
     width: 40px;
     height: 40px;
   }
+
+  ${media.lessThan('large')`
+      margin: 0 1rem 1rem;
+    `}
 `;
 
 export const SkillsItem = styled.li`
@@ -73,6 +81,7 @@ export const SkillsLinkIcon = styled.a`
     width: 40px;
     height: 40px;
   }
+
 `;
 
 export const SkillsSubTitle = styled.h2`
@@ -81,6 +90,10 @@ export const SkillsSubTitle = styled.h2`
   font-size: 1.9rem;
   font-weight: 500;
   color: var(--colorLetters);
+
+  ${media.lessThan('large')`
+      padding: 2rem 1rem 1rem;
+    `}
 `;
 
 export const SkillsP = styled.p`
@@ -93,6 +106,10 @@ export const SkillsP = styled.p`
   &:hover {
     color: var(--hover);
   }
+
+  ${media.lessThan('large')`
+      padding: 0 1rem 1rem;
+    `}
 `;
 
 export const Div = styled.div`
@@ -109,6 +126,10 @@ export const Div = styled.div`
     background: var(--backgroundIcons);
     bottom: 0;
     margin-left: 3rem;
+
+    ${media.lessThan('large')`
+      margin-left: 1rem;
+    `}
   }
 `;
 
