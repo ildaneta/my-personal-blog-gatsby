@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Operadores Spread e Rest Javascript
-description: Um pouco mais sobre os operadores spread e rest
+description: Um pouco mais sobre os operadores spread e rest.
 date: '2019-12-17 03:52:30'
 thumbnail: assets/img/0_bpYAhsqPDn2CO78u.png
 category: JS
