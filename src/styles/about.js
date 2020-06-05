@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const AboutHeader = styled.h1`
   padding: 2rem 3rem 0;
@@ -17,6 +18,15 @@ export const AboutDescription = styled.p`
   font-weight: 300;
   line-height: 1.4;
   color: var(--colorLetters);
+
+  iframe {
+    padding: 0 1.6rem 1.6rem;
+    width: 100%;
+
+    ${media.lessThan('large')`
+      padding: 0 1rem;
+    `}
+  }
 `;
 
 export const AboutLink = styled.a`
