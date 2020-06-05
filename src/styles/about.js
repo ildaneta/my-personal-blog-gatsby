@@ -9,6 +9,10 @@ export const AboutHeader = styled.h1`
   font-size: 2.8rem;
   font-weight: 600;
   color: var(--colorLetters);
+
+  ${media.lessThan('large')`
+      padding: 0 1rem 1rem;
+    `}
 `;
 
 export const AboutDescription = styled.p`
@@ -19,12 +23,16 @@ export const AboutDescription = styled.p`
   line-height: 1.4;
   color: var(--colorLetters);
 
+  ${media.lessThan('large')`
+      padding: 0 1rem  1rem 1rem;
+    `}
+
   iframe {
     padding: 0 1.6rem 1.6rem;
     width: 100%;
 
     ${media.lessThan('large')`
-      padding: 0 1rem;
+      padding: 0.1rem;
     `}
   }
 `;
@@ -35,6 +43,10 @@ export const AboutLink = styled.a`
   transition: opacity 0.5s;
   font-weight: 300;
   border-bottom: 1px solid var(--linkColor);
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: manual;
 
   &:hover {
     opacity: 0.9;
@@ -44,13 +56,17 @@ export const AboutLink = styled.a`
 `;
 
 export const AboutSubTitle = styled.h2`
-  padding: 2rem 3rem;
-  margin: 1rem auto;
+  padding: 1rem 3rem;
+  margin: 0 0 1rem auto;
   line-height: 2.6rem;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 2.2rem;
   font-weight: 600;
   color: var(--colorLetters);
+
+  ${media.lessThan('large')`
+      padding: 1rem;
+    `}
 `;
 
 export const AboutLinksList = styled.ul`
@@ -60,4 +76,8 @@ export const AboutLinksList = styled.ul`
   list-style: none;
   width: 200px;
   margin: 2rem;
+
+  ${media.lessThan('large')`
+      margin: 0 0 2rem;
+    `}
 `;

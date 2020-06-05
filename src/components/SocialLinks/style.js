@@ -29,8 +29,11 @@ export const SocialLinksLink = styled.a`
     color: var(--hover);
   }
 `;
+
 export const IconWrapper = styled.div`
   fill: var(--colorIcons);
   width: 40px;
   height: 40px;
+
+  
 `;
