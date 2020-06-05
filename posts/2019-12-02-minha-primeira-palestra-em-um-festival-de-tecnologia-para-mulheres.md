@@ -2,7 +2,7 @@
 title: Minha primeira palestra em um Festival de Tecnologia para Mulheres
 description: >-
   Experiência maravilhosa ocorrida no FEMTEC BA (Festival Baiano de Mulheres na
-  Tecnologia)
+  Tecnologia).
 date: 2019-12-02T11:01:10.000Z
 thumbnail: assets/img/femtec.jpeg
 category: Comp
