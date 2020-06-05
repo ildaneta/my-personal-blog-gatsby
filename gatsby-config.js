@@ -5,7 +5,7 @@ const queries = require('./src/utils/algolia_queries');
 module.exports = {
   siteMetadata: {
     title: `Ilda Neta`,
-    position: `Desenvolvedora Front-end`,
+    position: `Desenvolvedora Mobile`,
     description: `Uma desenvolvedora minimalista, que busca através da escrita demonstrar suas paixões por tecnologia, soft skills e educação financeira.`,
     author: `Ilda Neta`,
     siteURL: `https://ildaneta.netlify.com/`
