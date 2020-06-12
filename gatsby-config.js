@@ -8,7 +8,7 @@ module.exports = {
     position: `Desenvolvedora Mobile`,
     description: `Uma desenvolvedora minimalista, que busca através da escrita demonstrar suas paixões por tecnologia, soft skills e educação financeira.`,
     author: `Ilda Neta`,
-    siteURL: `https://ildaneta.netlify.com/`,
+    siteURL: `https://ildaneta.dev/`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,

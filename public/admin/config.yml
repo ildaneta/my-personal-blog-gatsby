@@ -1,8 +1,8 @@
 backend:
   name: github
   repo: ildasilva/my-personal-blog-gatsby
-  branch: master
-  site_domain: ildaneta.netlify.com
+  branch: masters
+  site_domain: ildaneta.dev
 
 publish_mode: editorial_workflow
 media_folder: 'static/assets/img'

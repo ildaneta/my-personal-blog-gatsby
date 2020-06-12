@@ -16,14 +16,14 @@ import {
   SkillsSubTitle,
   SkillsP,
   Div,
-  SoftSkillsWrapper
+  SoftSkillsWrapper,
 } from '../styles/skills';
 
 const SkillsPage = () => (
   <Layout>
     <SEO title="Skills" />
     <SkillsHeader>Skills</SkillsHeader>
-    <SkillsLink href="https://ildaneta.netlify.com/about">
+    <SkillsLink href="https://ildaneta.dev/about">
       Visite o Sobre Mim
     </SkillsLink>
     <SkillsSubTitle>Hard Skills</SkillsSubTitle>

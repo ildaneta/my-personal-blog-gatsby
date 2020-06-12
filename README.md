@@ -53,4 +53,4 @@ Modo Light com visualização em Grid
 ## Autora
 
 - [Linkedin](https://www.linkedin.com/in/ilda-silva-neta/)
-- [Blog](http://ildaneta.netlify.com/)
+- [Blog](http://ildaneta.dev/)
