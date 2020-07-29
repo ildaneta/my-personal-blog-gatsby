@@ -3,7 +3,7 @@ layout: post
 title: Entendo a importância dos Commits Semânticos
 description: >-
   Neste artigo iremos descobrir o quanto os commits semânticos são essenciais em
-  nossa carreira e como poderemos utilizá-los!
+  nossa carreira e como essa prática pode torná-lo(a) um programador(a) melhor!
 date: '2020-07-28 12:24:21'
 thumbnail: assets/img/teste.PNG
 category: Dev
@@ -39,7 +39,7 @@ A estrutura base de um commit semântico ou "esqueleto" é:
 [rodapé opcional]
 ```
 
-#### Tipo e Descrição
+## Tipo e Descrição
 
 O commit semântico possui os elementos estruturais abaixo (**tipos**), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
@@ -68,4 +68,45 @@ BREAKING CHANGE: removendo Node 6 que atinge o final de vida em Abril
 
 ```jsx
 docs: ortografia correta de CHANGELOG
+```
+
+## Corpo
+
+O **corpo**, como mencionado no "esqueleto do commit semântico" é opcional. É indicado utilizá-lo quando o detalhamento do seu commit irá ser maior que 5 palavras.
+
+3. Commit semântico com corpo
+
+```jsx
+feat: adicionado a nova estrutura de pastas do frontend
+
+- Foi realizada uma mudança em toda a estruturação de páginas do projeto frontend, pois agora iremos utilizar o modelo de Design Atômico
+```
+
+
+
+## Escopo
+
+O escopo do commit, é opcional, e é com ele que iremos informar qual parte do código foi modificado. Pode ser o nome de um componente, uma determinada propriedade da API ou o nome da API, uma função...
+
+4. Commit semântico com escopo e corpo
+
+```jsx
+fix(ProdutoApi): retirando variável do path da API e ajustando loggers
+
+- O path anterior tinha variáveis desnecessárias e não utilizadas por nenhum consumidor
+
+```
+
+## Rodapé
+
+O rodapé, assim como o escopo e descrição, são opcionais de serem informados. Nele geralmente são informados uma issue, id ou tasks de atividades, que foram utilizadas para realizar a alteração desse trecho de código commitado.
+
+5. Commit semântico com escopo, corpo e rodapé
+
+```jsx
+fix: corrige pequenos erros de digitação no código
+
+veja o ticket para detalhes sobre os erros de digitação corrigidos
+
+closes issue JD#12
 ```
