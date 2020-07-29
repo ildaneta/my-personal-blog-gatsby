@@ -72,7 +72,7 @@ docs: ortografia correta de CHANGELOG
 
 ## Corpo
 
-O **corpo**, como mencionado no "esqueleto do commit semântico" é opcional. É indicado utilizá-lo quando o detalhamento do seu commit irá ser maior que 5 palavras.
+O **corpo**, como mencionado no "esqueleto do commit semântico" é opcional. É indicado utilizá-lo quando o detalhamento do seu commit irá ser maior que 7 palavras.
 
 3. Commit semântico com corpo
 
@@ -110,4 +110,8 @@ veja o ticket para detalhes sobre os erros de digitação corrigidos
 originado da issue JD#12
 ```
 
-kdksk
+Além dos benefícios citados acima, acredito que o commit semântico pode demonstrar que o seu perfil de desenvolvedor está alcançando outro nível, e que além de introduzir boas práticas em seu código, você está preocupado em inserir boas práticas em seus commits.
+
+Essas boas práticas no commit auxiliarão você quando tiver que resolver um problema e/ou quando um colega de trabalho pegará aquele trecho de código feito por você, e conseguirá entender apenas olhando o que foi commitado.
+
+Espero que tenha gostado da dica de hoje, pois o foco dos artigos é fazer de você um(a) dev cada vez melhor!
