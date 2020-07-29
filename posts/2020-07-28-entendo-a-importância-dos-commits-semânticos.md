@@ -2,8 +2,8 @@
 layout: post
 title: Entendo a importância dos Commits Semânticos
 description: >-
-  Neste artigo iremos descobrir o quanto os commits semânticos são essenciais e
-  como poderemos utilizá-los!
+  Neste artigo iremos descobrir o quanto os commits semânticos são essenciais em
+  nossa carreira e como poderemos utilizá-los!
 date: '2020-07-28 12:24:21'
 thumbnail: assets/img/teste.PNG
 category: Dev
@@ -43,7 +43,7 @@ A estrutura base de um commit semântico ou "esqueleto" é:
 
 O commit semântico possui os elementos estruturais abaixo (**tipos**), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
-1. **fix** - Commits do tipo **`fix`** indicam que seu trecho de código commitado está solucionando um problema (bug fix), (se relaciona com o**`PATCH`**do versionamento semântico).
+1. **fix** - Commits do tipo **`fix`** indicam que seu trecho de código commitado está solucionando um problema (bug fix), (se relaciona com o **`PATCH`** do versionamento semântico).
 2. **feat** - Commits do tipo **`feat`** indicam que seu trecho de código está incuindo um novo recurso (se relaciona com o **`MINOR`** do versionamento semântico).
 3. **docs** - Commits do tipo **`docs`** indicam que houveram mudanças na documentação, como por exemplo no Readme do seu repositório.*(Não inclui alterações em código)*
 4. **style** - Commits do tipo **`style`** indicam que houveram alterações referentes a formatações de código, semicolons, trailing spaces, lint...*(Não inclui alterações em código)*
