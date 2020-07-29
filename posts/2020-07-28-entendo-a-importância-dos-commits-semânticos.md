@@ -92,7 +92,8 @@ O escopo do commit, é opcional, e é com ele que iremos informar qual parte do 
 ```jsx
 fix(ProdutoApi): retirando variável do path da API e ajustando loggers
 
-- O path anterior tinha variáveis desnecessárias e não utilizadas por nenhum consumidor
+- O path anterior tinha variáveis desnecessárias e não utilizadas por nenhum 
+consumidor
 ```
 
 ## Rodapé
