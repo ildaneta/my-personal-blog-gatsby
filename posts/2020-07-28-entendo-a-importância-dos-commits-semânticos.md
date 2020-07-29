@@ -30,3 +30,36 @@ Para se ter ideia do quanto são importantes, a biblioteca de testes **Karma** u
 ### Como realizar um Commit Semântico?
 
 A estrutura base de um commit semântico ou "esqueleto" é:
+
+```html
+<tipo>(escopo opcional): <descrição>
+
+[corpo opcional]
+
+[rodapé opcional]
+```
+
+#### Tipo e Descrição
+
+O commit semântico possui os elementos estruturais abaixo (**tipos**), que informam a intenção do seu commit ao utilizador(a) de seu código.
+
+1. **fix** - Commits do tipo **`fix`** indicam que seu trecho de código commitado está solucionando um problema (bug fix), (se relaciona com o**`PATCH`**do versionamento semântico).
+2. **feat** - Commits do tipo **`feat`** indicam que seu trecho de código está incuindo um novo recurso (se relaciona com o **`MINOR`** do versionamento semântico).
+3. **docs** - Commits do tipo **`docs`** indicam que houveram mudanças na documentação, como por exemplo no Readme do seu repositório.*(Não inclui alterações em código)*
+4. **style** - Commits do tipo **`style`** indicam que houveram alterações referentes a formatações de código, semicolons, trailing spaces, lint...*(Não inclui alterações em código)*
+5. **refactor** - Commits do tipo **`refactor`** referem-se a mudanças devido a refatorações que não alterem sua funcionalidade, como por exemplo, uma alteração no formato como é processada determinada parte da tela, mas que manteve a mesma funcionalidade, ou melhorias de performance devido a um code review.
+6. **build** - Commits do tipo **`build`** são utilizados quando são realizadas modificações em arquivos de build e dependências.
+7. **test** - Commits do tipo **`test`** são utilizados quando são realizadas alterações em testes, seja criando, alterando ou excluindo testes unitários.*(Não inclui alterações em código)*
+8. **chore** - Commits do tipo **`chore`** indicam atualizações de tarefas de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore.*(Não inclui alterações em código)*
+9. **BREAKING CHANGE** - Commits que possuem o texto **`BREAKING CHANGE`** no começo do texto do corpo opcional ou no rodapé opcional, indicam que a modificação que está sendo realizada no commit possui uma modificiação que quebra a compatibilidade da API, (se relaciona com o**`MAJOR`**do versionamento semântico).
+
+Observação: Quando se utiliza o **`BREAKING CHANGE`** é obrigatório informar uma descrição, onde deverá conter o que foi alterado na API por exemplo.\
+Além disso, é indicado que o **tipo** seja acompanhado de um `!` para chamar atenção para a quebra de compatibilidade.
+
+Além dos tipos, a **descrição** que irá acompanhá-lo é obrigatória, pois é essa breve descrição que explicará de forma breve e objetiva o que aquele trecho de código commitado está modificando seu código ou o código de sua equipe.
+
+1. Commit semântico apenas com tipo e descrição
+
+```jsx
+docs: ortografia correta de CHANGELOG
+```
