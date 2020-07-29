@@ -79,10 +79,9 @@ O **corpo**, como mencionado no "esqueleto do commit semântico" é opcional. É
 ```jsx
 feat: adicionado a nova estrutura de pastas do frontend
 
-- Foi realizada uma mudança em toda a estruturação de páginas do projeto frontend, pois agora iremos utilizar o modelo de Design Atômico
+- Foi realizada uma mudança em toda a estruturação de páginas do projeto frontend,
+pois agora iremos utilizar o modelo de Design Atômico
 ```
-
-
 
 ## Escopo
 
@@ -94,7 +93,6 @@ O escopo do commit, é opcional, e é com ele que iremos informar qual parte do 
 fix(ProdutoApi): retirando variável do path da API e ajustando loggers
 
 - O path anterior tinha variáveis desnecessárias e não utilizadas por nenhum consumidor
-
 ```
 
 ## Rodapé
@@ -108,5 +106,5 @@ fix: corrige pequenos erros de digitação no código
 
 veja o ticket para detalhes sobre os erros de digitação corrigidos
 
-closes issue JD#12
+originado da issue JD#12
 ```
