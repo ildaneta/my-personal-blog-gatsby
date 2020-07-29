@@ -9,8 +9,6 @@ thumbnail: assets/img/teste.PNG
 category: Dev
 background: '#CD4C51'
 ---
-<!--StartFragment-->
-
 Recentemente descobri o termo "Commits Semânticos", que funciona de forma simples, mas que mesmo sendo simples, comecei a perceber que nem todos(as) os(as) devs conheciam verdadeiramente o quanto esses commits semânticos poderiam ser úteis e valoráveis em projetos.
 
 Além disso, se você está entrando no mundo da programação agora, com certeza eu indicaria que você iniciasse a utilização desses commits em seu git, principalmente se seu foco nesse momento é entrar em uma empresa de tecnologia.
@@ -30,5 +28,3 @@ Para se ter ideia do quanto são importantes, a biblioteca de testes Karma utili
 ### Como realizar um Commit Semântico?
 
 A estrutura base de um commit semântico ou "esqueleto" é:
-
-<!--EndFragment-->
