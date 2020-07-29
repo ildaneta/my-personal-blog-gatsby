@@ -11,13 +11,13 @@ background: '#CD4C51'
 ---
 ![commits semanticos](assets/img/teste.PNG)
 
-No banco que trabalho atualmente, estamos desenvolvendo um documento com boas práticas que serão seguidas por todos(as) os(as) devs do banco, e um dos itens desse documento são os Commits Semânticos, que é uma simples prática que deveríamos utilizar não apenas em corporações, mas também em projetos pessoais.
+No banco que trabalho atualmente, estamos desenvolvendo um documento com boas práticas que serão seguidas por todos(as) os(as) devs do banco, e um dos itens desse documento são os ***Commits Semânticos***, que é uma simples prática que deveríamos utilizar não apenas em corporações, mas também em projetos pessoais.
 
 Acredito que ainda possuem muitos(as) devs que desconhecem essa boa prática, e minha intenção com esse artigo é justamente aumentar seu conhecimento, e que com isso, você consiga ver todo o potencial por detrás dessa boa prática, como por exemplo, mostrar a uma companhia que você deseja se candidatar, que seus projetos possuem bons commits, antes mesmo de estar atuando em equipes laborais.
 
 # O que são Commits Semânticos?
 
-De acordo com a documentação do [Convetional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/), Commits semânticos são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas.
+De acordo com a documentação do [Convetional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/), Commits Semânticos são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas.
 
 ### Porque realizar esse tipo de commit?
 
@@ -56,7 +56,7 @@ O commit semântico possui os elementos estruturais abaixo (**tipos**), que info
 Observação: Quando se utiliza o **`BREAKING CHANGE`** é **obrigatório** informar uma descrição, onde deverá conter o que foi alterado na API por exemplo.\
 Além disso, é indicado que o **tipo** seja acompanhado de um `!` para chamar atenção para a quebra de compatibilidade.
 
-1. Commit semântico que inclui o BREAKING CHANGE, além do `!` para chamar atenção para a quebra de compatibilidade.
+1. Commit Semântico que inclui o BREAKING CHANGE, além do `!` para chamar atenção para a quebra de compatibilidade.
 
 ```jsx
 chore!: removendo Node 6 da matriz de testes
@@ -64,7 +64,7 @@ chore!: removendo Node 6 da matriz de testes
 BREAKING CHANGE: removendo Node 6 que atinge o final de vida em Abril
 ```
 
-2. Commit semântico apenas com tipo e descrição
+2. Commit Semântico apenas com tipo e descrição
 
 ```jsx
 docs: ortografia correta de CHANGELOG
@@ -74,7 +74,7 @@ docs: ortografia correta de CHANGELOG
 
 O **corpo**, como mencionado no "esqueleto do commit semântico" é opcional. É indicado utilizá-lo quando o detalhamento do seu commit irá ser maior que 7 palavras.
 
-3. Commit semântico com corpo
+3. Commit Semântico com corpo
 
 ```jsx
 feat: adicionado a nova estrutura de pastas do frontend
@@ -87,7 +87,7 @@ pois agora iremos utilizar o modelo de Design Atômico
 
 O escopo do commit, é opcional, e é com ele que iremos informar qual parte do código foi modificado. Pode ser o nome de um componente, uma determinada propriedade da API ou o nome da API, uma função...
 
-4. Commit semântico com escopo e corpo
+4. Commit Semântico com escopo e corpo
 
 ```jsx
 fix(ProdutoApi): retirando variável do path da API e ajustando loggers
@@ -100,7 +100,7 @@ consumidor
 
 O rodapé, assim como o escopo e descrição, são opcionais de serem informados. Nele geralmente são informados uma issue, id ou tasks de atividades, que foram utilizadas para realizar a alteração desse trecho de código commitado.
 
-5. Commit semântico com escopo, corpo e rodapé
+5. Commit Semântico com escopo, corpo e rodapé
 
 ```jsx
 fix: corrige pequenos erros de digitação no código
@@ -110,7 +110,7 @@ veja o ticket para detalhes sobre os erros de digitação corrigidos
 originado da issue JD#12
 ```
 
-Além dos benefícios citados acima, acredito que o commit semântico pode demonstrar que o seu perfil de desenvolvedor está alcançando outro nível, e que além de introduzir boas práticas em seu código, você está preocupado em inserir boas práticas em seus commits.
+Além dos benefícios citados acima, acredito que o ***Commit Semântico*** pode demonstrar que o seu perfil de desenvolvedor está alcançando outro nível, e que além de introduzir boas práticas em seu código, você está preocupado em inserir boas práticas em seus commits.
 
 Essas boas práticas no commit auxiliarão você quando tiver que resolver um problema e/ou quando um colega de trabalho pegará aquele trecho de código feito por você, e conseguirá entender apenas olhando o que foi commitado.
 
