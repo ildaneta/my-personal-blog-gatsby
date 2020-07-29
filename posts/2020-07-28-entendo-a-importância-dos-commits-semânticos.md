@@ -11,8 +11,6 @@ background: '#CD4C51'
 ---
 ![commits semanticos](assets/img/teste.PNG)
 
-
-
 No banco que trabalho atualmente, estamos desenvolvendo um documento com boas práticas que serão seguidas por todos(as) os(as) devs do banco, e um dos itens desse documento são os Commits Semânticos, que é uma simples prática que deveríamos utilizar não apenas em corporações, mas em projetos pessoais.
 
 Acredito que ainda possuem muitos(as) devs que desconhecem essa boa prática, e minha intenção com esse artigo é justamente aumentar seu conhecimento, e que com isso, você consiga ver todo o potencial por detrás dessa boa prática, como por exemplo, mostrar a uma companhia que você deseja se candidatar, que seus projetos possuem bons commits, antes mesmo de estar atuando em equipes laborais.
