@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Entendo a importância dos Commits Semânticos
+title: Entendendo a importância dos Commits Semânticos
 description: >-
   Neste artigo iremos descobrir o quanto os commits semânticos são essenciais em
   nossa carreira e como essa prática pode torná-lo(a) um programador(a) melhor!
