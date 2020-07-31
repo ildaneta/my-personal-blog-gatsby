@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import Img from 'gatsby-image';
 
 export const SocialLinksWrapper = styled.nav`
   margin: 3rem 3rem 4rem 3rem;
@@ -34,6 +33,4 @@ export const IconWrapper = styled.div`
   fill: var(--colorIcons);
   width: 40px;
   height: 40px;
-
-  
 `;

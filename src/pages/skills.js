@@ -5,8 +5,6 @@ import SEO from '../components/seo';
 import links from '../components/Skills/content';
 import Icons from '../components/Skills/icons';
 
-import { Code } from '@styled-icons/material/Code';
-
 import {
   SkillsHeader,
   SkillsLink,
