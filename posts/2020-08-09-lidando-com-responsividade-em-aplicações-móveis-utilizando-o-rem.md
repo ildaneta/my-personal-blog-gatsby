@@ -25,8 +25,26 @@ Esse conceito começou a partir do lançamento do iPhone 4 através da tela de r
 
 ![Pixel in iPhone 4](assets/img/xxx.PNG)
 
+Com isso percebemos que o píxel do CSS não é um píxel da tela do dispositivo (hardware), mas um píxel de referência (geralmente maior do que o píxel real).
+
+Atualmente temos 3 níveis de densidades de píxel para iPhones e 6 para Android.
+
 2 - Conhecendo a diferença entre medidas absolutas e medidas relativas
 
 Unidades de medidas absolutas são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento com css em pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece.
 
 Unidades de medidas relativas são medidas que se baseiam em um valor base (ou valor de referência), ou seja, diferentemente das medidas absolutas, essas medidas se adequam ao contexto onde estão inseridas.
+
+
+
+
+
+
+
+Artigos para se aprofundar:
+
+<https://alistapart.com/article/a-pixel-identity-crisis/>
+
+<https://www.alura.com.br/artigos/guia-de-unidades-no-css>
+
+<https://developer.android.com/training/multiscreen/screendensities?hl=pt-br>
