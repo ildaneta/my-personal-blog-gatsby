@@ -11,11 +11,11 @@ background: '#7d669e'
 ---
 ![Relative unit REM](assets/img/2ef58f878ee7.jpg)
 
-Atuando na área front-end é perceptível de primeira que a responsividade é algo imprescindível, mas no mundo mobile isso também é utilizado, pensando principalmente na gama de dispositivos que possuímos de possibilidades de tamanhos, tanto de width quanto height, ou seja, temos desde smartphones com width pequeno e hight alto, ou width largo e hight alto, tablets...
+Atuando na área front-end é perceptível de primeira que a responsividade é algo imprescindível, mas no mundo mobile isso também é utilizado, pensando principalmente na gama de possibilidades de tamanhos que possuímos hoje em dia, tanto de width quanto height, ou seja, temos desde smartphones com width pequeno e hight grande, ou width grande e hight grande, tablets...
 
 Além do tamanho das medidas de width e height que variam bastante, temos que entender que além destes tamanhos, outra medida que muda bastante de um dispositivo para o outro, é a densidade de pixels.
 
-Com isso, o objetivo desse artigo é te apresentar a medida REM e o poder que ela possui para nos auxiliar na responsividade
+Com isso, o objetivo desse artigo é te apresentar a medida REM e o poder que ela possui para nos auxiliar na responsividade, além de uma lib que comecei a utilizar recentemente no React Native, que me permite utilizar o REM e outras medidas relativas no desenvolvimento de aplicações móveis.
 
 1 - Entendendo o verdadeiro tamanho de um Pixel
 
@@ -34,12 +34,6 @@ Atualmente temos 3 níveis de densidades de píxel para iPhones e 6 para Android
 Unidades de medidas absolutas são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento com css em pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece.
 
 Unidades de medidas relativas são medidas que se baseiam em um valor base (ou valor de referência), ou seja, diferentemente das medidas absolutas, essas medidas se adequam ao contexto onde estão inseridas.
-
-
-
-
-
-
 
 Artigos para se aprofundar:
 
