@@ -19,9 +19,9 @@ Com isso, o objetivo desse artigo é te apresentar a medida REM e o poder que el
 
 1 - Entendendo o verdadeiro tamanho de um Pixel
 
-O pixel ao contrário do que muitos(as) devs pensam, não possui uma medida absoluta, pois ele pode assumir diferentes tamanhos, devido a estar diretamente relacionado a quantidade de pixels por polegadas ou ppi (pixel per inch). O que ocorre é que o valor do pixel sofre influência da quantidade de pixels que suporta a resolução do dispositivo, ou seja, quanto maior a densidade de pixels um dispositivo possui, mais pixels por polegada cabem em sua tela.
+O píxel ao contrário do que muitos(as) devs pensam, não possui uma medida absoluta, pois ele pode assumir diferentes tamanhos, devido a estar diretamente relacionado a quantidade de pixels por polegadas ou ppi (pixel per inch). O que ocorre é que o valor do pixel sofre influência da quantidade de pixels que suporta a resolução do dispositivo, ou seja, quanto maior a densidade de pixels um dispositivo possui, mais pixels por polegada cabem em sua tela.
 
-Esse conceito começou a partir do lançamento do iPhone 4 através da tela de retina, onde a Apple conseguiu fazer com que 4 pixels coubessem em um espaço onde antes caberia apenas 1 pixel. Além disso, a tela de retina era mais nítida e dobrou a quantidade de pixel por polegada.
+Esse conceito começou a partir do lançamento do iPhone 4 através da tela de retina, onde a Apple conseguiu fazer com que 4 pixels coubessem em um espaço onde antes caberia apenas 1 pixel, através da tela de retina, que era mais nítida e dobrava a quantidade de píxel por polegada exibida na tela.
 
 ![Pixel in iPhone 4](assets/img/xxx.PNG)
 
@@ -31,7 +31,7 @@ Atualmente temos 3 níveis de densidades de píxel para iPhones e 6 para Android
 
 2 - Conhecendo a diferença entre medidas absolutas e medidas relativas
 
-Unidades de medidas absolutas são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento com css em pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece.
+Unidades de medidas absolutas são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida em CSS pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece, ou seja, por não se adaptar a quantidade de ppi dos dispositivos, uma simples declaração de font-size: 16px, pode resultar em um grande problema de responsividade em outros dispositivos.
 
 Unidades de medidas relativas são medidas que se baseiam em um valor base (ou valor de referência), ou seja, diferentemente das medidas absolutas, essas medidas se adequam ao contexto onde estão inseridas.
 
