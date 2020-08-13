@@ -33,7 +33,7 @@ Com isso percebemos que o píxel que declaramos em nossos estilos (px), não é 
 
 Já as **Unidades de medidas relativas** são medidas que se baseiam em um valor base (ou valor de referência), diferentemente das medidas absolutas, estas se adequam ao contexto onde estão inseridas. \
 \
-Temos bastantes exemplos de medidas relativas como o **EM**, a porcentagem **%**, o **REM**, entre outros, mas o foco desse artigo é mostrar uma medida que me auxilia bastante quando necessito ser responsiva nas telas que entrego, ou seja, necessito que o layout do design seja fiel ao que foi apresentado e além disso, consiga se adequar a maior quantidade de dispositivos e aparelhos que existirem. 
+Temos bastantes exemplos de medidas relativas como o **EM**, a porcentagem **%**, o **REM**, entre outros, mas o foco desse artigo é mostrar uma medida que me auxilia bastante quando necessito ser responsiva nas telas que entrego, ou seja, necessito que o layout do design seja fiel ao que foi apresentado e além disso, consiga se adequar a maior quantidade de dispositivos possíveis. 
 
 ## 3 - Conhecendo a medida relativa REM
 
