@@ -60,8 +60,10 @@ Como explicado acima, os dispositivos mobiles hoje possuem muitos formatos, que 
 Para exemplificar essa diversidade de densidade de pixels, cito abaixo as medidas mencionadas na [documentação de Pixel Ratio do ReactNative](https://reactnative.dev/docs/pixelratio) :
 
 * ###### **PixelRatio.get() === 1**\
+
   [dispositivos Android mdpi](https://material.io/tools/devices/)
 * ###### **PixelRatio.get() === 1.5**\
+
   [dispositivos hdpi Android](<* https://material.io/tools/devices/>)
 * ###### **PixelRatio.get() === 2**
 
@@ -84,7 +86,7 @@ Para exemplificar essa diversidade de densidade de pixels, cito abaixo as medida
 
 Como isso impacta seu código?
 
-![](assets/img/untitled (2).png)
+![Aplicação que utiliza medida em pixel para imagem](assets/img/untitled (2).png)
 
 Como mostra na imagem acima, estou emulando o código abaixo em 2 dispositivos Android, mas que possuem densidade de pixels diferentes.
 
