@@ -86,7 +86,7 @@ Para exemplificar essa diversidade de densidade de pixels, cito abaixo as medida
 
 Como isso impacta seu código?
 
-![Aplicação que utiliza medida em pixel para imagem](assets/img/untitled (2).png)
+![Aplicação que utiliza medida em pixel para imagem](assets/img/appPX.PNG)
 
 Como mostra na imagem acima, estou emulando o código em 2 dispositivos Android, mas que possuem densidade de pixels diferentes.
 
@@ -227,7 +227,7 @@ export default ExampleREM;
 
 Resultado do código acima:
 
-![Aplicação que utiliza medida em REM para a imagem](assets/img/untitled (1).png)
+![Aplicação que utiliza medida em REM para a imagem](assets/img/appREM.PNG)
 
 \
 Utilizando o REM é possível visualizar na tela acima que as imagens ficaram praticamente do mesmo tamanho, diferentemente de quando utilizamos o valor em pixel.
