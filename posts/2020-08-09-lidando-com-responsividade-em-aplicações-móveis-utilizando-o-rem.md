@@ -25,7 +25,7 @@ Esse conceito começou a partir do lançamento do iPhone 4 através da tela de r
 
 ![Pixel in iPhone 4](assets/img/xxx.PNG)
 
-Com isso percebemos que o píxel do CSS não é um píxel da tela do dispositivo (hardware), mas um píxel de referência (geralmente maior do que o píxel real).
+Com isso percebemos que o píxel que declaramos em nossos estilos (px), não é um píxel da tela do dispositivo (hardware), mas um píxel de referência (geralmente maior do que o píxel real).
 
 ## 2 - Conhecendo a diferença entre medidas absolutas e medidas relativas
 
