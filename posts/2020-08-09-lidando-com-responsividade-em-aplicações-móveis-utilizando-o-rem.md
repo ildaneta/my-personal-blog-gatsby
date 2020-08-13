@@ -59,26 +59,24 @@ Como explicado acima, os dispositivos mobiles hoje possuem muitos formatos, que 
 
 Para exemplificar essa diversidade de densidade de pixels, cito abaixo as medidas mencionadas na [documentação de Pixel Ratio do ReactNative](https://reactnative.dev/docs/pixelratio) :
 
-* ###### PixelRatio.get() === 1\
-  \
+* ###### **PixelRatio.get() === 1**\
   [dispositivos Android mdpi](https://material.io/tools/devices/)
-* ###### PixelRatio.get() === 1.5\
-  \
+* ###### **PixelRatio.get() === 1.5**\
   [dispositivos hdpi Android](<* https://material.io/tools/devices/>)
-* ###### PixelRatio.get() === 2
+* ###### **PixelRatio.get() === 2**
 
   iPhone SE, 6S, 7, 8\
   iPhone XR\
   iPhone 11[\
   dispositivos xhdpi Android](https://material.io/tools/devices/)
-* ###### PixelRatio.get() === 3
+* ###### **PixelRatio.get() === 3**
 
   iPhone 6S Plus, 7 Plus, 8 Plus\
   iPhone X, XS, XS Max\
   iPhone 11 Pro, 11 Pro Max\
   Pixel, Pixel 2[\
   Dispositivos Android xxhdpi](https://material.io/tools/devices/)
-* ###### PixelRatio.get() === 3.5
+* ###### **PixelRatio.get() === 3.5**
 
   Nexus 6\
   Pixel XL, Pixel 2 XL[\
