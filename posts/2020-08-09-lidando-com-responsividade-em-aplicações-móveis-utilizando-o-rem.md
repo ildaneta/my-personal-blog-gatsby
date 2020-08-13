@@ -88,7 +88,7 @@ Como isso impacta seu código?
 
 ![Aplicação que utiliza medida em pixel para imagem](assets/img/untitled (2).png)
 
-Como mostra na imagem acima, estou emulando o código abaixo em 2 dispositivos Android, mas que possuem densidade de pixels diferentes.
+Como mostra na imagem acima, estou emulando o código em 2 dispositivos Android, mas que possuem densidade de pixels diferentes.
 
 Então se eu declarar a última imagem no meu estilo utilizando pixels, ela ficará diferente em dispositivos que possuírem diferentes densidades, devido ao ppi(pixel per inch).
 
