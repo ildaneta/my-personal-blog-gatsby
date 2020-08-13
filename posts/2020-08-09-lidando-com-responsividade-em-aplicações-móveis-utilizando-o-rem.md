@@ -90,16 +90,14 @@ Como isso impacta seu código?
 
 Como mostra na imagem acima, estou emulando o código em 2 dispositivos Android, mas que possuem densidade de pixels diferentes.
 
-Então se eu declarar a última imagem no meu estilo utilizando pixels, ela ficará diferente em dispositivos que possuírem diferentes densidades, devido ao ppi(pixel per inch).
+Então se eu declarar a última imagem em meu arquivo de estilos utilizando pixels, ela se comportará de forma diferente em dispositivos que possuírem densidades distintas, pois as medidas em pixel serão multiplicadas com o ppi(pixel per inch).
 
-Ou seja, se eu declaro o tamanho da imagem (width e height) cat com um tamanho de 70px, automaticamente esse valor será multiplicado a quantidade de pixel que esse dispositivo possui, e no caso do exemplo acima ficaria:\
+Ou seja, se eu declaro a imagem (width e height) cat com um tamanho de 70px, automaticamente esse valor será multiplicado a quantidade de pixel que esse dispositivo possui, e no caso do exemplo acima ficaria:\
 \
-70px x 3.5(proporção do dispositivo da esquerda) = 245px\
-70px x 2.75(proporção da direita) = 192,5px\
+70px **x** 3.5(proporção do dispositivo da esquerda) = 245px\
+70px **x** 2.75(proporção da direita) = 192,5px\
 \
-Mas o dispositivo da direita está mostrando que o valor em pixel é 193px, o que leva também a outro problema, os arredondamentos.\
-\
-Graças a esses valores que são arredondados, muitas vezes, nós desenvolvedores perdermos um certo tempo tentando mudar aquela diferença de pixel, principalmente quando mudamos de sistema operacional.
+Mas o dispositivo da direita está mostrando que o valor em pixel é 193px, o que leva também a outro problema, os arredondamentos, que podem nos fazer perder um certo tempo corrigindo as quebras de responsividades.
 
 De acordo com a documentação do pixel ratio que é uma classe que acessa a densidade nativa dos dispositivos, temos algumas formas de sabermos esses valores, utilizando por exemplo as funções abaixo:
 
@@ -107,7 +105,7 @@ De acordo com a documentação do pixel ratio que é uma classe que acessa a den
 
 `PixelRatio.getPixelSizeForLayoutSize( )` - o método [getPixelSizeForLayoutSize()](https://reactnative.dev/docs/pixelratio#getpixelsizeforlayoutsize) converte um tamanho de layout (dp) em tamanho de pixel (px).\
 \
-Exemplo de utilização que gerou as imagens de tela acima:
+Exemplo de utilização tirada da documentação do Pixel Ratio que originou as telas acima:
 
 ```typescript
 import React from 'react';
@@ -145,6 +143,7 @@ const ExampleREM: React.FC = () => {
 export default ExampleREM;
 ```
 
+Como é perceptível, as imagens ficaram com os tamanhos diferentes \
 Com isso, utilizei como alternativa a medida REM, pois é uma medida relativa que depende de uma medida base. Essa medida base não leva em consideração a proporção dos dispositivos, ou seja, o valor transformado em pixel não será multiplicado pela densidade oferecida pela tela.
 
 Atrelado a isso, não é possível até a data em que estou escrevendo esse post inserir medidas 'rem' utilizando o StyleSheet ofertado pela lib do 'react-native', e para contornar essa situação, comecei a utilizar recentemente a lib react-native-extended-stylesheet
