@@ -13,7 +13,7 @@ background: '#7d669e'
 
 Atuando na área front-end é perceptível de primeira que a responsividade é algo imprescindível, mas no mundo mobile isso também é utilizado, pensando principalmente na gama de possibilidades de tamanhos que possuímos hoje em dia, tanto de width quanto height, ou seja, temos desde smartphones com width pequeno e hight grande, ou width grande e hight grande, tablets...
 
-Além do tamanho das medidas de width e height que variam bastante, temos que entender que além destes tamanhos, outra medida que muda bastante de um dispositivo para o outro, é a densidade de pixels.
+Além do tamanho das medidas de width (largura) e height (altura) que variam bastante, outra medida que muda bastante de um dispositivo para o outro, é a densidade de pixels.
 
 Com isso, o objetivo desse artigo é te apresentar a medida REM e o poder que ela possui para nos auxiliar na responsividade, além de uma lib que comecei a utilizar recentemente no React Native, que me permite utilizar o REM e outras medidas relativas no desenvolvimento de aplicações móveis.
 
@@ -21,7 +21,7 @@ Com isso, o objetivo desse artigo é te apresentar a medida REM e o poder que el
 
 O píxel ao contrário do que muitos(as) devs pensam, não possui uma medida absoluta, pois ele pode assumir diferentes tamanhos, devido a estar diretamente relacionado a quantidade de pixels por polegadas ou ppi (pixel per inch). O que ocorre é que o valor do pixel sofre influência da quantidade de pixels que suporta a resolução do dispositivo, ou seja, quanto maior a densidade de pixels um dispositivo possui, mais pixels por polegada cabem em sua tela.
 
-Esse conceito começou a partir do lançamento do iPhone 4 através da tela de retina, onde a Apple conseguiu fazer com que 4 pixels coubessem em um espaço onde antes caberia apenas 1 pixel, através da tela de retina, que era mais nítida e dobrava a quantidade de píxel por polegada exibida na tela.
+Esse conceito começou a partir do lançamento do iPhone 4 através da tela de retina, onde a Apple conseguiu fazer com que 4 pixels coubessem em um espaço onde antes caberia apenas 1 pixel, pois a tela de retina, além de ser mais nítida, dobrava a quantidade de píxel por polegada exibida na tela dos dispositivos.
 
 ![Pixel in iPhone 4](assets/img/xxx.PNG)
 
@@ -59,30 +59,34 @@ Como explicado acima, os dispositivos mobiles hoje possuem muitos formatos, que 
 
 Para exemplificar essa diversidade de densidade de pixels, cito abaixo as medidas mencionadas na [documentação de Pixel Ratio do ReactNative](https://reactnative.dev/docs/pixelratio) :
 
-* `PixelRatio.get() === 1`
+`PixelRatio.get() === 1`
 
-  * [dispositivos Android mdpi](https://material.io/tools/devices/)
-* `PixelRatio.get() === 1.5`
+* [dispositivos Android mdpi](https://material.io/tools/devices/)
 
-  * [dispositivos hdpi Android](https://material.io/tools/devices/)
-* `PixelRatio.get() === 2`
+`PixelRatio.get() === 1.5`
 
-  * iPhone SE, 6S, 7, 8
-  * iPhone XR
-  * iPhone 11
-  * [dispositivos xhdpi Android](https://material.io/tools/devices/)
-* `PixelRatio.get() === 3`
+* [dispositivos hdpi Android](https://material.io/tools/devices/)
 
-  * iPhone 6S Plus, 7 Plus, 8 Plus
-  * iPhone X, XS, XS Max
-  * iPhone 11 Pro, 11 Pro Max
-  * Pixel, Pixel 2
-  * [Dispositivos Android xxhdpi](https://material.io/tools/devices/)
-* `PixelRatio.get() === 3.5`
+`PixelRatio.get() === 2`
 
-  * Nexus 6
-  * Pixel XL, Pixel 2 XL
-  * [Dispositivos Android xxxhdpi](https://material.io/tools/devices/)
+* iPhone SE, 6S, 7, 8
+* iPhone XR
+* iPhone 11
+* [dispositivos xhdpi Android](https://material.io/tools/devices/)
+
+`PixelRatio.get() === 3`
+
+* iPhone 6S Plus, 7 Plus, 8 Plus
+* iPhone X, XS, XS Max
+* iPhone 11 Pro, 11 Pro Max
+* Pixel, Pixel 2
+* [Dispositivos Android xxhdpi](https://material.io/tools/devices/)
+
+`PixelRatio.get() === 3.5`
+
+* Nexus 6
+* Pixel XL, Pixel 2 XL
+* [Dispositivos Android xxxhdpi](https://material.io/tools/devices/)
 
 Como isso impacta seu código?
 
@@ -148,10 +152,6 @@ export default ExampleREM;
 Com isso, utilizei como alternativa a medida REM, pois é uma medida relativa que depende de uma medida base. Essa medida base não leva em consideração a proporção dos dispositivos, ou seja, o valor transformado em pixel não será multiplicado pela densidade oferecida pela tela.
 
 Atrelado a isso, não é possível até a data em que estou escrevendo esse post inserir medidas 'rem' utilizando o StyleSheet ofertado pela lib do 'react-native', e para contornar essa situação, comecei a utilizar recentemente a lib react-native-extended-stylesheet
-
-
-
-
 
 Artigos para se aprofundar:
 
