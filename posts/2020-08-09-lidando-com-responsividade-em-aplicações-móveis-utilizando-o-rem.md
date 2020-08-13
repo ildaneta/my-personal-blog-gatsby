@@ -3,7 +3,8 @@ layout: post
 title: Lidando com responsividade em aplicações móveis utilizando o REM
 description: >-
   Neste artigo irei explicar um pouco mais sobre a medida relativa REM do CSS, e
-  como podemos utilizá-la para auxiliar na responsividade de aplicações móveis!
+  como podemos utilizá-la para auxiliar na responsividade de suas aplicações
+  móveis!
 date: '2020-08-13 08:52:16'
 thumbnail: assets/img/2ef58f878ee7.jpg
 category: CSS
