@@ -107,7 +107,7 @@ De acordo com a documentação do pixel ratio que é uma classe que acessa a den
 \
 Exemplo de utilização tirada da documentação do Pixel Ratio que originou as telas acima:
 
-```typescript
+```jsx
 import React from 'react';
 import { View, Text, Image, SafeAreaView, PixelRatio } from 'react-native';
 
