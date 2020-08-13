@@ -31,9 +31,30 @@ Atualmente temos 3 níveis de densidades de píxel para iPhones e 6 para Android
 
 2 - Conhecendo a diferença entre medidas absolutas e medidas relativas
 
-Unidades de medidas absolutas são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida em CSS pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece, ou seja, por não se adaptar a quantidade de ppi dos dispositivos, uma simples declaração de font-size: 16px, pode resultar em um grande problema de responsividade em outros dispositivos.
+**Unidades de medidas absolutas** são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida em CSS pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece, ou seja, por não se adaptar a quantidade de ppi dos dispositivos, uma simples declaração de font-size: 16px, pode resultar em um grande problema de responsividade em outros dispositivos.
 
-Unidades de medidas relativas são medidas que se baseiam em um valor base (ou valor de referência), ou seja, diferentemente das medidas absolutas, essas medidas se adequam ao contexto onde estão inseridas.
+Já as **Unidades de medidas relativas** são medidas que se baseiam em um valor base (ou valor de referência), diferentemente das medidas absolutas, essa se adequam ao contexto onde estão inseridas. \
+\
+Temos bastantes exemplos de medidas relativas como o **EM**, a porcentagem **%**, o **REM**, entre outros, mas o foco desse artigo é mostrar uma medida que me auxilia bastante quando necessito ser responsiva nas telas que entrego, ou seja, necessito que o layout do design seja fiel ao que foi apresentado e além disso, consiga se adequar a maior quantidade de dispositivos e aparelhos que existirem. 
+
+3 - Conhecendo a medida relativa REM
+
+REM (cuja letra inicial "r" vem de "root": "root em"), ou seja, seu tamanho baseia-se na fonte fixada ao elemento raiz.
+
+Diferentemente do EM, ele não possui aninhamento de tamanhos, e seu valor é a base para as medidas subsequentes.
+
+Sua base comumente possui o valor de **1rem equivalendo a 16px (pixéis)**, então para criar uma tabela de valores em REM basta utilizar o valor em ***pixel*/16** (que é o valor de **1rem**):
+
+```jsx
+1px  = 1/16 = 0.0625rem
+4px  = 0.25rem
+8px  = 0.5rem
+16px = 1rem (valor base do REM)
+24px = 1.5rem
+32px = 2rem
+```
+
+
 
 Artigos para se aprofundar:
 
