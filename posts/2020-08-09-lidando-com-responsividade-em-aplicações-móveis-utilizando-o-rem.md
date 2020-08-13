@@ -12,7 +12,7 @@ background: '#7d669e'
 ---
 ![Relative unit REM](assets/img/2ef58f878ee7.jpg)
 
-Quando atuamos na área front-end, fica perceptível logo de primeira, o quanto a responsividade é algo imprescindível para nós devs, porém no mundo mobile essas implementações de layouts responsivos também são sumamente importantes e devem ser levadas em consideração, pensando principalmente na gama de possibilidades de tamanhos de dispositivos que possuímos hoje em dia, tanto de width quanto height, ou seja, temos desde smartphones com width pequeno e hight grande, ou width grande e hight grande, tablets...
+Quando atuamos na área front-end, fica perceptível logo de primeira, o quanto a responsividade é algo imprescindível para nós devs, porém no mundo mobile essas implementações de layouts responsivos também são sumamente importantes e devem ser levadas em consideração, pensando principalmente na gama de possibilidades de tamanhos de dispositivos que possuímos hoje em dia, tanto de width quanto height, ou seja, temos desde aparelhos com width pequeno e hight grande, ou width grande e hight grande, tablets...
 
 Além da dimensão das medidas de width (largura) e height (altura) que variam bastante, outra medida que muda bastante de um dispositivo para o outro, é a ***densidade de pixels.***
 
