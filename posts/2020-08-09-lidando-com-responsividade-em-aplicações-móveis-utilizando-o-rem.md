@@ -62,9 +62,9 @@ Para exemplificar essa diversidade de densidade de pixels, cito abaixo as medida
 * ###### PixelRatio.get() === 1\
   \
   [dispositivos Android mdpi](https://material.io/tools/devices/)
-* ###### PixelRatio.get() === 1.5[\
+* ###### PixelRatio.get() === 1.5\
   \
-  dispositivos hdpi Android](https://material.io/tools/devices/)
+  [dispositivos hdpi Android](<* https://material.io/tools/devices/>)
 * ###### PixelRatio.get() === 2
 
   iPhone SE, 6S, 7, 8\
