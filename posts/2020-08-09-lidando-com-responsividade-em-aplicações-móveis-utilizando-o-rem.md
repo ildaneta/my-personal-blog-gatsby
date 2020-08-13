@@ -89,11 +89,11 @@ Como isso impacta seu código?
 
 ![Aplicação que utiliza medida em pixel para imagem](assets/img/appPX.PNG)
 
-Como mostra na imagem acima, estou emulando o código em 2 dispositivos Android, mas que possuem densidade de pixels diferentes.
+Como mostrado na imagem acima, estou emulando o código em 2 dispositivos Android, mas que possuem densidades de pixels diferentes.
 
 Então se eu declarar a última imagem em meu arquivo de estilos utilizando pixels, ela se comportará de forma diferente em dispositivos que possuírem densidades distintas, pois as medidas em pixel serão multiplicadas pelo ppi(pixel per inch).
 
-Ou seja, se eu declaro a imagem (width e height) cat com um tamanho de 70px, automaticamente esse valor será multiplicado a quantidade de pixel que esse dispositivo possui, e no caso do exemplo acima ficaria:\
+Ou seja, se eu declaro a imagem (width e height) cat com um tamanho de 70px, automaticamente esse valor será multiplicado pela quantidade de pixel que esse dispositivo possui, e no caso do exemplo acima ficaria:\
 \
 70px **x** 3.5(proporção do dispositivo da esquerda) = 245px\
 70px **x** 2.75(proporção da direita) = 192,5px\
@@ -246,6 +246,8 @@ Artigos para se aprofundar:
 [A Pixel Identity Crisis](https://alistapart.com/article/a-pixel-identity-crisis/)[](https://alistapart.com/article/a-pixel-identity-crisis/)
 
 [](https://www.alura.com.br/artigos/guia-de-unidades-no-css)[Guia de unidades no CSS](https://www.alura.com.br/artigos/guia-de-unidades-no-css)
+
+[Documentação Pixel Ratio - React Native](https://reactnative.dev/docs/pixelratio)
 
 [Compatibilidade com densidades de pixel diferentes - Android](https://developer.android.com/training/multiscreen/screendensities?hl=pt-br) 
 
