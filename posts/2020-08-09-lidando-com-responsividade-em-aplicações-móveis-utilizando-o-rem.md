@@ -236,6 +236,7 @@ Utilizando o REM é possível visualizar na tela acima que as imagens ficaram pr
 Sei que o assunto foi extenso, mas se você chegou até aqui, imagino que tenha gostado dessa forma de declaração de medidas, pois essa utilização no mobile com React Native é nova pra mim também, mas já tenho percebido grandes ganhos, tanto de usabilidade quanto de produtividade!
 
 Essa foi mais uma dica para te auxiliar a ser um dev que se preocupa ainda mais com a usabilidade e responsividade de suas aplicações!\
+\
 E você já utiliza essa medida? Se sim, qual está sendo sua lib favorita no momento para utilizar o REM?\
 \
 Para finalizar, deixarei alguns artigos, e a documentação do Pixel Ratio, caso você deseje se aprofundar ainda mais nesse assunto:
