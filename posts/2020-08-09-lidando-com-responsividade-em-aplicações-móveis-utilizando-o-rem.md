@@ -14,13 +14,13 @@ background: '#7d669e'
 
 Quando atuamos na área front-end, fica perceptível logo de primeira, o quanto a responsividade é algo imprescindível para nós devs, porém no mundo mobile essas implementações de layouts responsivos também são sumamente importantes e devem ser levadas em consideração, pensando principalmente na gama de possibilidades de tamanhos de dispositivos que possuímos hoje em dia, tanto de width quanto height, ou seja, temos desde aparelhos com width pequeno e hight grande, ou width grande e hight grande, tablets...
 
-Além da dimensão das medidas de width (largura) e height (altura) que variam bastante, outra medida que muda bastante de um dispositivo para o outro, é a ***densidade de pixels.***
+Além da grande variedade de medidas de width (largura) e height (altura) que variam bastante, existe também a ***densidade de pixels*** que varia de ***dispositivo a dispositivo.***
 
 Com isso, o objetivo desse artigo é te apresentar a medida ***REM*** e o poder que ela possui para nos auxiliar na responsividade, além de uma lib que comecei a utilizar recentemente no React Native, que me permite utilizar o ***REM*** e outras medidas relativas no desenvolvimento de aplicações móveis.
 
 ## 1 - Entendendo o verdadeiro tamanho de um Pixel
 
-O píxel ao contrário do que muitos(as) devs pensam, não possui uma medida absoluta, pois ele pode assumir diferentes tamanhos, devido a estar diretamente relacionado a quantidade de pixels por polegadas ou ppi (pixel per inch). O que ocorre é que o valor do pixel sofre influência da quantidade de pixels que suporta a resolução do dispositivo, ou seja, quanto maior a densidade de pixels um dispositivo possui, mais pixels por polegada cabem em sua tela.
+O píxel ao contrário do que muitos(as) devs pensam, não possui uma medida absoluta, pois ele pode assumir diferentes tamanhos, devido a estar diretamente relacionado a ***quantidade de pixels por polegadas*** ou ***ppi (pixel per inch)***. O que ocorre é que o valor do pixel sofre a influência da quantidade de pixels que suporta a resolução do dispositivo, ou seja, quanto maior a densidade de pixels um dispositivo possui, mais pixels por polegada cabem em sua tela.
 
 Esse conceito começou a partir do lançamento do iPhone 4 através da tela de retina, onde a Apple conseguiu fazer com que 4 pixels coubessem em um espaço onde antes caberia apenas 1 pixel, pois a tela de retina, além de ser mais nítida, dobrava a quantidade de pixel por polegada exibida na tela dos dispositivos.
 
@@ -30,7 +30,7 @@ Com isso percebemos que o pixel que declaramos em nossos estilos (px), não é u
 
 ## 2 - Conhecendo a diferença entre medidas absolutas e medidas relativas
 
-**Unidades de medidas absolutas** são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece, ou seja, por não se adaptar a quantidade de ppi dos dispositivos, uma simples declaração de `font-size: 16px`, pode resultar em um grande problema de responsividade em outros dispositivos.
+**Unidades de medidas absolutas** são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, esse valor absoluto será multiplicado ao valor da densidade de pixel que o aparelho oferece, ou seja, uma simples declaração de `font-size: 16px`, pode resultar em um grande problema de responsividade em outros dispositivos.
 
 Já as **Unidades de medidas relativas** são medidas que se baseiam em um valor base (ou valor de referência), diferentemente das medidas absolutas, estas se adequam ao contexto onde estão inseridas. \
 \
