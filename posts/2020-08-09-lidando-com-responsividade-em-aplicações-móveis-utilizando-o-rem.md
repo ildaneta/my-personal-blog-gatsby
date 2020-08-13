@@ -27,8 +27,6 @@ Esse conceito começou a partir do lançamento do iPhone 4 através da tela de r
 
 Com isso percebemos que o píxel do CSS não é um píxel da tela do dispositivo (hardware), mas um píxel de referência (geralmente maior do que o píxel real).
 
-Atualmente temos 3 níveis de densidades de píxel para iPhones e 6 para Android.
-
 ## 2 - Conhecendo a diferença entre medidas absolutas e medidas relativas
 
 **Unidades de medidas absolutas** são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida em CSS pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece, ou seja, por não se adaptar a quantidade de ppi dos dispositivos, uma simples declaração de font-size: 16px, pode resultar em um grande problema de responsividade em outros dispositivos.
@@ -145,8 +143,13 @@ const ExampleREM: React.FC = () => {
 };
 
 export default ExampleREM;
-
 ```
+
+Com isso, utilizei como alternativa a medida REM, pois é uma medida relativa que depende de uma medida base. Essa medida base não leva em consideração a proporção dos dispositivos, ou seja, o valor transformado em pixel não será multiplicado pela densidade oferecida pela tela.
+
+Atrelado a isso, não é possível até a data em que estou escrevendo esse post inserir medidas 'rem' utilizando o StyleSheet ofertado pela lib do 'react-native', e para contornar essa situação, comecei a utilizar recentemente a lib react-native-extended-stylesheet
+
+
 
 
 
