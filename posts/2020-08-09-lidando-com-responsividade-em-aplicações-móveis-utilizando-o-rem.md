@@ -90,22 +90,22 @@ Como isso impacta seu código?
 
 Como mostra na imagem acima, estou emulando o código em 2 dispositivos Android, mas que possuem densidade de pixels diferentes.
 
-Então se eu declarar a última imagem em meu arquivo de estilos utilizando pixels, ela se comportará de forma diferente em dispositivos que possuírem densidades distintas, pois as medidas em pixel serão multiplicadas com o ppi(pixel per inch).
+Então se eu declarar a última imagem em meu arquivo de estilos utilizando pixels, ela se comportará de forma diferente em dispositivos que possuírem densidades distintas, pois as medidas em pixel serão multiplicadas pelo ppi(pixel per inch).
 
 Ou seja, se eu declaro a imagem (width e height) cat com um tamanho de 70px, automaticamente esse valor será multiplicado a quantidade de pixel que esse dispositivo possui, e no caso do exemplo acima ficaria:\
 \
 70px **x** 3.5(proporção do dispositivo da esquerda) = 245px\
 70px **x** 2.75(proporção da direita) = 192,5px\
 \
-Mas o dispositivo da direita está mostrando que o valor em pixel é 193px, o que leva também a outro problema, os arredondamentos, que podem nos fazer perder um certo tempo corrigindo as quebras de responsividades.
+Mas o dispositivo da direita está mostrando que o valor em pixel é 193px, o que leva também a outro problema, os arredondamentos, que podem nos fazer perder um certo tempo corrigindo as quebras de responsividades, devido a pequenos arredondamentos realizados.
 
-De acordo com a documentação do pixel ratio que é uma classe que acessa a densidade nativa dos dispositivos, temos algumas formas de sabermos esses valores, utilizando por exemplo as funções abaixo:
+De acordo com a documentação do Pixel Ratio, que é uma classe que acessa a densidade nativa dos dispositivos, temos algumas formas de sabermos esses valores, utilizando por exemplo as funções abaixo:
 
 `PixelRatio.get( )` - o método [get()](https://reactnative.dev/docs/pixelratio#getpixelsizeforlayoutsize) fornece acesso à densidade de pixels e escala da fonte do dispositivo.
 
 `PixelRatio.getPixelSizeForLayoutSize( )` - o método [getPixelSizeForLayoutSize()](https://reactnative.dev/docs/pixelratio#getpixelsizeforlayoutsize) converte um tamanho de layout (dp) em tamanho de pixel (px).\
 \
-Exemplo de utilização tirada da documentação do Pixel Ratio que originou as telas acima:
+Exemplo de utilização em código, tirada da documentação do Pixel Ratio que originou as telas acima:
 
 ```jsx
 import React from 'react';
@@ -143,10 +143,94 @@ const ExampleREM: React.FC = () => {
 export default ExampleREM;
 ```
 
-Como é perceptível, as imagens ficaram com os tamanhos diferentes \
+Como é perceptível, as imagens ficaram com os tamanhos diferentes, e não gostaríamos que um ícone de um app ficasse com vários tamanhos em dispositivos diferentes, queremos ele padrão, ou seja, o mais real e parecido possível em "todos os dispositivos".\
+\
 Com isso, utilizei como alternativa a medida REM, pois é uma medida relativa que depende de uma medida base. Essa medida base não leva em consideração a proporção dos dispositivos, ou seja, o valor transformado em pixel não será multiplicado pela densidade oferecida pela tela.
 
-Atrelado a isso, não é possível até a data em que estou escrevendo esse post inserir medidas 'rem' utilizando o StyleSheet ofertado pela lib do 'react-native', e para contornar essa situação, comecei a utilizar recentemente a lib react-native-extended-stylesheet
+Atrelado a isso, não é possível até a data em que estou escrevendo esse post inserir medidas `'rem'` utilizando o `StyleSheet` ofertado pela lib do `'react-native'`, e para contornar essa situação, comecei a utilizar recentemente a lib [react-native-extended-stylesheet](https://github.com/vitalets/react-native-extended-stylesheet).
+
+Ainda estou em fase de testes, mas a utilizo basicamente para utilizar o REM e porcentagem, que me auxiliam bastante na responsividade.
+
+Exemplo de código utilizando a lib `react-native-extended-stylesheet` e o **REM** juntos:
+
+```jsx
+import React from 'react';
+import { View, Text, Image, SafeAreaView, PixelRatio } from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
+
+const size = 70;
+const cat = {
+  uri: 'https://reactnative.dev/docs/assets/p_cat1.png',
+  width: size,
+  height: size,
+};
+
+const ExampleREM: React.FC = () => {
+  return (
+    <SafeAreaView style={styles.safeAreaContainer}>
+      <View style={styles.container}>
+        <Text style={styles.text}>A proporção atual de pixel é:</Text>
+        <Text style={styles.value}>{PixelRatio.get()} </Text>
+      </View>
+
+      <View style={styles.container}>
+        <Text style={styles.text}>Neste dispositivo, uma imagem de width:</Text>
+        <Text style={styles.value}>{size} px</Text>
+
+        <Image source={cat} />
+      </View>
+
+      <View style={styles.container}>
+        <Text style={styles.text}>
+          Exige uma imagem de de width em pixels de:
+        </Text>
+        <Text style={styles.value}>
+          {PixelRatio.getPixelSizeForLayoutSize(size)} px
+        </Text>
+
+        {/* Transformando o tamanho da imagem em REM */}
+        <Image source={cat} style={styles.cat} />
+      </View>
+    </SafeAreaView>
+  );
+};
+
+const styles = EStyleSheet.create({
+  safeAreaContainer: {
+    flex: 1,
+    marginTop: '1rem',
+  },
+
+  container: {
+    alignItems: 'center',
+  },
+
+  text: {
+    fontSize: '1.2rem',
+  },
+
+  value: {
+    fontSize: '1.5rem',
+    marginBottom: '0.75rem',
+    marginTop: '0.25rem',
+  },
+
+  // Criando uma medida relativa para a imagem
+  cat: {
+    width: '8rem',
+    height: '8rem',
+  },
+});
+
+export default ExampleREM;
+
+```
+
+Resultado do código acima:
+
+![Aplicação que utiliza medida em REM para a imagem](assets/img/untitled (1).png)
+
+
 
 Artigos para se aprofundar:
 
