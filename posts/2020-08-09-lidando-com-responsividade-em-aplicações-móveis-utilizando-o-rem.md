@@ -29,7 +29,7 @@ Com isso percebemos que o píxel que declaramos em nossos estilos (px), não é 
 
 ## 2 - Conhecendo a diferença entre medidas absolutas e medidas relativas
 
-**Unidades de medidas absolutas** são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida em CSS pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece, ou seja, por não se adaptar a quantidade de ppi dos dispositivos, uma simples declaração de font-size: 16px, pode resultar em um grande problema de responsividade em outros dispositivos.
+**Unidades de medidas absolutas** são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece, ou seja, por não se adaptar a quantidade de ppi dos dispositivos, uma simples declaração de `font-size: 16px`, pode resultar em um grande problema de responsividade em outros dispositivos.
 
 Já as **Unidades de medidas relativas** são medidas que se baseiam em um valor base (ou valor de referência), diferentemente das medidas absolutas, essa se adequam ao contexto onde estão inseridas. \
 \
