@@ -55,7 +55,7 @@ Sua base comumente possui o valor de **1rem equivalendo a 16px (pixels)**, entã
 
 Você deve estar se perguntando, tudo bem, entendi o valor do REM mas não entendi ainda como ele me ajudará na construção do código e responsividade.\
 \
-Como explicado acima, os dispositivos mobiles hoje possuem muitos formatos, que mudam desde o tamanho de altura e largura, mas também a quantidade de pixels que os dispositivos suportam, o que acaba impactando diretamente em seu layout pois quanto maior a densidade de pixels um dispositivo possui, mais pixels por polegada cabem em sua tela.
+Como explicado acima, os dispositivos mobiles hoje possuem muitos formatos, que mudam desde o tamanho de altura e largura da tela, até a quantidade de pixels que os dispositivos suportam, o que acaba impactando diretamente em seu layout, pois quanto maior a densidade de pixels um dispositivo possui, mais pixels por polegada cabem em sua tela.
 
 Para exemplificar essa diversidade de densidade de pixels, cito abaixo as medidas mencionadas na [documentação de Pixel Ratio do ReactNative](https://reactnative.dev/docs/pixelratio) :
 
