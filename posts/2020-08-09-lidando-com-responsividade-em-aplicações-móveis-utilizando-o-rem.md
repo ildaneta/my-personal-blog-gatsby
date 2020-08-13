@@ -31,7 +31,7 @@ Com isso percebemos que o píxel que declaramos em nossos estilos (px), não é 
 
 **Unidades de medidas absolutas** são aquelas que não dependem de valores de referência, ou seja, caso defina um elemento utilizando a medida pt ou pc por exemplo, esse elemento terá esse valor em todas as versões mobile ou web onde a aplicação esteja sendo exibida, independente do tamanho da tela, e no caso do mobile, independente da densidade de pixel que o aparelho oferece, ou seja, por não se adaptar a quantidade de ppi dos dispositivos, uma simples declaração de `font-size: 16px`, pode resultar em um grande problema de responsividade em outros dispositivos.
 
-Já as **Unidades de medidas relativas** são medidas que se baseiam em um valor base (ou valor de referência), diferentemente das medidas absolutas, essa se adequam ao contexto onde estão inseridas. \
+Já as **Unidades de medidas relativas** são medidas que se baseiam em um valor base (ou valor de referência), diferentemente das medidas absolutas, estas se adequam ao contexto onde estão inseridas. \
 \
 Temos bastantes exemplos de medidas relativas como o **EM**, a porcentagem **%**, o **REM**, entre outros, mas o foco desse artigo é mostrar uma medida que me auxilia bastante quando necessito ser responsiva nas telas que entrego, ou seja, necessito que o layout do design seja fiel ao que foi apresentado e além disso, consiga se adequar a maior quantidade de dispositivos e aparelhos que existirem. 
 
