@@ -223,19 +223,28 @@ const styles = EStyleSheet.create({
 });
 
 export default ExampleREM;
-
 ```
 
 Resultado do código acima:
 
 ![Aplicação que utiliza medida em REM para a imagem](assets/img/untitled (1).png)
 
+\
+Utilizando o REM é possível visualizar na tela acima que as imagens ficaram praticamente do mesmo tamanho, diferentemente de quando utilizamos o valor em pixel.
 
+Sei que o assunto foi extenso, mas se você chegou até aqui, imagino que tenha gostado dessa forma de declaração de medidas, pois essa utilização no mobile com React Native é nova pra mim também, mas já tenho percebido grandes ganhos, tanto de usabilidade quanto de tempo.
+
+Essa foi mais uma dica para te tornar um dev ainda melhor!\
+E você já utiliza essa medida? Se sim, qual está sendo sua lib favorita no momento para utilizar o REM?\
+\
+Para finalizar, deixarei alguns artigos, e a documentação do Pixel Ratio, caso você deseje se aprofundar ainda mais nesse assunto:
 
 Artigos para se aprofundar:
 
-<https://alistapart.com/article/a-pixel-identity-crisis/>
+[A Pixel Identity Crisis](https://alistapart.com/article/a-pixel-identity-crisis/)[](https://alistapart.com/article/a-pixel-identity-crisis/)
 
-<https://www.alura.com.br/artigos/guia-de-unidades-no-css>
+[](https://www.alura.com.br/artigos/guia-de-unidades-no-css)[Guia de unidades no CSS](https://www.alura.com.br/artigos/guia-de-unidades-no-css)
 
-<https://developer.android.com/training/multiscreen/screendensities?hl=pt-br>
+[Compatibilidade com densidades de pixel diferentes - Android](https://developer.android.com/training/multiscreen/screendensities?hl=pt-br) 
+
+Nos vemos na próxima dica!
