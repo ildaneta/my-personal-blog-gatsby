@@ -11,21 +11,21 @@ background: '#7d669e'
 ---
 ![Relative unit REM](assets/img/2ef58f878ee7.jpg)
 
-Atuando na área front-end é perceptível de primeira que a responsividade é algo imprescindível, mas no mundo mobile isso também é utilizado, pensando principalmente na gama de possibilidades de tamanhos que possuímos hoje em dia, tanto de width quanto height, ou seja, temos desde smartphones com width pequeno e hight grande, ou width grande e hight grande, tablets...
+Quando atuamos na área front-end, fica perceptível logo de primeira, o quanto a responsividade é algo imprescindível para nós devs, porém no mundo mobile essas implementações de layouts responsivos tembém são sumamente importantes e devem ser levados em consideração, pensando principalmente na gama de possibilidades de tamanhos de dispositivos que possuímos hoje em dia, tanto de width quanto height, ou seja, temos desde smartphones com width pequeno e hight grande, ou width grande e hight grande, tablets...
 
-Além do tamanho das medidas de width (largura) e height (altura) que variam bastante, outra medida que muda bastante de um dispositivo para o outro, é a densidade de pixels.
+Além da dimensão das medidas de width (largura) e height (altura) que variam bastante, outra medida que muda bastante de um dispositivo para o outro, é a ***densidade de pixels.***
 
-Com isso, o objetivo desse artigo é te apresentar a medida REM e o poder que ela possui para nos auxiliar na responsividade, além de uma lib que comecei a utilizar recentemente no React Native, que me permite utilizar o REM e outras medidas relativas no desenvolvimento de aplicações móveis.
+Com isso, o objetivo desse artigo é te apresentar a medida ***REM*** e o poder que ela possui para nos auxiliar na responsividade, além de uma lib que comecei a utilizar recentemente no React Native, que me permite utilizar o ***REM*** e outras medidas relativas no desenvolvimento de aplicações móveis.
 
 ## 1 - Entendendo o verdadeiro tamanho de um Pixel
 
 O píxel ao contrário do que muitos(as) devs pensam, não possui uma medida absoluta, pois ele pode assumir diferentes tamanhos, devido a estar diretamente relacionado a quantidade de pixels por polegadas ou ppi (pixel per inch). O que ocorre é que o valor do pixel sofre influência da quantidade de pixels que suporta a resolução do dispositivo, ou seja, quanto maior a densidade de pixels um dispositivo possui, mais pixels por polegada cabem em sua tela.
 
-Esse conceito começou a partir do lançamento do iPhone 4 através da tela de retina, onde a Apple conseguiu fazer com que 4 pixels coubessem em um espaço onde antes caberia apenas 1 pixel, pois a tela de retina, além de ser mais nítida, dobrava a quantidade de píxel por polegada exibida na tela dos dispositivos.
+Esse conceito começou a partir do lançamento do iPhone 4 através da tela de retina, onde a Apple conseguiu fazer com que 4 pixels coubessem em um espaço onde antes caberia apenas 1 pixel, pois a tela de retina, além de ser mais nítida, dobrava a quantidade de pixel por polegada exibida na tela dos dispositivos.
 
 ![Pixel in iPhone 4](assets/img/xxx.PNG)
 
-Com isso percebemos que o píxel que declaramos em nossos estilos (px), não é um píxel da tela do dispositivo (hardware), mas um píxel de referência (geralmente maior do que o píxel real).
+Com isso percebemos que o pixel que declaramos em nossos estilos (px), não é um píxel da tela do dispositivo (hardware), mas um píxel de referência (geralmente maior do que o píxel real).
 
 ## 2 - Conhecendo a diferença entre medidas absolutas e medidas relativas
 
@@ -39,7 +39,7 @@ Temos bastantes exemplos de medidas relativas como o **EM**, a porcentagem **%**
 
 **REM** (cuja letra inicial **"r"** vem de ***"root": "root em"***), ou seja, seu tamanho baseia-se na fonte fixada ao elemento raiz.
 
-Diferentemente do EM, ele não possui aninhamento de tamanhos, e seu valor é a base para as medidas subsequentes.
+Diferentemente do EM, ele não possui aninhamento nos valores de tamanhos, e seu valor base é o que é utilizado nas medidas subsequentes.
 
 Sua base comumente possui o valor de **1rem equivalendo a 16px (pixels)**, então para criar uma tabela de valores em REM basta utilizar o valor em ***pixel*/16** (que é o valor de **1rem**):
 
@@ -232,9 +232,9 @@ Resultado do código acima:
 \
 Utilizando o REM é possível visualizar na tela acima que as imagens ficaram praticamente do mesmo tamanho, diferentemente de quando utilizamos o valor em pixel.
 
-Sei que o assunto foi extenso, mas se você chegou até aqui, imagino que tenha gostado dessa forma de declaração de medidas, pois essa utilização no mobile com React Native é nova pra mim também, mas já tenho percebido grandes ganhos, tanto de usabilidade quanto de tempo.
+Sei que o assunto foi extenso, mas se você chegou até aqui, imagino que tenha gostado dessa forma de declaração de medidas, pois essa utilização no mobile com React Native é nova pra mim também, mas já tenho percebido grandes ganhos, tanto de usabilidade quanto de produtividade!
 
-Essa foi mais uma dica para te tornar um dev ainda melhor!\
+Essa foi mais uma dica para te auxiliar a ser um dev que se preocupa ainda mais com a usabilidade e responsividade de suas aplicações!\
 E você já utiliza essa medida? Se sim, qual está sendo sua lib favorita no momento para utilizar o REM?\
 \
 Para finalizar, deixarei alguns artigos, e a documentação do Pixel Ratio, caso você deseje se aprofundar ainda mais nesse assunto:
@@ -247,4 +247,4 @@ Artigos para se aprofundar:
 
 [Compatibilidade com densidades de pixel diferentes - Android](https://developer.android.com/training/multiscreen/screendensities?hl=pt-br) 
 
-Nos vemos na próxima dica!
+Nos vemos no próximo post!
