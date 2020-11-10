@@ -43,5 +43,5 @@ Modo Light com visualização em Grid
 
 ## Autora
 
-- [Linkedin](https://www.linkedin.com/in/ilda-silva-neta/)
+- [Linkedin](https://www.linkedin.com/in/ildaneta)
 - [Blog](http://ildaneta.dev/)
