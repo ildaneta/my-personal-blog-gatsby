@@ -32,7 +32,7 @@ No dia 26/10 realizei a primeira palestra da minha carreira em um evento de tecn
 
 ![Palestra FEMTEC](assets/img/ILDA NETA.png)
 
-Nessa palestra pude contar um pouco de minha trajetória, incluindo minha mudança de carreira para a área de desenvolvimento (mas nesse momento eu ainda não havia recebido a resposta do meu processo seletivo para estágio em frontend), que era um tema recorrente no evento, mulheres que estavam em transição de carreira, ou que estavam tentando pela primeira vez empregos na área de tecnologia.
+Nessa palestra pude contar um pouco da minha trajetória, incluindo os passos que estava realizando para minha mudança de carreira para a área de desenvolvimento, que era um tema recorrente no evento, mulheres que estavam em transição de carreira, ou que estavam tentando pela primeira vez empregos na área de tecnologia.
 
 ![Palestrantes FEMTEC](assets/img/Untitled.png "Palestrantes FEMTEC")
 
