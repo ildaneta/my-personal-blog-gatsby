@@ -28,7 +28,7 @@ Em outubro de 2019 ainda atuava como analista de suporte, mas já havia começad
 
 Passei o ano de 2019 estudando, principalmente a partir de agosto/19 onde investi em meu primeiro bootcamp de programação e tive meu primeiro contato com React, NodeJS e um pouquinho de React Native.
 
-No dia 26/10 realizei a primeira palestra de minha carreira em um evento de tecnologia, e além de ser tão especial para mim, esse evento era focado em mulheres e grupos LGBTQIA+, onde naquele momento pude levar um tema extremamente importante para nossa área, o complexo de inferioridade, e como poderíamos lutar contra ele para conseguirmos dar a volta por cima.
+No dia 26/10 realizei a primeira palestra da minha carreira em um evento de tecnologia, e além de ser tão especial para mim, esse evento era focado em mulheres e grupos LGBTQIA+, e naquele momento pude levar um tema extremamente importante para nossa área, o complexo de inferioridade, e como poderíamos lutar contra ele para conseguirmos dar a volta por cima.
 
 ![Palestra FEMTEC](assets/img/ILDA NETA.png)
 
