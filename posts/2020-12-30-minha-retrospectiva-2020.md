@@ -197,9 +197,9 @@ E para consolidar meus conhecimentos, escrevi o artigo: Lidando com responsivida
 
 Em setembro eu e Marcos Henrique, um dev mirim muito esforçado, dedicado e inteligente, criamos uma [super LIVE para darmos dicas para se destacar profissionalmente](https://www.youtube.com/watch?v=K3t6s-dMQuY&t=1786s&ab_channel=MarcosHenriquedev), utilizando o LinkedIn, Github e Soft skills.
 
-Foi uma LIVE bem descontraída e recheada de dicas, tudo para que vocês pudessem ter aindaild mais oportunidades ao se candidatarem para uma vaga, aplicando pequenos conceitos e ensinamentos, que passamos ao longo de toda a live.
+Foi uma LIVE bem descontraída e recheada de dicas, tudo para que vocês pudessem ter ainda mais oportunidades ao se candidatarem para uma vaga, aplicando pequenos conceitos e ensinamentos, que passamos ao longo de toda a live.
 
-E no fim da LIVE, eu e Marcos tiramos várias dúvidas de quem estava assistindo online.
+E no fim, eu e Marcos tiramos várias dúvidas de quem estava assistindo online.
 
 ![Dicas para se destacar profissionalmente com Ilda Neta e Marcos Henrique](assets/img/Captura de Tela 2020-12-30 às 15.07.02.png "Dicas para se destacar profissionalmente com Ilda Neta e Marcos Henrique")
 
@@ -227,7 +227,7 @@ Esse projeto foi a concretização de um enorme esforço realizado em conjunto p
 
 Além do resultado que alcançamos como equipe, desenvolvendo uma aplicação totamente do zero, foi extremamente gratificante termos como resultado final essa entrega visual linda, minimalista e centrada no usuário.
 
-E para encerrar meu mês de novembro da melhor forma possível, realizei minha primeira palestra técnica no maior evento de React da América Latina, a React Conf Brasil.
+E para encerrar meu mês de novembro da melhor forma possível, realizei minha primeira palestra técnica na React Conf Brasil.
 
 Nesta talk me aprofundei na medida relativa REM e em sua forma de nos auxiliar na construção de layouts ainda mais performáticos e responsivos no React Native.
 
