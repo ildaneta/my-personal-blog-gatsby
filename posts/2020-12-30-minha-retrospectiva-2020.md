@@ -195,7 +195,7 @@ E para consolidar meus conhecimentos, escrevi o artigo: Lidando com responsivida
 
 ## Setembro de 2020
 
-Em setembro eu e Marcos Henrique, um dev mirim muito esforçado, dedicado e inteligente, criamos uma [super LIVE para darmos dicas para se destacar profissionalmente](https://www.youtube.com/watch?v=K3t6s-dMQuY&t=1786s&ab_channel=MarcosHenriquedev), utilizando o LinkedIn, Github e sofft skills.
+Em setembro eu e Marcos Henrique, um dev mirim muito esforçado, dedicado e inteligente, criamos uma [super LIVE para darmos dicas para se destacar profissionalmente](https://www.youtube.com/watch?v=K3t6s-dMQuY&t=1786s&ab_channel=MarcosHenriquedev), utilizando o LinkedIn, Github e Soft skills.
 
 Foi uma LIVE bem descontraída e recheada de dicas, tudo para que vocês pudessem ter aindaild mais oportunidades ao se candidatarem para uma vaga, aplicando pequenos conceitos e ensinamentos, que passamos ao longo de toda a live.
 
