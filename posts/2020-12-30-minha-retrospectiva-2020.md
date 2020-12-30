@@ -219,7 +219,7 @@ Tivemos nesse dia mais de 1.000 pessoas assistindo a LIVE simultaneamente, uma e
 
 ## Novembro de 2020
 
-No dia 16 de novembro lançamos com sucesso o PIX do Banco ABC Brasil, e foi simplesmente um sucesso.
+No dia 16 de novembro lançamos o PIX do Banco ABC Brasil, e foi simplesmente um sucesso.
 
 Esse projeto foi a concretização de um enorme esforço realizado em conjunto por diversas áreas do banco, um projeto que estava sendo muito aguardado e valorizado pelo banco em geral.
 
