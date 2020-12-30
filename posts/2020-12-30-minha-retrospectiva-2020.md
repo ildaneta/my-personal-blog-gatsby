@@ -251,8 +251,8 @@ O meu intuito com essa grande retrospectiva foi contar um pouco mais dos meus qu
 
 E exatamente nesse ano onde me encontro com 24 anos, consigo olhar como eu estava aos 12 anos, como estou com os 24 e como posso estar aos 36 anos, exatamente daqui a 12 anos.
 
-Pois o ato de realizamos essa autoanálise/autorreflexão, é uma grande oportunidade que temos de analisar as decisões que temos tomado para nossa vida, tanto no âmbito financeiro, profissional e pessoal. Porque o quanto antes analisamos nossa retrospectiva e enxergamos onde podemos melhorar, mais chances e oportunidades deixarão de passar desapercebidas em nossa vida.
+Pois o ato de realizamos essa autoanálise/autorreflexão, é uma grande oportunidade que temos de observar as decisões que temos tomado para nossa vida, tanto no âmbito financeiro, profissional e pessoal. Porque o quanto antes fizermos essa retrospectiva e enxergarmos onde podemos melhorar, mais chances e oportunidades deixarão de passar desapercebidas em nossa caminhada.
 
-Espero que vocês tenham gostado da primeira retrospectiva que realizo, como uma forma de inspirá-los(as) a seguirem seus sonhos e a realizarem seus planejamentos, pois aquele(a) que planeja, sempre estará se antecipando aos acontecimentos que surgirão ao longo de nossa caminhada.
+Espero que vocês tenham gostado da primeira retrospectiva que realizo, como uma forma de inspirá-los(as) a seguirem seus sonhos e a realizarem seus planejamentos, pois aquele(a) que planeja, sempre estará se antecipando aos acontecimentos que surgirão ao longo de nossa trajetória.
 
 Desejo a vocês um excelente ano novo e um 2021 cheio de realizações!
