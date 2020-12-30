@@ -6,17 +6,17 @@ description: >-
   forma diferente, estarei apresentando meus últimos 14 meses e todas as
   evoluções que tive nesse período. Acompanhe!
 date: '2020-12-30 05:00:14'
-thumbnail: assets/img/Post Rosa de Retrospectiva do Ano para Instagram (1).png
+thumbnail: assets/img/ILdaNeta.png
 category: Dev
 background: '#CD4C51'
 ---
-![](assets/img/Post Rosa de Retrospectiva do Ano para Instagram (1).png)
+![](assets/img/ILdaNeta.png)
 
 # Retrospectiva 2020
 
 Hoje dia 30 de dezembro, é comumente um dia que utilizo para realizar minha retrospectiva pessoal, onde posso analisar como foi o meu ano, visualizar se atingi alguns objetivos que havia planejado e no geral, acompanhar minha evolução de um ano para outro.
 
-No dia 25 de dezembro de 2019 escrevi o artigo: [O que o meu Eu de agora diria ao meu Eu de 7 anos atrás](https://ildaneta.dev/posts/o-que-meu-eu-de-agora-diria-ao-meu-eu-de-7-anos-atr%C3%A1s/), e acabou sendo o artigo mais visitado do meu blog em 2020, assim, caso não tenha lido, creio que vale a pena.
+No dia 25 de dezembro de 2019 escrevi o artigo: [O que o meu Eu de agora diria ao meu Eu de 7 anos atrás](https://ildaneta.dev/posts/o-que-meu-eu-de-agora-diria-ao-meu-eu-de-7-anos-atr%C3%A1s/), artigo esse que acabou sendo o  mais visitado do meu blog em 2020, assim, caso não tenha lido, creio que vale a pena!
 
 Ao final do ano de 2019 [li a retrospectiva de Erick Wendel](https://www.linkedin.com/pulse/minha-retrospectiva-de-2019-erick-wendel-erick-wendel/) e ela foi uma grande motivadora para meu ano de 2020, me senti tão motivada ao lê-la que pensei: ano que vem farei meu máximo para ter uma retrospectiva que inspire outras pessoas, assim como me inspirei na de Erick.
 
@@ -149,7 +149,7 @@ Por fim, mas não menos importante, fui convidada por Diego Fernandes para ser u
 
 ![Space Squad Logo](assets/img/Roxo Casamento Instagram Post.png "Space Squad Logo")
 
-E no fim de maio, fui convidada a contar minha trajetória no podcast Alumni da Rocketseat, e assim surge meu primeiro vídeo no youtube, com Mayk Brito (Alô galera, aqui é Mayk Brito na área).
+E no fim de maio, fui convidada a contar minha trajetória no podcast Alumni da Rocketseat, e assim surge meu primeiro vídeo no youtube, com Mayk Brito (Alô galera, aqui é Mayk Brito na área rsrs).
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/U0wQjppkFdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -177,7 +177,7 @@ Para visualizá-lo:
 
 [](https://ildaneta.dev/posts/entendo-a-import%C3%A2ncia-dos-commits-sem%C3%A2nticos/)[https://ildaneta.dev/posts/entendo-a-importância-dos-commits-semânticos/](https://ildaneta.dev/posts/entendo-a-import%C3%A2ncia-dos-commits-sem%C3%A2nticos/)
 
-E mais uma vez, esse artigo gerou um enorme engajamento, o que me deixa extremamente contente e feliz, pois pude mostrar novas formas de mantermos a qualidade em nosso código, mesmo que seja através commits, encerrando assim meu mês de julho.
+E mais uma vez, esse artigo gerou um enorme engajamento, o que me deixa extremamente contente e feliz, pois pude mostrar novas formas de mantermos a qualidade em nosso código, mesmo que seja através de commits, encerrando assim meu mês de julho.
 
 ## Agosto de 2020
 
@@ -195,9 +195,9 @@ E para consolidar meus conhecimentos, escrevi o artigo: Lidando com responsivida
 
 ## Setembro de 2020
 
-Em setembro eu e Marcos Henrique, um dev mirim muito esforçado, dedicado e inteligente, criamos uma [super LIVE para darmos dicas para se destacar profissionalment](https://www.youtube.com/watch?v=K3t6s-dMQuY&ab_channel=MarcosHenriquedev)e, utilizando o LinkedIn, Github e sofft skills.
+Em setembro eu e Marcos Henrique, um dev mirim muito esforçado, dedicado e inteligente, criamos uma [super LIVE para darmos dicas para se destacar profissionalmente](https://www.youtube.com/watch?v=K3t6s-dMQuY&t=1786s&ab_channel=MarcosHenriquedev), utilizando o LinkedIn, Github e sofft skills.
 
-Foi uma LIVE bem descontraída e recheada de dicas, tudo para que vocês pudessem ter ainda mais oportunidades ao se candidatarem para uma vaga, aplicando pequenos conceitos e ensinamentos, que passamos ao longo de toda a live.
+Foi uma LIVE bem descontraída e recheada de dicas, tudo para que vocês pudessem ter aindaild mais oportunidades ao se candidatarem para uma vaga, aplicando pequenos conceitos e ensinamentos, que passamos ao longo de toda a live.
 
 E no fim da LIVE, eu e Marcos tiramos várias dúvidas de quem estava assistindo online.
 
