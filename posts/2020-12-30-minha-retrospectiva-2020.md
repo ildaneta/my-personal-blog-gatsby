@@ -10,6 +10,8 @@ thumbnail: assets/img/Post Rosa de Retrospectiva do Ano para Instagram.png
 category: Dev
 background: '#CD4C51'
 ---
+![](assets/img/Post Rosa de Retrospectiva do Ano para Instagram.png)
+
 # Retrospectiva 2020
 
 Hoje dia 30 de dezembro, é comumente um dia que utilizo para realizar minha retrospectiva pessoal, onde posso analisar como foi o meu ano, visualizar se atingi alguns objetivos que havia planejado e no geral, acompanhar minha evolução de um ano para outro.
@@ -129,7 +131,7 @@ Com isso, realizei o clone do aplicativo Nubank, acrescentei um dark mode e crie
 
 Essa postagem acabou sendo a mais vista e curtida de meu LinkedIn até então, onde atingi um enorme engajamento, gerando 1.458 curtidas, 159 comentários e mais de 60 mil visualizações de meu vídeo.
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6653765874886995968" height="1131" width="504" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6653765874886995968" width="853" height="480" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
 
 E foi assim basicamente minha evolução no mês de abril.
 
@@ -149,7 +151,7 @@ Por fim, mas não menos importante, fui convidada por Diego Fernandes para ser u
 
 E no fim de maio, fui convidada a contar minha trajetória no podcast Alumni da Rocketseat, e assim surge meu primeiro vídeo no youtube, com Mayk Brito (Alô galera, aqui é Mayk Brito na área).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U0wQjppkFdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/U0wQjppkFdY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 E assim termina meu mês de maio, com muitos objetivos alcançados e muitos outros para serem conquistados.
 
