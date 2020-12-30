@@ -245,11 +245,11 @@ Em dezembro recebi meu primeiro feeback formal no banco, onde eu e meu gestor an
 
 E para você que chegou até aqui, muito obrigada por ter acompanhado minha evolução nesse ano tão desafiador.
 
-Ano que vem estarei voltando cheia de novos planos, novas postagens, artigos e com muito conteúdo técnico relacionado a desenvolvimento mobile híbrido.
+Ano que vem estarei voltando cheia de novos planos, novas postagens, artigos e com muito conteúdo técnico relacionado a desenvolvimento mobile multiplataforma.
 
-O meu intuito com essa grande retrospectiva foi contar um pouco mais dos meus quase 7 anos na área de tecnologia, onde passei quase 5 anos como analista de processos e analista de suporte, mostrando como minha evolução foi de forma gradual ao longo desses últimos 14 meses, onde aprendi a programar, virei uma desenvolvedora frontend e acabei migrando para a carreira de desenvolvimento mobile híbrido.
+O meu intuito com essa grande retrospectiva foi contar um pouco mais dos meus quase 7 anos atuando na área de tecnologia (atuei quase 5 anos como analista de processos e analista de suporte), mostrando como minha evolução foi de forma gradual ao longo desses últimos 14 meses, onde aprendi a programar, virei uma desenvolvedora frontend e acabei migrando para a carreira de desenvolvimento mobile híbrido.
 
-E exatamente nesse ano onde me encontro com 24 anos, consigo olhar como eu era aos 12 anos, como estou com os 24 e como posso estar aos 36 anos, exatamente daqui a 12 anos.
+E exatamente nesse ano onde me encontro com 24 anos, consigo olhar como eu estava aos 12 anos, como estou com os 24 e como posso estar aos 36 anos, exatamente daqui a 12 anos.
 
 Pois o ato de realizamos essa autoanálise/autorreflexão, é uma grande oportunidade que temos de analisar as decisões que temos tomado para nossa vida, tanto no âmbito financeiro, profissional e pessoal. Porque o quanto antes analisamos nossa retrospectiva e enxergamos onde podemos melhorar, mais chances e oportunidades deixarão de passar desapercebidas em nossa vida.
 
