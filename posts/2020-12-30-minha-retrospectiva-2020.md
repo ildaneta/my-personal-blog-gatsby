@@ -10,7 +10,7 @@ thumbnail: assets/img/ILdaNeta.png
 category: Dev
 background: '#CD4C51'
 ---
-![](assets/img/ILdaNeta.png)
+![Retrospectiva Ilda Neta 2020](assets/img/ILdaNeta.png "Retrospectiva Ilda Neta 2020")
 
 # Retrospectiva 2020
 
