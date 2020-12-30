@@ -10,6 +10,10 @@ thumbnail: assets/img/Post Rosa de Retrospectiva do Ano para Instagram.png
 category: Dev
 background: '#CD4C51'
 ---
+
+
+![](assets/img/Post Rosa de Retrospectiva do Ano para Instagram.png)
+
 # Retrospectiva 2020
 
 Hoje dia 30 de dezembro, é comumente um dia que utilizo para realizar minha retrospectiva pessoal, onde posso analisar como foi o meu ano, visualizar se atingi alguns objetivos que havia planejado e no geral, acompanhar minha evolução de um ano para outro.
