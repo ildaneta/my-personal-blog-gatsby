@@ -6,11 +6,11 @@ description: >-
   forma diferente, estarei apresentando meus últimos 14 meses e todas as
   evoluções que tive nesse período. Acompanhe!
 date: '2020-12-30 05:00:14'
-thumbnail: assets/img/Post Rosa de Retrospectiva do Ano para Instagram.png
+thumbnail: assets/img/Post Rosa de Retrospectiva do Ano para Instagram (1).png
 category: Dev
 background: '#CD4C51'
 ---
-![](assets/img/Post Rosa de Retrospectiva do Ano para Instagram.png)
+![](assets/img/Post Rosa de Retrospectiva do Ano para Instagram (1).png)
 
 # Retrospectiva 2020
 
