@@ -6,11 +6,11 @@ description: >-
   forma diferente, estarei apresentando meus últimos 14 meses e todas as
   evoluções que tive nesse período. Acompanhe!
 date: '2020-12-30 05:00:14'
-thumbnail: assets/img/Post Rosa de Retrospectiva do Ano para Instagram.png
+thumbnail: assets/img/Post Rosa de Retrospectiva do Ano para Instagram (1).png
 category: Dev
 background: '#CD4C51'
 ---
-![](assets/img/Post Rosa de Retrospectiva do Ano para Instagram.png)
+![](assets/img/Post Rosa de Retrospectiva do Ano para Instagram (1).png)
 
 # Retrospectiva 2020
 
@@ -18,7 +18,7 @@ Hoje dia 30 de dezembro, é comumente um dia que utilizo para realizar minha ret
 
 No dia 25 de dezembro de 2019 escrevi o artigo: [O que o meu Eu de agora diria ao meu Eu de 7 anos atrás](https://ildaneta.dev/posts/o-que-meu-eu-de-agora-diria-ao-meu-eu-de-7-anos-atr%C3%A1s/), e acabou sendo o artigo mais visitado de meu blog em 2020, assim, caso não tenha lido, creio que vale a pena.
 
-Ao final do ano de 2019 li a retrospectiva de Erick Wendel e ela foi uma grande motivadora para meu ano de 2020, me senti tão motivada ao lê-la que pensei: ano que vem farei meu máximo para ter uma retrospectiva que inspire outras pessoas, assim como me inspirei na de Erick.
+Ao final do ano de 2019 [li a retrospectiva de Erick Wendel](https://www.linkedin.com/pulse/minha-retrospectiva-de-2019-erick-wendel-erick-wendel/) e ela foi uma grande motivadora para meu ano de 2020, me senti tão motivada ao lê-la que pensei: ano que vem farei meu máximo para ter uma retrospectiva que inspire outras pessoas, assim como me inspirei na de Erick.
 
 Então esse é o maior objetivo desse artigo, mostrar como foi meu progresso nesse ano tão difícil, e para isso, gostaria de começar minha retrospectiva a partir de outubro de 2019 onde eu ainda era analista de suporte e mostrar como tive que mudar e ser perseverante ao longo desses 14 meses para realizar as mudanças necessárias em minha vida e em minha carreira.
 
