@@ -34,7 +34,7 @@ Com isso, deixo a documentação que a rocketseat criou para termos de apoio ao 
 
 [](https://react-native.rocketseat.dev/)<https://react-native.rocketseat.dev/>
 
-1. Iniciando o projeto React Native
+## 1) Iniciando o projeto React Native
 
 Iniciaremos rodando o seguinte comando:
 
