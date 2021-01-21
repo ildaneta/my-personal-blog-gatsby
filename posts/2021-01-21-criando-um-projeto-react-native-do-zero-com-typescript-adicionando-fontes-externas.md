@@ -2,7 +2,7 @@
 layout: post
 title: >-
   Criando um projeto React Native do zero com Typescript adicionando fontes
-  externas
+  externas - Parte I
 description: >-
   Neste artigo vamos começar uma série de novos aprendizados sobre o React
   Native, e para iniciarmos, vamos criar nossa primeira aplicação do zero e
