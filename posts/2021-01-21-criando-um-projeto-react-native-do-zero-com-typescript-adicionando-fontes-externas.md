@@ -14,7 +14,7 @@ thumbnail: >-
 category: Dev
 background: '#CD4C51'
 ---
-![](assets/img/Adicionar um pouquinho de texto.png)
+![](assets/img/Criando um projeto React Native do zero com typescript adicionando fontes externas.png)
 
 Em maio do ano passado comecei a atuar formalmente com desenvolvimento mobile híbrido, pois utilizo como ferramenta o React Native.
 
