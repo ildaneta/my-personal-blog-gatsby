@@ -42,7 +42,7 @@ Iniciaremos rodando o seguinte comando:
 npx react-native init nomeProjeto --template react-native-template-typescript
 ```
 
-Onde está nomeProjeto, renomeei para o nome que seu aplicativo terá, no caso todoApp.
+Onde está nomeProjeto, renomeie para o nome que seu aplicativo terá, no caso todoApp.
 
 Basicamente com o comando acima estamos iniciando um projeto React Native onde após o init já nomeamos esse projeto e em seguida dizemos que queremos que o template gerado seja com typescript, assim poderemos criar arquivos **.ts** e **.tsx**.
 
@@ -70,9 +70,9 @@ Esses são textos e estilos que vem por padrão ao baixarmos um template React N
 
 Esse arquivo geralmente apenas exibe as páginas ou componentes finais que criamos, pois como é nosso arquivo principal, não devemos sobrecarregá-lo com outras funções.
 
-Resetando o que havia nesse arquivo, iremos apenas mostrar em tela um texto "Hello world" e estilizar esse texto com uma fonte de 15px e adicionarmos margins em cima e dos lados.
+Resetando o que havia nesse arquivo, iremos apenas mostrar em tela um texto escrito "Hello world", estilizaremos esse texto com uma fonte de 15px,  e adicionarmos margins em cima e dos lados.
 
-Para isso, vamos dentro do elemento **<Text />** e adicionaremos a propriedade **style={styles.text}**, pois assim, ao criarmos nosso estilo dentro da const styles, nossa propriedade text estará linkada com a tag que possui esse estilo.
+Para isso, iremos dentro do elemento **<Text />** e adicionaremos a propriedade **style={styles.text}**, pois assim, ao criarmos nosso estilo dentro da const styles, nossa propriedade text estará linkada com a tag que possui esse estilo.
 
 ```typescript
 import React from 'react';
@@ -117,11 +117,11 @@ Para finalizarmos a primeira etapa de hoje, vamos adicionar uma fonte externa, m
 
 Para adicionarmos fontes externas em nossas aplicações React Native seguiremos os passos abaixo:
 
-1. Em nosso app, iremos utilizar a fonte Montserrat, e para isso, vamos acessar o Google Fonts, buscar pela fonte Montserrat, e em seguida baixá-las clicando em **Download family.**
+1) Em nosso app, iremos utilizar a fonte Montserrat, e para isso, vamos acessar o Google Fonts, buscar pela fonte Montserrat, e em seguida baixá-las clicando em **Download family.**
 
 <https://fonts.google.com/specimen/Montserrat>
 
-2. Em sequência, vamos criar mais uma pasta na raiz do projeto chamada assets (fora da src), e dentro dela criaremos outra pasta chamada **fonts**. Em seguida, vamos pegar os arquivos **.ttf** que iremos utilizar no projeto e jogar dentro da pasta fonts que acabamos de criar.
+2) Em sequência, vamos criar mais uma pasta na raiz do projeto chamada assets (fora da src), e dentro dela criaremos outra pasta chamada **fonts**. Em seguida, vamos pegar os arquivos **.ttf** que iremos utilizar no projeto e jogar dentro da pasta fonts que acabamos de criar.
 
 Iremos utilizar as fontes **Montserrat-Regular.ttf** e **Montserrat-Bold.ttf**, ficando assim nosso projeto:
 
@@ -129,7 +129,7 @@ Iremos utilizar as fontes **Montserrat-Regular.ttf** e **Montserrat-Bold.ttf**, 
 
 Apenas uma observação, é que se você estiver no ambiente Mac OS, é importante você clicar nos arquivos .ttf baixados em downloads, e instalar essas fontes no seu pc, pois iremos precisar delas instaladas para o passo 6.
 
-3. Após o passo acima, iremos criar um arquivo na raiz do projeto chamado **react-native.config.js** e dentro dele colocaremos o seguinte código:
+3) Após o passo acima, iremos criar um arquivo na raiz do projeto chamado **react-native.config.js** e dentro dele colocaremos o seguinte código:
 
 ```typescript
 module.exports = {
@@ -143,7 +143,7 @@ module.exports = {
 
 O que estamos fazendo no código acima é basicamente adicionando nossas fontes para serem interpretadas nos códigos nativos iOS e Android.
 
-4. Agora iremos rodar o comando abaixo para linkar nossas fontes ao nosso app:
+4) Agora iremos rodar o comando abaixo para linkar nossas fontes ao nosso app:
 
 ```powershell
 yarn react-native link
@@ -153,7 +153,7 @@ Aparecerá uma mensagem como a abaixo, indicando que as fontes foram linkadas co
 
 ![Linkando fonts](assets/img/link-fonts.png "Linkando fonts")
 
-5. Agora, como mexemos em recursos nativos, temos que "reinstalar" essas novas atualizações em nosso app, com as seguintes linhas de comando:
+5) Agora, como mexemos em recursos nativos, temos que "reinstalar" essas novas atualizações em nosso app, com as seguintes linhas de comando:
 
 ```powershell
 yarn android
@@ -180,9 +180,9 @@ Caso dentro de main possua a pasta assets e dentro dela nossa pasta de fontes, s
 
 ![Android fonts](assets/img/android-fonts.png "Android fonts")
 
-6. Passo caso você tenha ambiente do iOS
+6) Passo para realizar apenas se você utilizar ambiente iOS
 
-Fontes conferidas com sucesso, agora é só utilizá-las, e para isso, primeiro preciso explicar de uma pequena diferença que existe entre o Android e o iOS.
+Fontes conferidas com sucesso, agora é só utilizá-las, e para isso, primeiro preciso explicar uma pequena diferença que existe entre o Android e o iOS em relação aos nomes de fontes.
 
 Pode ser que em uma determinada fonte, tenha seu nome no iOS diferente do nome do arquivo baixado, e esse nome é utilizado no Android. Com isso, quem possuir ambiente iOS, é recomendado ir até o programa **Catálogo de Fontes** e procurar pelas fontes que baixamos no passo 2.
 
@@ -194,11 +194,11 @@ Quando clicamos em cima da fonte Montserrat Normal, ao analisarmos o **Nome Post
 
 ![](assets/img/fonts-app.png)
 
-É importante conferirmos esse passo quando temos o iOS, pois caso aqui o nome da fonte seja diferente do que colocamos em nosso projeto, é aconselhado que mudemos o nome do .ttf que está dentro do projeto, deixando igual ao do iOS, pois mudar o nome aqui dentro do Catálogo de fontes é mais difícil.
+É importante conferirmos esse passo quando temos o iOS, pois caso aqui o nome da fonte seja diferente do que colocamos em nosso projeto, é aconselhado que mudemos o nome do .ttf que está dentro do projeto, colocando igual ao nome dentro do catálogo iOS, pois editar o nome em Catálogo de fontes é mais difícil.
 
 Porque disso? Porque quando vamos utilizar a fonte em nosso código, utilizamos um mesmo nome para os dois sistemas operacionais.
 
-7. Agora vamos voltar ao nosso arquivo `App.tsx` , dentro do nosso objeto de estilo text, e adicionaremos a propriedade fontFamily: 'Montserrat-Regular' e setaremos o valor de 20 para nosso fontSize.
+7) Agora vamos voltar ao nosso arquivo `App.tsx` , onde dentro do nosso objeto de estilo text, adicionaremos a propriedade `fontFamily: 'Montserrat-Regular'` e setaremos o valor de 20 para nosso fontSize.
 
 ```typescript
 import React from 'react';
@@ -240,6 +240,6 @@ Passei o fim do ano passado planejando os novos artigos para o ano de 2021 e qui
 
 Como dica final para os ensinamentos de hoje, crie um repositório em seu Github e coloque nosso app, pois nos próximos artigos iremos evoluir ele ainda mais.
 
-Vejo você em nosso próximo artigo/aula, pois nos próximos passos são entendermos o que são os componentes dentro do React Native e como podemos estilizá-los ainda mais!
+Vejo você em nosso próximo artigo/aula, pois nos próximos passos nós entenderemos o que são os componentes dentro do React Native e como podemos estilizá-los ainda mais!
 
 Até já!
