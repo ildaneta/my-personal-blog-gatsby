@@ -194,9 +194,9 @@ Quando clicamos em cima da fonte Montserrat Normal, ao analisarmos o **Nome Post
 
 ![](assets/img/fonts-app.png)
 
-É importante conferirmos esse passo quando temos o iOS, pois caso aqui o nome da fonte seja diferente do que colocamos em nosso projeto, é aconselhado que mudemos o nome do .ttf que está dentro do projeto, colocando igual ao nome dentro do catálogo iOS, pois editar o nome em Catálogo de fontes é mais difícil.
+É importante conferirmos esse passo quando temos o iOS, pois caso aqui o nome da fonte seja diferente do que colocamos em nosso projeto, é aconselhado que mudemos o nome do .ttf que está dentro do projeto, colocando igual ao nome dentro do catálogo de fontes do iOS, pois editar o nome do Catálogo de fontes é mais difícil.
 
-Porque disso? Porque quando vamos utilizar a fonte em nosso código, utilizamos um mesmo nome para os dois sistemas operacionais.
+Porque disso? Porque quando vamos utilizar uma fonte personalizada em nosso código, utilizamos um mesmo nome para os dois sistemas operacionais.
 
 7 - Agora vamos voltar ao nosso arquivo `App.tsx` , onde dentro do nosso objeto de estilo text, adicionaremos a propriedade `fontFamily: 'Montserrat-Regular'` e setaremos o valor de 20 para nosso fontSize.
 
