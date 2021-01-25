@@ -68,7 +68,7 @@ const AboutPage = () => (
 
     <AboutDescription>
       <AboutLink
-        href="https://www.linkedin.com/posts/ilda-silva-neta_rocketseat-spacesquad-desenvolvimentopessoal-activity-6663898502927646720-boHI"
+        href="https://www.linkedin.com/posts/ildaneta_spacesquad-rocketseat-desenvolvimentopessoal-activity-6663898502927646720-JC-9"
         target="_blank"
       >
         Recentemente também fui convidada para participar do Space Squad da
