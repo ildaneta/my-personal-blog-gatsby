@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Aprendendo a criar componentes e estilos no React Native
+title: Aprendendo a criar componentes e estilos no React Native - Parte II
 description: >-
-  Hoje iremos aprender um pouco mais sobre o React Native, e para isso,
-  entenderemos melhor o que são os componentes e como podemos estilizá-los!
+  Hoje iremos aprender um pouco mais sobre o React Native, continuando nossa
+  série de artigos, e para isso, entenderemos melhor o que são os componentes e
+  como podemos estilizá-los!
 date: '2021-02-03 05:57:55'
-thumbnail: assets/img/app-final.png
+thumbnail: assets/img/Captura de Tela 2021-02-03 às 19.12.24.png
 category: Dev
 background: '#CD4C51'
 ---
-![Imagem final](assets/img/app-final.png "Imagem final")
+![Imagem final](assets/img/Captura de Tela 2021-02-03 às 19.12.24.png "Imagem final")
 
 Continuando nosso artigo que nos ensina a startar um projeto React Native e a inserir fontes externas, hoje iremos avançar um pouco mais nossos conhecimentos, onde desvendaremos o que são os famosos componentes e como podemos deixá-los ainda mais bonitos, adicionando estilos.
 
@@ -545,8 +546,6 @@ E para isso, seguiremos mais um passo a passo abaixo.
 Assim, quando clicamos em cima de um arquivo, ele faz uma comparação do que existia antes nesse arquivo que queremos commitar, e o que colocamos dentro dele, como um git diff.
 
 Abaixo deixo um pequeno vídeo onde commito as alterações de nossa Screen Main:
-
-
 
 ![106799305-dc4cf000-663d-11eb-9e6e-4b8e6f539433](https://user-images.githubusercontent.com/21963291/106812664-c09e1580-664e-11eb-8331-e3a009bb0387.gif)
 
