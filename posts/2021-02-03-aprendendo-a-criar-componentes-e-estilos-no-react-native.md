@@ -362,3 +362,228 @@ O que melhoramos no código acima é que desestruturamos a propriedade de dentro
 Como já sabemos, o React Native é apenas um framework que nos auxilia na produção da aplicação, mas ter a base Javascript é sumamente indispensável, por isso, aconselho a estudar mais sobre desestruturações, manipulações de arrays e spread and rest operators.
 
 Mesmo realizando essa desestruturação, nossa prop está sem tipagem, o que faz o código ficar com esse alerta:
+
+![](assets/img/06.png)
+
+Basicamente o ESLint está nos alertando: o **headerTitle** precisa ser tipado.
+
+Para isso, criaremos uma interface chamada **IHeader**, a letra i que antecede o nome da tipagem é uma boa prática para que você saiba que essa tipagem é do tipo interface, pois poderemos ter outros tipos como enums.
+
+```tsx
+import React from 'react';
+import { Text } from 'react-native';
+
+import { styles } from './styles';
+
+interface IHeader {
+  headerTitle: string;
+}
+
+const Header = ({ headerTitle }: IHeader): JSX.Element => {
+  return <Text style={styles.textHeader}>{headerTitle}</Text>;
+};
+
+export default Header;
+```
+
+Uma interface basicamente serve para tipar itens contidos em objetos, e no código acima vemos que dentro da interface **IHeader** adicionamos a propriedade **headerTitle** que receberá um valor do tipo **string**.
+
+Essa é uma tipagem relativamente simples, mas caso seja sua primeira vez visualizando-a, ou caso você deseje se aprofundar mais no assunto, deixo o conteúdo abaixo sobre o TypeScript:
+
+[](https://www.typescriptlang.org/docs/handbook/basic-types.html)<https://www.typescriptlang.org/docs/handbook/basic-types.html>
+
+[](https://blog.rocketseat.com.br/typescript-vantagens-mitos-conceitos/)<https://blog.rocketseat.com.br/typescript-vantagens-mitos-conceitos/>
+
+Agora se voltamos ao nosso arquivo `App.tsx`, veremos que nosso componente `<Header />` ficará vermelho, indicando que temos um erro que pode ser visto ao passamos o mouse em cima do componente:
+
+![](assets/img/07.png)
+
+A mensagem nos diz que esse componente agora espera uma propriedade obrigatória chamada **headerTitle**, e com isso, podemos complementar nosso componente da seguinte forma:
+
+```tsx
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+
+import Header from './src/components/header/Header';
+
+const App = (): JSX.Element => {
+  return (
+    <SafeAreaView>
+      <Header headerTitle="ToDo App" />
+    </SafeAreaView>
+  );
+};
+
+export default App;
+```
+
+Mas isso não é tudo o que precisamos para entendermos mais nossas propriedades. Por exemplo, vocês se questionaram qual a razão de utilizarmos uma prop? Não poderíamos ter deixado com o texto fixo, como estava antes?
+
+E é aí que vem o pulo do gato rs, quando utilizamos uma propriedade, geralmente estamos querendo uma informação ou característica que seja passível de ser alterada dentro do componente. Se deixássemos nosso componente **Header** da forma que estava antes, sempre que fôssemos utilizá-lo teríamos o mesmo texto: *ToDo App*, pois esse texto estava fixo dentro dele.
+
+Agora, como utilizamos uma propriedade, toda vez que o componente **Header** for ser utilizado, será necessário informar a propriedade **headerTitle** que poderá assumir qualquer valor do tipo string. Com isso, conseguimos deixar nosso componente um pouco mais maleável a alterações, sem que precisemos ir dentro do componente alterar.
+
+Outra curiosidade sobre as props é que, existe uma prop especial, chamada children. Quando utilizamos essa prop, ela pega o valor que está entre a abertura e fechamento da tag do componente, diferente de quando criamos outras propriedades, que vão dentro da tag. Parece um pouco complexo ne, mas seria essa a diferença:
+
+Dentro do componente Header, a declaração da prop continua a mesma:
+
+```tsx
+import React from 'react';
+import { Text } from 'react-native';
+
+import { styles } from './styles';
+
+interface IHeader {
+  children: string;
+}
+
+const Header = ({ children }: IHeader): JSX.Element => {
+  return <Text style={styles.textHeader}>{children}</Text>;
+};
+
+export default Header;
+```
+
+O que muda é onde utilizamos o componente, quando utilizamos a prop children, a tag passa a não fechar nela mesma, mas vira uma tag com abertura e fechamento:
+
+```tsx
+// Utilizando a prop children
+<Header>ToDo App</Header>
+
+// Utilizando a prop headerTitle
+<Header headerTitle="ToDo App" />
+```
+
+Particularmente gosto de utilizar quando a tag fecha nela mesma, conforme fizemos em nosso Header utilizando a prop headerTitle.
+
+Acredito que pudemos aprender bastante hoje, e apesar do artigo ter ficado maior do que pensava, vamos finalizar os conhecimentos de hoje deixando nosso componente Header pronto para o próximo artigo, e adicionaremos também mais uma boa prática a seguir:
+
+1 - Voltaremos em nosso arquivo `Header.tsx` onde adicionaremos uma `<View>` que englobará nosso **Header** e adicionaremos também uma propriedade de **style** dentro da nossa View:
+
+```tsx
+import React from 'react';
+import { Text, View } from 'react-native';
+
+import { styles } from './styles';
+
+interface IHeader {
+  headerTitle: string;
+}
+
+const Header = ({ headerTitle }: IHeader): JSX.Element => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.textHeader}>{headerTitle}</Text>
+    </View>
+  );
+};
+
+export default Header;
+```
+
+2 - Agora iremos em nosso arquivo de `styles.ts` e criaremos nossos estilos:
+
+```tsx
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  textHeader: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 22,
+    color: '#fff',
+  },
+
+  container: {
+    backgroundColor: '#f26',
+    marginBottom: 20,
+    height: 60,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+```
+
+Quando salvarmos os arquivos, já poderemos ver o resultado em nosso emulador:
+
+![](assets/img/09.png)
+
+Agora estamos pertinho de acabar, por isso, não é uma boa prática montarmos componentes e telas diretamente em nosso arquivo `App.tsx`, porque esse é o principal arquivo de nossa aplicação. Com isso, vamos até nossa pasta de screens e criaremos uma pasta para nossa page **Main**, seguindo a mesma estrutura de componentes:
+
+Pasta Main → criar dentro dela os arquivos `Main.tsx` e `styles.ts`
+
+![](assets/img/010.png)
+
+```tsx
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+
+import Main from './src/screens/main/Main';
+
+const App = (): JSX.Element => {
+  return (
+    <SafeAreaView>
+      <Main />
+    </SafeAreaView>
+  );
+};
+
+export default App;
+```
+
+E nosso componente continuará sendo exibido em nossa aplicação:
+
+![](assets/img/09.png)
+
+Por fim, mas não menos importante, como terminamos a parte de código, agora chega o momento de commitarmos nossas alterações de código, e posteriormente realizar o merge dessa branch em nossa branch master.
+
+E para isso, seguiremos mais um passo a passo abaixo.
+
+1 - Começaremos commitando nossas alterações, e como eu possuo a extensão do GitLens em meu VSCode, consigo commitar por dentro dele mesmo, pois a extensão me oferece uma aba do Git do lado esquerdo do VSCode:
+
+![](assets/img/011.png)
+
+Assim, quando clicamos em cima de um arquivo, ele faz uma comparação do que existia antes nesse arquivo que queremos commitar, e o que colocamos dentro dele, como um git diff.
+
+Abaixo deixo um pequeno vídeo onde commito as alterações de nossa Screen Main:
+
+
+
+![106799305-dc4cf000-663d-11eb-9e6e-4b8e6f539433](https://user-images.githubusercontent.com/21963291/106812664-c09e1580-664e-11eb-8331-e3a009bb0387.gif)
+
+2 - Após commitarmos nossos arquivos, abriremos nosso terminal e digitaremos a linha de comando `git push` para que possamos enviar nosso código local de fato para nosso git.
+
+O próprio Git nos sugere o comando de `—-set-upstream`, que é um comando que define a ramificação remota padrão para a ramificação atual, basta copiarmos esse comando sugerido, rodarmos e assim realizaremos o push de nossas modificações. Caso desejem também se aprofundar nesse ponto, deixo abaixo a documentação de ramificações do Git:
+
+[](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches)<https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches>
+
+3 - Após commitarmos e de fato enviarmos nosso código para o Git, teremos que mergiar nossas alterações com o conteúdo contido na master de nosso projeto. Você pode fazer isso por linhas de comando ou dentro do Github.
+
+Para fazer dentro do Github, basta acessar o repositório do nosso projeto que você já verá a seguinte mensagem:
+
+![](assets/img/012.png)
+
+Com isso, basta clicar no botão de Compare & pull request que será exibida uma página com todas as alterações que realizamos, e assim poderemos criar nosso pull request:
+
+![](assets/img/013.png)
+
+Com o pull request criado, podemos enviá-lo a amigos que possam realizar um breve code review de nossa aplicação. Posteriormente, nos será exibida uma nova tela para conferirmos os commits que fizemos e aprovar o pull request para nossa branch master.
+
+Assim que o código for mergeado, aparecerá em tela:
+
+![](assets/img/014.png)
+
+Agora sim, código mergeado com sucesso, nossos aprendizados já foram para a branch master de nossa aplicação!
+
+Fazendo então um breve resumo do artigo de hoje, pudemos aprender sobre os seguintes tópicos:
+
+* Como criar uma nova branch de desenvolvimento
+* Conceitos de como nossa interface é compilada para widgets nativos e como nosso código Javascript vai parar em nosso dispositivo
+* Conceitos de tags no React Native
+* Como criar componentes e estilos
+* Como mergear nosso código em outra branch
+
+Agradeço imensamente a todos(as) que tenham chegado até aqui e como sempre menciono a vocês, espero que esse artigo desperte ainda mais sua curiosidade e a vontade de aprender cada vez mais.
+
+Além disso, esse artigo foi um grande desafio pra mim, pois explicar com palavras o que geralmente é feito em vídeo, acabou sendo bem desafiador, por isso, caso ainda surjam dúvidas ou tenha ficado alguma dúvida que não salientei no artigo, não hesite em me procurar. Será um prazer auxiliá-los(as)!
+
+Nós vemos no próximo artigo onde criaremos o restante de nossos componentes! Até lá!
