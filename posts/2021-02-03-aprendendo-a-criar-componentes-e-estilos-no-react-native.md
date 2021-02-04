@@ -50,7 +50,7 @@ Agora que já sabemos a nomenclatura, vamos começar a digitar as linhas de coma
 
 ![](assets/img/1.png)
 
-Então vamos criar nossa nova branch, onde iremos aprender sobre criação de componentes e estilos, sugiro o nome abaixo, mas vocês podem nomear da forma que acharem mais agradável, o que cito aqui são apenas segestões:
+Então vamos criar nossa nova branch, onde iremos aprender sobre criação de componentes e estilos, sugiro o nome abaixo, mas vocês podem nomear da forma que acharem mais agradável, o que cito aqui são apenas sugestões:
 
 ```powershell
 git checkout -b feat/TodoApp/Criando-componentes-e-estilos
