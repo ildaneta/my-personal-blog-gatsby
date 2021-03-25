@@ -37,7 +37,7 @@ Então acredito que esse pode ser um excelente motivo para iniciarmos nosso apre
 
 O DS é um produto vivo, ou seja, que constantemente pode ser melhorado e evoluído, alem de ser um produto que serve outros produtos, de forma dinâmica.
 
-Nesse produto teremos regras, componentes, tipografias, cores, padrões de uso, responsividade, tamanhos... um conjunto de ferramentas que vão nos ajudar a ter mais consistência nos projetos que utilizarmos o DS e um alto ganho de usabilidade.
+Nesse produto teremos regras, componentes, tipografias, cores, padrões de uso, responsividade, tamanhos... Essas regras e especificações irão nos auxiliar a termos mais consistência nos projetos que utilizarmos o DS, ganhando então uma enorme usabilidade e ganho de experiência.
 
 ### Quais são os passos para a construção de um DS?
 
@@ -75,7 +75,7 @@ Sobre os benefícios de termos um DS, gostaria de comentar um pouco mais sobre o
 
 Quando mantemos a consistência visual de nossas aplicações como por exemplo através de tipografias, cores e componentes, que partem do mesmo princípio visual, estamos construindo a marca de nossa companhia e consequentemente de nosso produto.
 
-Muitas vezes associamos a segurança apenas ao mantermos controles para invasões por exemplo, mas quando mantemos uma identidade visual consistente, estamos associando essa imagem ao que queremos transmitir com nosso produto/aplicação.
+Muitas vezes associamos a segurança apenas ao mantermos controles para invasões por exemplo, mas quando mantemos uma identidade visual consistente, estamos associando essa imagem ao que queremos transmitir com nosso produto/aplicação, passando assim ainda mais segurança para nossos usuários.
 
 ## Como podemos dar vida a um DS?
 
@@ -84,8 +84,6 @@ Geralmente um DS cria vida através da criação de uma biblioteca de componente
 * Utilizarmos variáveis (chamados tokens pelos designers) para dimensões, cores e fontes, pois caso o DS evolua e mude pequenas regras, nosso código precisa se adaptar de forma eficiente e ágil;
 
 ![](assets/img/Tokens-Design-System.png)
-
-
 
 * Utilizarmos boas práticas no desenvolvimento dessa lib, pois o DS é um projeto igual a outros, onde devemos utilizar commits semânticos, testes...
 * Realizar code review, para auxiliar na manutenção dessa biblioteca, pois outros projetos estarão utilizando esse produto, e manter a consistência do código, auxilia a manter o DS "vivo";
