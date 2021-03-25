@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A construcao do Design System na visao dos devs
+title: A construção do Design System na visão dos devs
 description: >-
   Iremos descobrir um pouco mais sobre o Design System, e como nós devs podemos
   dar vida a esse produto incrível.
@@ -11,15 +11,15 @@ background: '#CD4C51'
 ---
 ![](assets/img/Rectangle 4.png)
 
-Atuando como dev mobile no banco, sou focada na experiência e usabilidade dos usuários. Assim trabalhamos juntamente com os designers, pensando em como podemos deixar nossa aplicação ainda mais acessível a quem estiver utilizando-a.
+Atuando como dev mobile no banco, sou focada na experiência e usabilidade dos usuários. Assim, trabalhamos juntamente com os designers, pensando em como podemos deixar nossa aplicação ainda mais acessível a quem estiver utilizando-a.
 
 No início de minha carreira em tecnologia, aos 18 anos, meu primeiro emprego foi como analista de processos, onde eu era responsável por realizar levantamentos de requisitos junto ao cliente e stakeholders, transcrever a documentação utilizando a notação BPMN e posteriormente treinar nossos usuários para que eles pudessem ler e entender essa documentação, pois o próximo passo após os requisitos serem aprovados, era iniciar o desenvolvimento de software.
 
 Nesta empresa, atuava em um departamento que automatizava processos, ou seja, transformávamos atividades que eram realizadas de forma manual em sistemas automatizados. Então, acredito que com toda essa experiência que possuí lidando diretamente com nossos usuários, além de posteriormente atuar como analista de suporte, fez com que eu direcionasse minha carreira de desenvolvedora tendo justamente esse foco no usuário e na experiência, me preocupando sempre no impacto que proporciono através das telas e códigos que produzo.
 
-Na minha visão, entender sobre o negócio deixou de ser um papel apenas do PO (Product Owner) do produto, ou designers. Acredito no real impacto que causamos na vida das pessoas, e uma forma de demonstrar isso é através das interfaces das aplicações que criamos.
+Na minha visão, entender sobre o negócio deixou de ser um papel apenas do PO (Product Owner) do produto, ou designers. Acredito no real impacto que causamos na vida das pessoas, e uma forma de demonstrar isso é através das interfaces das aplicações que criamos, pois nosso usuário final não consegue saber como o código foi desenvolvido, mas consegue entender se aquela interface facilita ou não sua usabilidade.
 
-Ao longo desse artigo estarei dando minha opinião sobre esse assunto que vejo ainda mais relevante devido as aplicações frontend estarem se tornando cada vez mais complexas e robustas, e também porque muitos conteúdos que vejo sobre Design system sempre estão baseados na visão do designer (que é muito importante), mas acredito que podemos construir uma boa visão juntos sobre o tema, e para isso é preciso enxergarmos todos os benefícios de termos um DS e qual o nosso papel nessa jornada.
+Ao longo desse artigo estarei dando minha opinião sobre esse assunto que vejo ainda mais relevante devido as aplicações frontend estarem se tornando cada vez mais complexas e robustas, e também porque muitos conteúdos que vejo sobre Design System sempre estão baseados na visão do designer (que é muito importante), mas acredito que podemos construir uma boa visão juntos sobre o tema, e para isso é preciso enxergarmos todos os benefícios de termos um DS e qual o nosso papel nessa jornada.
 
 ## Diferentes tipos de carreira
 
@@ -27,7 +27,7 @@ Antes de começarmos a entender o Design System, é importante termos a visão d
 
 Mas em que se conecta nosso tipo de carreira ao Design System?
 
-Como vocês sabem, e já comentei em outros artigos, gosto de planejar, criar metas, objetivos a serem concluídos, e com minha carreira não é diferente. Tenho seguido a carreira T, e uma premissa para essa carreira, é o profissional buscar obter conhecimento em outros assuntos de forma mais profunda, e no meu caso, estudo assuntos relacionados ao design, interfaces e usuários... Mas existem infinitas possibilidades, como seguir uma carreira técnica e de gestão ao mesmo tempo. Para entender um pouco mais sobre esses novos tipos de carreiras, deixarei no final do artigo alguns conteúdos para vocês se aprofundarem posteriormente.
+Como vocês sabem, e já comentei em outros artigos, gosto de planejar e pensar em minha carreira a longo prazo. Tenho seguido a carreira T, e uma premissa para ela, é o profissional buscar obter conhecimento em outros assuntos de forma mais profunda, e no meu caso, constantemente estudo sobre assuntos relacionados ao design, interfaces e usuários... Mas existem infinitas possibilidades, como seguir uma carreira técnica e de gestão ao mesmo tempo. Para entender um pouco mais sobre esses novos tipos de carreiras, deixarei no final do artigo alguns conteúdos para vocês se aprofundarem posteriormente.
 
 Outro ponto em comum entre esses novos tipos de carreiras é manter a consistência em obter aprendizados e soft skills, além da parte técnica.
 
@@ -53,7 +53,7 @@ Esses são apenas alguns passos, e como foi perceptível, é necessário realmen
 
 Mas vocês já pensaram em qual é o nosso papel como devs na criação do Design System?
 
-A Meiuca é uma empresa referência em Design Systems e citam: "Se não tem nada em código, então você não tem um DS", ou seja, apesar de ter Design no nome, não significa que apenas eles criam o produto, ou seja, para o DS efetivamente existir e poder ser colocado em prática em projetos, nós devs temos que codificá-lo.
+A Meiuca é uma empresa referência em Design Systems e citam: "Se não tem nada em código, então você não tem um DS", ou seja, apesar de ter Design no nome, não significa que apenas eles criam o produto. Sendo assim, para o DS efetivamente existir e poder ser colocado em prática em projetos, nós devs temos que codificá-lo.
 
 ## Quais os benefícios do Design System?
 
@@ -79,24 +79,29 @@ Muitas vezes associamos a segurança apenas ao mantermos controles para invasõe
 
 ## Como podemos dar vida a um DS?
 
-Geralmente um DS cria vida através da criação de uma biblioteca de componentes, que segue um conjunto de regras. Mas para que esse DS realmente seja fiel ao proposto e consiga transmitir tudo o que foi idealizado pelo time de design, temos que seguir algumas boas práticas no desenvolvimento desse código, como por exemplo:
+Geralmente um DS cria vida através da criação de uma biblioteca de componentes, que segue um conjunto de regras pré determinadas. Mas para que esse DS realmente seja fiel ao proposto e consiga transmitir tudo o que foi idealizado pelo time de design, temos que seguir algumas boas práticas no desenvolvimento desse código, como por exemplo:
 
-* Utilizarmos variáveis para dimensões, cores e fontes, pois caso o DS evolua e mude pequenas regras, nosso código precisa se adaptar de forma eficiente e ágil;
-* Utilizarmos boas práticas no desenvolvimento dessa lib, pois o DS é um projeto igual a outros, onde devemos utilizar commits semânticos, princípios da programação como o SOLID, testes...
+* Utilizarmos variáveis (chamados tokens pelos designers) para dimensões, cores e fontes, pois caso o DS evolua e mude pequenas regras, nosso código precisa se adaptar de forma eficiente e ágil;
+
+![](assets/img/Tokens-Design-System.png)
+
+
+
+* Utilizarmos boas práticas no desenvolvimento dessa lib, pois o DS é um projeto igual a outros, onde devemos utilizar commits semânticos, testes...
 * Realizar code review, para auxiliar na manutenção dessa biblioteca, pois outros projetos estarão utilizando esse produto, e manter a consistência do código, auxilia a manter o DS "vivo";
 * Pensarmos nos comportamentos que esses componentes terão de forma particular e criarmos propriedades que não comprometam a qualidade dos mesmos, em resumo, manter a qualidade do código e permitir que seu componente se adeque a comportamentos diferentes.
 
-Seguirmos boas práticas no desenvolvimento dos códigos que produzimos não nos auxilia apenas na criação do DS, mas no nosso crescimento profissional também. É importante mantermos o olhar do impacto que causamos na vida das pessoas através do que entregamos, e a melhor forma de medir isso é visualmente.
+Seguirmos boas práticas no desenvolvimento dos códigos que produzimos não nos auxilia apenas na criação do DS, mas no nosso crescimento profissional também. É importante mantermos o olhar do impacto que causamos na vida das pessoas através do que entregamos, e a melhor forma de medir isso é através do código que criamos.
 
-Acredito que meu maior intuito com esse artigo é mostrar novas visões e novas formas de aprendizado, e nada melhor do que unirmos esse conhecimento a forma que trabalhamos.
+Acredito que meu maior intuito com esse artigo é mostrar que juntos podemos construir novas visões e novas formas de visualizarmos o que estamos em constante contato.
 
 E para nós devs mobile, frontend, entendermos sobre interfaces, usabilidade e a experiência de nossos usuários tem sido um requisito cada vez mais relevante para esses cargos.
 
-E você já teve a oportunidade de criar um Design system ou de utilizá-lo?
+E você já teve a oportunidade de criar um Design System ou de utilizá-lo?
 
 Espero que esse artigo aguce ainda mais sua curiosidade e aumente sua vontade de explorar outros assuntos em nosso incrível mundo de desenvolvimento.
 
-Para que vocês saibam ainda mais sobre o assunto, deixo abaixo o link onde meus amigos amigos designers Bruno Ranieri e Nickolas Gomes participam de um podcast e trazem muitos insights legais sobre o tema.
+Para que vocês saibam ainda mais sobre o assunto, deixo abaixo o link onde meus amigos amigos designers Bruno Ranieri e Nickolas Gomes participaram de um podcast e trouxeram muitos insights sobre o tema.
 
 Gostaria também de agradecer meu amigo designer Grizilli que me trouxe muitas dicas para esse artigo, além de me auxiliar no card de divulgação do LinkedIn.
 
