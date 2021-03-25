@@ -103,7 +103,8 @@ Para que vocês saibam ainda mais sobre o assunto, deixo abaixo o link onde meus
 
 Gostaria também de agradecer meu amigo designer Grizilli que me trouxe muitas dicas para esse artigo, além de me auxiliar no card de divulgação do LinkedIn.
 
-\
+Links para aprofundarmos nosso conhecimento:\
 [Podcast Lambda 3 - Design System](https://open.spotify.com/episode/6vECz1EcQPn4j2Qank8WiS?si=j-X1rEQOTtKAisC2ycG9Vw)\
 [Design System na visão da Meiuca - Artigo](https://medium.com/meiuca/1-design-system-na-vis%C3%A3o-da-meiuca-cc0d67aa8d1b)\
-[Como o Design System pode transformar seu produto digital - Artigo](https://medium.com/flowestudio/como-design-system-pode-revolucionar-seu-produto-digital-5b79a2d05f75)
+[Como o Design System pode transformar seu produto digital - Artigo](https://medium.com/flowestudio/como-design-system-pode-revolucionar-seu-produto-digital-5b79a2d05f75)\
+[Tipos de carreira - Artigo](https://site-v1.gama.academy/blog/carreira/tipos-de-carreira/)
