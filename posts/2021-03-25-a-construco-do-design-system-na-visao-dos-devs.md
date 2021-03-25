@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A construco do Design System na visao dos devs
+title: A construcao do Design System na visao dos devs
 description: >-
   Iremos descobrir um pouco mais sobre o Design System, e como nós devs podemos
   dar vida a esse produto incrível.
