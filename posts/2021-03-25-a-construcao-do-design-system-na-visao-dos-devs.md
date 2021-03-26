@@ -39,15 +39,15 @@ O DS é um produto vivo, ou seja, que constantemente pode ser melhorado e evolu�
 
 Nesse produto teremos regras, componentes, tipografias, cores, padrões de uso, responsividade, tamanhos... Essas regras e especificações irão nos auxiliar a termos mais consistência nos projetos que utilizarmos o DS, ganhando então uma enorme usabilidade e ganho de experiência.
 
-### Quais são os passos para a construção de um DS?
+## Quais são os passos para a construção de um DS?
 
 A construção de um DS é um projeto que leva um tempo considerável, pois os designers tem que passar por todo um step-by-step, como por exemplo:
 
-* Realizar uma imersão para entendimento dos usuários e stakeholders
-* Início da ideação do design
-* Testes de usabilidade
-* Criação de telas
-* Handoff com a equipe de desenvolvimento
+* Realizar uma imersão para entendimento dos usuários e stakeholders;
+* Início da ideação do design;
+* Testes de usabilidade;
+* Criação de telas;
+* Handoff com a equipe de desenvolvimento;
 
 Esses são apenas alguns passos, e como foi perceptível, é necessário realmente uma imersão e entendimento para a criação de um DS por parte dos designers.
 
@@ -65,9 +65,9 @@ São eles:
 * Aumentar a escalabilidade de um projeto;
 * Facilitar mudanças de interfaces;
 * Consistência na experiência do usuário e código;
-* Possibilitar aos desenvolvedores(es) em projetos que utilizam o DS, manter um foco maior nas regras de negócio;
-* Previnir código duplicado (muito comumente vemos componentes duplicados, quando não temos uma fonte única de verdade, como o DS);
-* Melhorar comunicação entre as equipes, pois sendo o DS nossa fonte de busca e verdade para mantermos a consistência visual, as equipes estarão mais alinhadas para a chegada de novos integrantes na equipe;
+* Possibilitar aos desenvolvedores em projetos que utilizam o DS, manter um foco maior nas regras de negócio;
+* Prevenir código duplicado (muito comumente vemos componentes duplicados, quando não temos uma fonte única de verdade, como o DS);
+* Melhorar a comunicação entre as equipes, pois sendo o DS nossa fonte de busca e verdade para mantermos a consistência visual, as equipes estarão mais alinhadas para a chegada de novos integrantes no projeto;
 * Aumenta a disseminação de conhecimento e compartilhamento sobre experiências visuais, tendo como centro a construção da identidade visual do produto/empresa;
 * Segurança para o usuário utilizar a aplicação;
 
@@ -81,7 +81,7 @@ Muitas vezes associamos a segurança apenas ao mantermos controles para invasõe
 
 Geralmente um DS cria vida através da criação de uma biblioteca de componentes, que segue um conjunto de regras pré determinadas. Mas para que esse DS realmente seja fiel ao proposto e consiga transmitir tudo o que foi idealizado pelo time de design, temos que seguir algumas boas práticas no desenvolvimento desse código, como por exemplo:
 
-* Utilizarmos variáveis (chamados tokens pelos designers) para dimensões, cores e fontes, pois caso o DS evolua e mude pequenas regras, nosso código precisa se adaptar de forma eficiente e ágil;
+* Utilizarmos variáveis (chamados tokens pelos designers) para dimensões, cores e fontes, pois caso o DS evolua e mude pequenas regras, nosso código precisa se adaptar de forma eficiente e ágil. Além disso, quando utilizamos esses tokens, mudamos o valor em apenas um arquivo e todos os lugares que estiverem utilizando-o será automaticamente mudado também, conforme vemos na imagem abaixo:
 
 ![](assets/img/Tokens-Design-System.png)
 
@@ -99,7 +99,7 @@ E você já teve a oportunidade de criar um Design System ou de utilizá-lo?
 
 Espero que esse artigo aguce ainda mais sua curiosidade e aumente sua vontade de explorar outros assuntos em nosso incrível mundo de desenvolvimento.
 
-Para que vocês saibam ainda mais sobre o assunto, deixo abaixo o link onde meus amigos amigos designers Bruno Ranieri e Nickolas Gomes participaram de um podcast e trouxeram muitos insights sobre o tema.
+Para que vocês saibam ainda mais sobre o assunto, deixo abaixo o link onde meus amigos designers Bruno Ranieri e Nickolas Gomes participaram de um podcast e trouxeram muitos insights sobre o tema.
 
 Gostaria também de agradecer meu amigo designer Grizilli que me trouxe muitas dicas para esse artigo, além de me auxiliar no card de divulgação do LinkedIn.
 
