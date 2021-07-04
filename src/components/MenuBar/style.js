@@ -82,6 +82,11 @@ export const MenuBarItem = styled.span`
     height: 27px;
   }
 
+  .aboutMe {
+    width: 30px;
+    height: 27px;
+  }
+
   .light {
     width: 25px;
     height: 25px;
@@ -110,7 +115,6 @@ export const MenuBarItem = styled.span`
     }
   `}
   ${media.lessThan('large')`
-    height: 3.2rem;
     padding: .9rem;
     position: relative;
     width: 3.2rem;
