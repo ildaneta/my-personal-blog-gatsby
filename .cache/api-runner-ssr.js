@@ -1,20 +1,20 @@
 var plugins = [{
-      plugin: require('/Users/ildaneta/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-transition-link/gatsby-ssr'),
+      plugin: require('/Users/ildaneta/Documents/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-transition-link/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/ildaneta/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/Users/ildaneta/Documents/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/ildaneta/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/ildaneta/Documents/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/ildaneta/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/Users/ildaneta/Documents/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-120929041-1","head":false,"anonymize":true,"respectDNT":true,"exclude":["/preview/**","/do-not-track/me/too/"],"pageTransitionDelay":0,"optimizeId":"YOUR_GOOGLE_OPTIMIZE_TRACKING_ID","experimentId":"YOUR_GOOGLE_EXPERIMENT_ID","variationId":"YOUR_GOOGLE_OPTIMIZE_VARIATION_ID","defer":false,"sampleRate":5,"siteSpeedSampleRate":10,"cookieDomain":"example.com"},
     },{
-      plugin: require('/Users/ildaneta/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/ildaneta/Documents/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Ilda Neta","short_name":"Ilda neta","start_url":"/","background_color":"#191921;","theme_color":"#191921;","display":"minimal-ui","icon":"src/images/favicon.png"},
     },{
-      plugin: require('/Users/ildaneta/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/Users/ildaneta/Documents/Github/my-personal-blog-gatsby/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
