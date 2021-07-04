@@ -12,11 +12,14 @@ const {
   flattenDeep,
   replace,
   concat,
+  memoize,
 } = require(`lodash`)
 
+const { RouteAnnouncerProps } = require(`./route-announcer-props`)
 const apiRunner = require(`./api-runner-ssr`)
-const syncRequires = require(`./sync-requires`)
+const syncRequires = require(`$virtual/sync-requires`)
 const { version: gatsbyVersion } = require(`gatsby/package.json`)
+const { grabMatchParams } = require(`./find-path`)
 
 const stats = JSON.parse(
   fs.readFileSync(`${process.cwd()}/public/webpack.stats.json`, `utf-8`)
@@ -59,10 +62,40 @@ const getPageDataUrl = pagePath => {
   return `${__PATH_PREFIX__}/${pageDataPath}`
 }
 
-const getPageDataFile = pagePath => {
+const getStaticQueryUrl = hash =>
+  `${__PATH_PREFIX__}/page-data/sq/d/${hash}.json`
+
+const getPageData = pagePath => {
   const pageDataPath = getPageDataPath(pagePath)
-  return join(process.cwd(), `public`, pageDataPath)
+  const absolutePageDataPath = join(process.cwd(), `public`, pageDataPath)
+  const pageDataRaw = fs.readFileSync(absolutePageDataPath)
+
+  try {
+    return JSON.parse(pageDataRaw.toString())
+  } catch (err) {
+    return null
+  }
 }
+
+const appDataPath = join(`page-data`, `app-data.json`)
+
+const getAppDataUrl = memoize(() => {
+  let appData
+
+  try {
+    const absoluteAppDataPath = join(process.cwd(), `public`, appDataPath)
+    const appDataRaw = fs.readFileSync(absoluteAppDataPath)
+    appData = JSON.parse(appDataRaw.toString())
+
+    if (!appData) {
+      return null
+    }
+  } catch (err) {
+    return null
+  }
+
+  return `${__PATH_PREFIX__}/${appDataPath}`
+})
 
 const loadPageDataSync = pagePath => {
   const pageDataPath = getPageDataPath(pagePath)
@@ -167,16 +200,24 @@ export default (pagePath, callback) => {
     postBodyComponents = sanitizeComponents(components)
   }
 
-  const pageDataRaw = fs.readFileSync(getPageDataFile(pagePath))
-  const pageData = JSON.parse(pageDataRaw)
+  const pageData = getPageData(pagePath)
   const pageDataUrl = getPageDataUrl(pagePath)
-  const { componentChunkName } = pageData
+
+  const appDataUrl = getAppDataUrl()
+
+  const { componentChunkName, staticQueryHashes = [] } = pageData
+
+  const staticQueryUrls = staticQueryHashes.map(getStaticQueryUrl)
 
   class RouteHandler extends React.Component {
     render() {
       const props = {
         ...this.props,
         ...pageData.result,
+        params: {
+          ...grabMatchParams(this.props.location.pathname),
+          ...(pageData.result?.pageContext?.__params || {}),
+        },
         // pathContext was deprecated in v2. Renamed to pageContext
         pathContext: pageData.result ? pageData.result.pageContext : undefined,
       }
@@ -199,17 +240,13 @@ export default (pagePath, callback) => {
     }
   }
 
-  const routerElement = createElement(
-    ServerLocation,
-    { url: `${__BASE_PATH__}${pagePath}` },
-    createElement(
-      Router,
-      {
-        id: `gatsby-focus-wrapper`,
-        baseuri: `${__BASE_PATH__}`,
-      },
-      createElement(RouteHandler, { path: `/*` })
-    )
+  const routerElement = (
+    <ServerLocation url={`${__BASE_PATH__}${pagePath}`}>
+      <Router id="gatsby-focus-wrapper" baseuri={__BASE_PATH__}>
+        <RouteHandler path="/*" />
+      </Router>
+      <div {...RouteAnnouncerProps} />
+    </ServerLocation>
   )
 
   const bodyComponent = apiRunner(
@@ -251,7 +288,7 @@ export default (pagePath, callback) => {
       const fetchKey = `assetsByChunkName[${s}]`
 
       let chunks = get(stats, fetchKey)
-      let namedChunkGroups = get(stats, `namedChunkGroups`)
+      const namedChunkGroups = get(stats, `namedChunkGroups`)
 
       if (!chunks) {
         return null
@@ -334,6 +371,29 @@ export default (pagePath, callback) => {
       />
     )
   }
+  staticQueryUrls.forEach(staticQueryUrl =>
+    headComponents.push(
+      <link
+        as="fetch"
+        rel="preload"
+        key={staticQueryUrl}
+        href={staticQueryUrl}
+        crossOrigin="anonymous"
+      />
+    )
+  )
+
+  if (appDataUrl) {
+    headComponents.push(
+      <link
+        as="fetch"
+        rel="preload"
+        key={appDataUrl}
+        href={appDataUrl}
+        crossOrigin="anonymous"
+      />
+    )
+  }
 
   styles
     .slice(0)
@@ -355,6 +415,7 @@ export default (pagePath, callback) => {
         headComponents.unshift(
           <style
             data-href={`${__PATH_PREFIX__}/${style.name}`}
+            id={`gatsby-global-css`}
             dangerouslySetInnerHTML={{
               __html: fs.readFileSync(
                 join(process.cwd(), `public`, style.name),
@@ -394,17 +455,29 @@ export default (pagePath, callback) => {
     />
   )
 
+  let bodyScripts = []
+  if (chunkMapping[`polyfill`]) {
+    chunkMapping[`polyfill`].forEach(script => {
+      const scriptPath = `${__PATH_PREFIX__}${script}`
+      bodyScripts.push(
+        <script key={scriptPath} src={scriptPath} noModule={true} />
+      )
+    })
+  }
+
   // Filter out prefetched bundles as adding them as a script tag
   // would force high priority fetching.
-  const bodyScripts = scripts
-    .filter(s => s.rel !== `prefetch`)
-    .map(s => {
-      const scriptPath = `${__PATH_PREFIX__}/${JSON.stringify(s.name).slice(
-        1,
-        -1
-      )}`
-      return <script key={scriptPath} src={scriptPath} async />
-    })
+  bodyScripts = bodyScripts.concat(
+    scripts
+      .filter(s => s.rel !== `prefetch`)
+      .map(s => {
+        const scriptPath = `${__PATH_PREFIX__}/${JSON.stringify(s.name).slice(
+          1,
+          -1
+        )}`
+        return <script key={scriptPath} src={scriptPath} async />
+      })
+  )
 
   postBodyComponents.push(...bodyScripts)
 

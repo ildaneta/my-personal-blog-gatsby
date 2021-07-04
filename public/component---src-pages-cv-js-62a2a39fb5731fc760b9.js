@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"4ngj":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("Zttt"),c=n("vrFN");t.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"Skills"}),l.a.createElement("h1",null,"Cv Page"))}}}]);
-//# sourceMappingURL=component---src-pages-cv-js-62a2a39fb5731fc760b9.js.map
