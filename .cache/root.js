@@ -11,10 +11,16 @@ import { apiRunner } from "./api-runner-browser"
 import loader from "./loader"
 import { PageQueryStore, StaticQueryStore } from "./query-result-store"
 import EnsureResources from "./ensure-resources"
-
+import FastRefreshOverlay from "./fast-refresh-overlay"
 import { reportError, clearError } from "./error-overlay-handler"
+import { LoadingIndicatorEventHandler } from "./loading-indicator"
 
-if (window.__webpack_hot_middleware_reporter__ !== undefined) {
+// TODO: Remove entire block when we make fast-refresh the default
+// In fast-refresh, this logic is all moved into the `error-overlay-handler`
+if (
+  window.__webpack_hot_middleware_reporter__ !== undefined &&
+  process.env.GATSBY_HOT_LOADER !== `fast-refresh`
+) {
   const overlayErrorID = `webpack`
   // Report build errors
   window.__webpack_hot_middleware_reporter__.useCustomOverlay({
@@ -130,4 +136,16 @@ const WrappedRoot = apiRunner(
   }
 ).pop()
 
-export default () => <StaticQueryStore>{WrappedRoot}</StaticQueryStore>
+const ConditionalFastRefreshOverlay = ({ children }) => {
+  if (process.env.GATSBY_HOT_LOADER === `fast-refresh`) {
+    return <FastRefreshOverlay>{children}</FastRefreshOverlay>
+  }
+
+  return <React.Fragment>{children}</React.Fragment>
+}
+
+export default () => (
+  <ConditionalFastRefreshOverlay>
+    <StaticQueryStore>{WrappedRoot}</StaticQueryStore>
+  </ConditionalFastRefreshOverlay>
+)

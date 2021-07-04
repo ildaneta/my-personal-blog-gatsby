@@ -2,20 +2,19 @@ import React, { useState, useEffect } from 'react';
 import getThemeColor from '../../utils/getThemeColor';
 import scrollToTop from '../../utils/scrollToTop';
 
-import { Grid } from '@styled-icons/feather/Grid';
-import { FormatListBulleted as List } from '@styled-icons/material/FormatListBulleted';
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2';
 import { CodeSSlash as Skills } from '@styled-icons/remix-fill/CodeSSlash';
 import { HomeHeart as Home } from '@styled-icons/boxicons-regular/HomeHeart';
 import { LightBulb } from '@styled-icons/octicons/LightBulb';
 import { Lightbulb } from '@styled-icons/fa-solid/Lightbulb';
+import { Person } from '@styled-icons/evaicons-solid/Person';
 import { ArrowUpward as ArrowUp } from '@styled-icons/material/ArrowUpward';
 
 import {
   MenuBarWrapper,
   MenuBarGroup,
   MenuBarLink,
-  MenuBarItem
+  MenuBarItem,
 } from './style';
 
 const MenuBar = () => {
@@ -23,7 +22,6 @@ const MenuBar = () => {
   const [display, setDisplay] = useState(null);
 
   const isDarkMode = theme === 'dark';
-  const isListMode = display === 'list';
 
   // the same of DidMount
   useEffect(() => {
@@ -47,6 +45,19 @@ const MenuBar = () => {
         >
           <MenuBarItem>
             <Home className="home" />
+          </MenuBarItem>
+        </MenuBarLink>
+
+        <MenuBarLink
+          cover
+          direction="left"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/about/"
+          title="Sobre mim"
+        >
+          <MenuBarItem>
+            <Person className="aboutMe" />
           </MenuBarItem>
         </MenuBarLink>
 
@@ -88,18 +99,8 @@ const MenuBar = () => {
           {isDarkMode ? (
             <LightBulb className="light" />
           ) : (
-              <Lightbulb className="light" className="lightBulb" />
-            )}
-        </MenuBarItem>
-
-        <MenuBarItem
-          title="Mudar visualização"
-          className="display"
-          onClick={() => {
-            window.__setPreferredDisplay(isListMode ? 'grid' : 'list');
-          }}
-        >
-          {isListMode ? <Grid /> : <List className="list" />}
+            <Lightbulb className="light" className="lightBulb" />
+          )}
         </MenuBarItem>
 
         <MenuBarItem title="Ir para o topo" onClick={scrollToTop}>

@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Ilda Neta`,
     position: `Desenvolvedora Mobile`,
-    description: `Uma desenvolvedora minimalista, que busca através da escrita demonstrar suas paixões por tecnologia, soft skills e educação financeira.`,
+    description: `Desenvolvedora mobile que busca através do compartilhamento de conhecimento, transformar nossa sociedade. `,
     author: `Ilda Neta`,
     siteURL: `https://ildaneta.dev/`,
   },
