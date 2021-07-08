@@ -117,8 +117,6 @@ Este é um exemplo do roadmap de frontend:
 
 ![Roadmap frontend](assets/img/roadmap-frontend.png)
 
-
-
 Um detalhe muito importante sobre os roadmaps, é que você necessariamente não precisa aprender tudo o que tem nele, mas guiar seu conhecimento para não perder o foco, pois com as dicas abaixo, e com os cursos que indicarei, você poderá aprender alguns tópicos do roadmap de uma vez só.
 
 **3 - Caso você já possua uma identificação com as áreas de frontend e mobile, indico que o próximo passo seja aprender HTML e CSS, caso você se identifique com backend, sugiro pular para o passo 4**
@@ -189,8 +187,6 @@ Na pesquisa que saiu nesse ano de 2020, mostra que dentre todos os que responder
 
 ![Stack Overflow survey](assets/img/stack-overflow-survey.png)
 
-
-
 O JavaScript tem sido utilizado por várias empresas ao redor do mundo, além de ser uma linguagem que te permite criar aplicações para backend, frontend e mobile híbrido. Além disso, ao aprendermos uma linguagem, isso nos abre portas para aprender outras linguagens e aumentar assim nosso conhecimento.
 
 Neste tópico, deixo como dicas 3 cursos, 2 gratuitos e 1 pago.
@@ -260,6 +256,8 @@ No começo você vai sentir um pouco de vergonha talvez, de medo, incertezas, ma
 Produza conteúdos e auxilie nossa comunidade a ser cada dia melhor, e também se torna uma forma de devolvermos todo o acolhimento, carinho e auxílio que também recebemos no começo de nossa jornada.
 
 Sobre esse tópico, eu e Marcos Henrique, um dev mirim muito esforçado e inteligente, que com apenas 15 anos arrasa na programação, fizemos uma live juntos com o seguinte tema: [Dicas para se destacar profissionalmente, utilizando o LinkedIn, Github e Soft Skills.](https://www.youtube.com/watch?v=K3t6s-dMQuY)
+
+![Ilda Neta e Marcos Henrique](assets/img/Captura de Tela 2021-07-08 às 17.34.24.png)
 
 Indico sempre esse vídeo, pois recheamos ele de dicas, utilizando tudo o que foi citado até o momento para você aplicar o que nós seguimos aplicamos em nossas carreiras.
 
