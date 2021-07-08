@@ -3,10 +3,9 @@ layout: post
 title: Dicas para se tornar um(a) desenvolvedor(a)!
 description: >-
   Este artigo visa auxiliar você que está em transição de carreira, ou iniciando
-  na área de tecnologia e se vê perdido(a) com tantos conteúdos e assuntos de
-  programação para estudar. Aqui encontraremos um passo a passo para impulsionar
-  suas decisões para auxiliar você a tornar-se um(a) desenvolvedor(a) utilizando
-  a linguagem de programação JavaScript.
+  na área de tecnologia e se sente perdido(a) com tantos conteúdos e assuntos de
+  programação para estudar. Através desse compilado de dicas, você poderá se
+  tornar um(a) desenvolvedor(a) com a linguagem de programação JavaScript!
 date: '2021-07-08 04:59:42'
 thumbnail: assets/img/como-se-tornar-um-dev-ilda-neta.png
 category: Dev
@@ -25,11 +24,15 @@ Será um artigo extenso, porém tentei sintetizar da melhor forma os aprendizado
 * Compartilhando conhecimento através do LinkedIn
 * O que o mercado busca além da parte técnica?
 * Fazer faculdade ou apenas estudos autodidata?
-* Aprofudando os conhecimentos adquiridos
+* Aprofundando os conhecimentos adquiridos
 * Impulsionando nossa comunidade
 * Encerramento
 
-Em 2018 decidi que estudaria programação para me tornar uma desenvolvedora, mas tinham tantas opções de cursos e materiais disponíveis que acabei ficando um pouco perdida por onde começar. Depois de algumas dicas, buscas e estudos, segui um caminho que acabou me auxiliando muito a conquistar meus objetivos laborais e que hoje comparto através das mentorias que realizo gratuitamente no LinkedIn, visando auxiliar pessoas que estão realizando mudança de carreira ou apenas estão começando na área de tecnologia. Com isso pensei, porque não criar um artigo e compartilhar essas dicas de cursos, ferramentas e insights que fui tendo e evoluindo ao longo do tempo?!
+Em 2018 decidi que estudaria programação para me tornar uma desenvolvedora, mas tinham tantas opções de cursos e materiais disponíveis que acabei ficando um pouco perdida por onde começar. 
+
+Depois de algumas dicas, buscas e estudos, segui um caminho que acabou me auxiliando muito a conquistar meus objetivos laborais e que hoje comparto através das mentorias que realizo gratuitamente no LinkedIn, visando auxiliar pessoas que estão realizando mudança de carreira ou apenas estão começando na área de tecnologia. 
+
+Com isso pensei, porque não criar um artigo e compartilhar essas dicas de cursos, ferramentas e insights que fui tendo e evoluindo ao longo do tempo?!
 
 Hoje temos um acesso a informação mais facilitada, seja no LinkedIn, youtube, artigos... e por ter tantos assuntos acabamos por ficar perdidos(as) em determinado momento, surgindo então a dúvida, como posso me tornar um(a) desenvolvedor(a)?
 
@@ -83,11 +86,11 @@ Mas qual é a diferença entre backend, frontend e mobile?
 
 Ambas podem utilizar como mesma linguagem o JavaScript, mas o que as diferencia são basicamente:
 
-Frontend - O frontend de forma simples é o desenvolvimento visual de um site, ou seja, tudo o que visualizamos em sites como botões, imagens, a interface como um todo, é feita pelo(a) desenvolvedor(a) frontend.
+**Frontend** - O frontend de forma simples é o desenvolvimento visual de um site, ou seja, tudo o que visualizamos em sites como botões, imagens, a interface como um todo, é feita pelo(a) desenvolvedor(a) frontend.
 
-Backend - O backend é basicamente o contrário do frontend, se no front é o que vemos visualmente, no backend é justamente o que muitas vezes não vemos, como salvar dados no banco de dados, criação de API's, ou seja, basicamente o backend cria pontes entre o que vem do navegador e o banco de dados e vice e versa.
+**Backend** - O backend é basicamente o contrário do frontend, se no front é o que vemos visualmente, no backend é justamente o que muitas vezes não vemos, como salvar dados no banco de dados, criação de API's, ou seja, basicamente o backend cria pontes entre o que vem do navegador e o banco de dados e vice e versa.
 
-Mobile - O mobile é um pouco da junção dos dois acima, pois fazemos desde a interface das aplicações móveis, até salvar determinados dados no banco de dados, ou localStorage, mas geralmente é mais parecido ao frontend. Um ponto de atenção no mobile é que podemos ver falar sobre desenvolvedor híbrido e nativo, que basicamente é, quando você é um desenvolvedor híbrido, você consegue com um mesmo código, transformá-lo em uma aplicação para iOS e Android, e os desenvolvedores nativos, são aqueles que produzem um código específico para cada sistema operacional, ou seja, desenvolvedor(a) nativo iOS, produz código para o sistema operacional iOS e desenvolvedor(a) nativo Android que desenvolve código nativo para o sistema operacional Android.
+**Mobile** - O mobile é um pouco da junção dos dois acima, pois fazemos desde a interface das aplicações móveis, até salvar determinados dados no banco de dados, ou localStorage, mas geralmente é mais parecido ao frontend. Um ponto de atenção no mobile é que podemos ver falar sobre desenvolvedor híbrido e nativo, que basicamente é, quando você é um desenvolvedor híbrido, você consegue com um mesmo código, transformá-lo em uma aplicação para iOS e Android, e os desenvolvedores nativos, são aqueles que produzem um código específico para cada sistema operacional, ou seja, desenvolvedor(a) nativo iOS, produz código para o sistema operacional iOS e desenvolvedor(a) nativo Android que desenvolve código nativo para o sistema operacional Android.
 
 ## Como iniciar os estudos técnicos?
 
@@ -119,7 +122,7 @@ Este é um exemplo do roadmap de frontend:
 
 Um detalhe muito importante sobre os roadmaps, é que você necessariamente não precisa aprender tudo o que tem nele, mas guiar seu conhecimento para não perder o foco, pois com as dicas abaixo, e com os cursos que indicarei, você poderá aprender alguns tópicos do roadmap de uma vez só.
 
-**3 - Caso você já possua uma identificação com as áreas de frontend e mobile, indico que o próximo passo seja aprender HTML e CSS, caso você se identifique com backend, sugiro pular para o passo 4**
+**3 - Caso você já possua uma identificação com as áreas de frontend e mobile, indico que o próximo passo seja aprender HTML e CSS, caso você se identifique com o backend, sugiro pular para o passo 4**
 
 Outra base muito importante para se tornar um desenvolvedor(a) frontend ou mobile é ter os conhecimentos consolidados em HTML e CSS, e como no item anterior, no próprio youtube encontramos cursos gratuitos para aprender.
 
@@ -219,7 +222,7 @@ Ao ir colocando os passos acima em prática, quando formos realizando esses curs
 
 Quem me segue no LinkedIn sabe que já dei várias dicas de como podemos criar projetinhos para expor nosso conhecimento, e para isso você não precisa estar em uma empresa, pois toda forma de colocar nosso conhecimento em prática tem que ser levada em consideração.
 
-Podemos fazer isso nos autodesafiando, pensando em pequenos projetos, ou colocando em prática os desafios colocados nos cursos citados acima.
+Podemos fazer isso nos auto desafiando, pensando em pequenos projetos, ou colocando em prática os desafios colocados nos cursos citados acima.
 
 Minha dica é, faça todos os desafios, e se possível tente incrementar uma funcionalidade a mais que o professor não tenha pedido.
 
@@ -235,13 +238,11 @@ Inclusive eu mesma apliquei essa dica criando a aplicação Financial App, onde 
 
 **7 - Tenha profissionais como referência para sua carreira**
 
-Como dica final para esse tópico, eu recomendaria a voce, que esta iniciando carreira na area de programação, a escolher pessoas da area para serem seu exemplo de carreira profissional e que te motivarão a conquistar seus objetivos na área de tecnologia.
+Como dica final para esse tópico, eu recomendaria a você, que está iniciando carreira na área de programação, escolher pessoas da área para serem seu exemplo de carreira profissional a ser seguido, motivando você a conquistar seus objetivos na área de tecnologia.
 
-Além disso, ter pessoas ao seu lado que te motivem durante essa jornada é extremamente importante. Aprender sobre tecnologia, mudar de área, são processos que levam tempo, não é feito em um mês, mas sim de vários meses de dedicação, dia a dia, até o objetivo ser concluído.
+Além disso, ter pessoas ao seu lado que te motivem durante essa jornada é extremamente importante. Aprender sobre tecnologia e/ou mudar de área, são processos que levam tempo, não é feito em um mês, mas sim de vários meses de dedicação, dia após dia, até o objetivo ser concluído.
 
 Por isso é importante ter pessoas que entendam seus esforços e que te estimulem a continuar estudando, pois a conquista é diária.
-
-Siga essas pessoas, consuma seus conteúdos e evolua cada dia mais, pois é muito importante termos referências de exemplos bons a serem seguidos, e eu levo isso não só pra tecnologia, mas em muitas áreas, como o minimalismo por exemplo, mas isso é assunto para outro artigo.
 
 ## **Compartilhando conhecimento através do LinkedIn**
 
@@ -265,11 +266,11 @@ Indico sempre esse vídeo, pois recheamos ele de dicas, utilizando tudo o que fo
 
 Outro ponto importante que precisamos levar em consideração quando pensamos em atuar na área de tecnologia, é que o mercado laboral também tem evoluído, e hoje é muito importante buscar desenvolver outras capacidades além das técnicas, e elas são chamadas de Soft Skills ou habilidades interpessoais.
 
-Como citado no tópico acima, nesta live que realizei com Marcos, nós falamos também sobre como as soft skills podem auxiliar em nossa carreira.
+Como citado no tópico acima, nesta live que realizei com Marcos, nós falamos também sobre como as Soft Skills podem auxiliar em nossa carreira.
 
 Habilidades interpessoais, vem para nos auxiliar a melhorarmos nossas relações com colegas de trabalhos, familiares e pessoas que convivemos.
 
-Algumas das soft skills que considero serem muito importantes são: Comunicação, Empatia, Trabalho em Equipe, Inteligência Emocional e Compromisso.
+Algumas das Soft Skills que considero serem muito importantes são: Comunicação, Empatia, Trabalho em Equipe, Inteligência Emocional e Compromisso.
 
 Lembre-se sempre que todos esses aprendizados são uma jornada, você não aprenderá tudo de uma vez, em um só dia, mas mantendo a constância, pouco a pouco, vamos aprendendo, colocando em prática e nos tornando pessoas melhores.
 
