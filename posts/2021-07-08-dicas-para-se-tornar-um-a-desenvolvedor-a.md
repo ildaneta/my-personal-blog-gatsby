@@ -13,7 +13,7 @@ background: '#CD4C51'
 ---
 ![Como se tornar um(a) dev](assets/img/como-se-tornar-um-dev-ilda-neta.png)
 
-Será um artigo extenso, porém tentei sintetizar da melhor forma os aprendizados que tenho adquirido ao longo de toda minha jornada na tecnologia. Espero que curta a leitura e aproveite as dicas citadas.
+Será um artigo extenso, porém tentei sintetizar da melhor forma os aprendizados que tenho adquirido ao longo de toda minha jornada na área de tecnologia. Espero que curta a leitura e aproveite as dicas citadas.
 
 ### Tópicos
 
@@ -70,7 +70,7 @@ Para isso, minha primeira dica é o [Notion.](https://www.notion.so/)
 
 Caso você não conheça, o Notion é um aplicativo tanto web quando mobile, que te permite através de vários templates pré prontos, organizar agendas, planejar seus estudos, anotar insights dos estudos e muito mais.
 
-Hoje eu o utilizo para muitas coisas, como planejar meus artigos, anotações de estudos, palestras que irei realizar, entre outros.Após criar sua conta e logar, você tem acesso a esses templates, podendo reaproveitá-los, modificá-los ou criar novos templates totalmente do zero para utilizar. Ele é bem personalizável mesmo.
+Hoje eu o utilizo para muitas coisas, como planejar meus artigos, anotações de estudos, palestras que irei realizar, entre outros. Após criar sua conta e logar, você tem acesso a esses templates, podendo reaproveitá-los, modificá-los ou criar novos templates totalmente do zero para utilizar. Ele é bem personalizável mesmo.
 
 ![Templates Notion](assets/img/notion-templates.png)
 
