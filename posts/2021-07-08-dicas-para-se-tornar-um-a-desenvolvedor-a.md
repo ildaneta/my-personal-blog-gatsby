@@ -3,10 +3,10 @@ layout: post
 title: Dicas para se tornar um(a) desenvolvedor(a)!
 description: >-
   Este artigo visa auxiliar você que está em transição de carreira, ou iniciando
-  na área de tecnologia e se vê perdido(a) com tantos conteúdos e assuntos para
-  estudar. Aqui encontraremos um passo a passo para impulsionar suas decisões e
-  te auxiliar a tornar-se um(a) desenvolvedor(a) utilizando a linguagem de
-  programação JavaScript.
+  na área de tecnologia e se vê perdido(a) com tantos conteúdos e assuntos de
+  programação para estudar. Aqui encontraremos um passo a passo para impulsionar
+  suas decisões para auxiliar você a tornar-se um(a) desenvolvedor(a) utilizando
+  a linguagem de programação JavaScript.
 date: '2021-07-08 04:59:42'
 thumbnail: assets/img/como-se-tornar-um-dev-ilda-neta.png
 category: Dev
