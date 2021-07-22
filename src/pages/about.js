@@ -43,9 +43,9 @@ const AboutPage = () => (
 
     <AboutDescription>
       Atualmente estou desenvolvendo uma nova versão para meu blog, trazendo
-      ainda mais a experiência e a usabilidade como centro da apliação, além da
-      implementação de novos idiomas, facilitando assim o acesso aos conteúdos
-      produzidos por pessoas de outros países.
+      ainda mais a experiência e a usabilidade para o centro da aplicação, além
+      da implementação de novos idiomas, auxiliando pessoas que vivem em outros
+      países terem acesso aos conteúdos produzidos.
     </AboutDescription>
 
     <AboutDescription>
