@@ -64,7 +64,7 @@ Antes de iniciarmos todas as dicas práticas, o primeiro conselho inicial seria 
 
 Quando você se torna investidor, aprende que uma das dicas de sucesso para sua evolução é pensar a longo prazo, e isso pode ser aplicado em diferentes áreas da sua vida, e com os estudos para programação não é diferente.
 
-Você verá ao longo deste artigo que para alcançar a vaga almejada e o conhecimento necessário, será preciso trilhar um caminho constante de estudos, como uma maratona, pouco a pouco e sempre treinando para quando chegar o momento certo estar preparado.
+Você verá ao longo deste artigo que para alcançar a vaga almejada e o conhecimento necessário, será preciso trilhar um caminho constante de estudos, como uma maratona, pouco a pouco e sempre treinando para quando chegar o momento certo estar preparado(a) para a tão sonhada oportunidade.
 
 Para isso, minha primeira dica é o [Notion.](https://www.notion.so/)
 
