@@ -30,9 +30,9 @@ const AboutPage = () => (
     </AboutDescription>
 
     <AboutDescription>
-      Durante todos esses anos profissionais, tive um contato muito próximo com
-      nossos usuários, o que fez direcionar minha atuação como desenvolvedora,
-      pensando sempre na experiência e usuabilidade proposta na aplicação.
+      Atuo com foco na experiência e usuabilidade dos usuários, pensando sempre
+      em como levar interfaces lindas, responsivas e sempre com o foco no
+      usuário.
     </AboutDescription>
 
     <AboutDescription>
