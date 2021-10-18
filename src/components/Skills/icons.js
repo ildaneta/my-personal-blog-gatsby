@@ -1,24 +1,24 @@
-import { Algolia } from '@styled-icons/fa-brands/Algolia';
-import { Css3Alt as CSS } from '@styled-icons/fa-brands/Css3Alt';
-import { Docker } from '@styled-icons/fa-brands/Docker';
-import { Figma } from '@styled-icons/boxicons-logos/Figma';
-import { Gatsby } from '@styled-icons/remix-fill/Gatsby';
-import { GitAlt as Git } from '@styled-icons/fa-brands/GitAlt';
-import { Github } from '@styled-icons/fa-brands/Github';
-import { Gitlab } from '@styled-icons/boxicons-logos/Gitlab';
-import { Html5 as HTML } from '@styled-icons/fa-brands/Html5';
-import { Linux } from '@styled-icons/fa-brands/Linux';
-import { Javascript } from '@styled-icons/boxicons-logos/Javascript';
-import { Npm } from '@styled-icons/fa-brands/Npm';
-import { NodeJs } from '@styled-icons/fa-brands/NodeJs';
-import { GetPocket as Pocket } from '@styled-icons/fa-brands/GetPocket';
-import { Python } from '@styled-icons/fa-brands/Python';
-import { ReactLogo as React } from '@styled-icons/fa-brands/ReactLogo';
-import { Sass } from '@styled-icons/fa-brands/Sass';
-import { Slack } from '@styled-icons/fa-brands/Slack';
-import { Ubuntu } from '@styled-icons/fa-brands/Ubuntu';
-import { Wordpress } from '@styled-icons/fa-brands/Wordpress';
-import { Yarn } from '@styled-icons/fa-brands/Yarn';
+import { Algolia } from '@styled-icons/fa-brands';
+import { Css3Alt as CSS } from '@styled-icons/fa-brands';
+import { Docker } from '@styled-icons/fa-brands';
+import { Figma } from '@styled-icons/boxicons-logos';
+import { Gatsby } from '@styled-icons/remix-fill';
+import { GitAlt as Git } from '@styled-icons/fa-brands';
+import { Github } from '@styled-icons/fa-brands';
+import { Gitlab } from '@styled-icons/boxicons-logos';
+import { Html5 as HTML } from '@styled-icons/fa-brands';
+import { Linux } from '@styled-icons/fa-brands';
+import { Javascript } from '@styled-icons/boxicons-logos';
+import { Npm } from '@styled-icons/fa-brands';
+import { NodeJs } from '@styled-icons/fa-brands';
+import { GetPocket as Pocket } from '@styled-icons/fa-brands';
+import { Python } from '@styled-icons/fa-brands';
+import { ReactLogo as React } from '@styled-icons/fa-brands';
+import { Sass } from '@styled-icons/fa-brands';
+import { Slack } from '@styled-icons/fa-brands';
+import { Ubuntu } from '@styled-icons/fa-brands';
+import { Wordpress } from '@styled-icons/fa-brands';
+import { Yarn } from '@styled-icons/fa-brands';
 
 const Icons = {
   Algolia,
@@ -41,7 +41,7 @@ const Icons = {
   Slack,
   Ubuntu,
   Wordpress,
-  Yarn
+  Yarn,
 };
 
 export default Icons;

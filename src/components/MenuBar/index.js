@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import getThemeColor from '../../utils/getThemeColor';
 import scrollToTop from '../../utils/scrollToTop';
 
-import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2';
-import { CodeSSlash as Skills } from '@styled-icons/remix-fill/CodeSSlash';
-import { HomeHeart as Home } from '@styled-icons/boxicons-regular/HomeHeart';
-import { LightBulb } from '@styled-icons/octicons/LightBulb';
-import { Lightbulb } from '@styled-icons/fa-solid/Lightbulb';
-import { Person } from '@styled-icons/evaicons-solid/Person';
-import { ArrowUpward as ArrowUp } from '@styled-icons/material/ArrowUpward';
+import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular';
+import { CodeSSlash as Skills } from '@styled-icons/remix-fill';
+import { HomeHeart as Home } from '@styled-icons/boxicons-regular';
+import { LightBulb } from '@styled-icons/octicons';
+import { Lightbulb } from '@styled-icons/fa-solid';
+import { Person } from '@styled-icons/evaicons-solid';
+import { ArrowUpward as ArrowUp } from '@styled-icons/material';
 
 import {
   MenuBarWrapper,

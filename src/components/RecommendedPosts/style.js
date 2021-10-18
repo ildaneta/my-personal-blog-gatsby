@@ -3,8 +3,8 @@ import media from 'styled-media-query';
 
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-import { ArrowRight } from '@styled-icons/remix-line/ArrowRight';
-import { ArrowLeft } from '@styled-icons/remix-line/ArrowLeft';
+import { ArrowRight } from '@styled-icons/remix-line';
+import { ArrowLeft } from '@styled-icons/remix-line';
 
 export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid var(--rose);
