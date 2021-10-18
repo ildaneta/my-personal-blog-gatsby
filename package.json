@@ -54,6 +54,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.8.0",
     "react-instantsearch-dom": "^6.10.3",
+    "sharp": "^0.29.1",
     "styled-components": "^5.2.1",
     "styled-icons": "^10.30.0",
     "styled-media-query": "^2.1.2"
