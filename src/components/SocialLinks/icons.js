@@ -1,11 +1,11 @@
-import { Github } from '@styled-icons/feather/Github';
-import { Linkedin } from '@styled-icons/feather/Linkedin';
-import { Mail as Email } from '@styled-icons/feather/Mail';
+import { Github } from '@styled-icons/feather';
+import { Linkedin } from '@styled-icons/feather';
+import { Mail as Email } from '@styled-icons/feather';
 
 const Icons = {
   Github,
   Linkedin,
-  Email
+  Email,
 };
 
 export default Icons;
