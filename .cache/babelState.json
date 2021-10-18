@@ -11,6 +11,12 @@
           "stage": "develop",
           "options": {
             "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
             "ssr": false
           }
         },
@@ -66,6 +72,12 @@
           "stage": "develop-html",
           "options": {
             "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
             "ssr": false
           }
         }
@@ -109,6 +121,12 @@
           "stage": "build-html",
           "options": {
             "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
             "ssr": true
           }
         }
@@ -152,6 +170,12 @@
           "stage": "build-javascript",
           "options": {
             "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
             "ssr": true
           }
         }
