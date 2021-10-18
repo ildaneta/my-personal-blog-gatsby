@@ -3,7 +3,7 @@
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 exports.__esModule = true;
-exports.default = void 0;
+exports.default = staticPage;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -13,9 +13,9 @@ var _server = require("react-dom/server");
 
 var _lodash = require("lodash");
 
-var _path = require("path");
+var _path = _interopRequireDefault(require("path"));
 
-var _apiRunnerSsr = _interopRequireDefault(require("./api-runner-ssr"));
+var _apiRunnerSsr = require("./api-runner-ssr");
 
 var _findPath = require("./find-path");
 
@@ -25,6 +25,7 @@ var _routeAnnouncerProps = require("./route-announcer-props");
 
 var _router = require("@reach/router");
 
+/* global BROWSER_ESM_ONLY */
 // import testRequireError from "./test-require-error"
 // For some extremely mysterious reason, webpack adds the above module *after*
 // this module so that when this code runs, testRequireError is undefined.
@@ -35,7 +36,17 @@ const testRequireError = (moduleName, err) => {
   return regex.test(firstLine);
 };
 
-const stats = JSON.parse(_fs.default.readFileSync(`${process.cwd()}/public/webpack.stats.json`, `utf-8`));
+let cachedStats;
+
+const getStats = publicDir => {
+  if (cachedStats) {
+    return cachedStats;
+  } else {
+    cachedStats = JSON.parse(_fs.default.readFileSync(_path.default.join(publicDir, `webpack.stats.json`), `utf-8`));
+    return cachedStats;
+  }
+};
+
 let Html;
 
 try {
@@ -51,7 +62,7 @@ try {
 
 Html = Html && Html.__esModule ? Html.default : Html;
 
-var _default = (pagePath, isClientOnlyPage, callback) => {
+async function staticPage(pagePath, isClientOnlyPage, publicDir, error, callback) {
   let bodyHtml = ``;
   let headComponents = [/*#__PURE__*/_react.default.createElement("meta", {
     key: "environment",
@@ -64,7 +75,18 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
   let postBodyComponents = [];
   let bodyProps = {};
 
-  const generateBodyHTML = () => {
+  if (error) {
+    postBodyComponents.push([/*#__PURE__*/_react.default.createElement("script", {
+      key: "dev-ssr-error",
+      dangerouslySetInnerHTML: {
+        __html: `window._gatsbyEvents = window._gatsbyEvents || []; window._gatsbyEvents.push(["FAST_REFRESH", { action: "SHOW_DEV_SSR_ERROR", payload: ${JSON.stringify(error)} }])`
+      }
+    }), /*#__PURE__*/_react.default.createElement("noscript", {
+      key: "dev-ssr-error-noscript"
+    }, /*#__PURE__*/_react.default.createElement("h1", null, "Failed to Server Render (SSR)"), /*#__PURE__*/_react.default.createElement("h2", null, "Error message:"), /*#__PURE__*/_react.default.createElement("p", null, error.sourceMessage), /*#__PURE__*/_react.default.createElement("h2", null, "File:"), /*#__PURE__*/_react.default.createElement("p", null, error.source, ":", error.line, ":", error.column), /*#__PURE__*/_react.default.createElement("h2", null, "Stack:"), /*#__PURE__*/_react.default.createElement("pre", null, /*#__PURE__*/_react.default.createElement("code", null, error.stack)))]);
+  }
+
+  const generateBodyHTML = async () => {
     const setHeadComponents = components => {
       headComponents = headComponents.concat(components);
     };
@@ -113,12 +135,13 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
 
     const getPageDataPath = path => {
       const fixedPagePath = path === `/` ? `index` : path;
-      return (0, _path.join)(`page-data`, fixedPagePath, `page-data.json`);
+      return _path.default.join(`page-data`, fixedPagePath, `page-data.json`);
     };
 
     const getPageData = pagePath => {
       const pageDataPath = getPageDataPath(pagePath);
-      const absolutePageDataPath = (0, _path.join)(process.cwd(), `public`, pageDataPath);
+
+      const absolutePageDataPath = _path.default.join(publicDir, pageDataPath);
 
       const pageDataJson = _fs.default.readFileSync(absolutePageDataPath, `utf8`);
 
@@ -131,11 +154,11 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
 
     const pageData = getPageData(pagePath);
     const {
-      componentChunkName,
-      staticQueryHashes = []
+      componentChunkName
     } = pageData;
     let scriptsAndStyles = (0, _lodash.flatten)([`commons`].map(chunkKey => {
       const fetchKey = `assetsByChunkName[${chunkKey}]`;
+      const stats = getStats(publicDir);
       let chunks = (0, _lodash.get)(stats, fetchKey);
       const namedChunkGroups = (0, _lodash.get)(stats, `namedChunkGroups`);
 
@@ -155,21 +178,23 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       });
       namedChunkGroups[chunkKey].assets.forEach(asset => chunks.push({
         rel: `preload`,
-        name: asset
+        name: asset.name
       }));
       const childAssets = namedChunkGroups[chunkKey].childAssets;
 
       for (const rel in childAssets) {
-        chunks = (0, _lodash.concat)(chunks, childAssets[rel].map(chunk => {
-          return {
-            rel,
-            name: chunk
-          };
-        }));
+        if (childAssets.hasownProperty(rel)) {
+          chunks = (0, _lodash.concat)(chunks, childAssets[rel].map(chunk => {
+            return {
+              rel,
+              name: chunk
+            };
+          }));
+        }
       }
 
       return chunks;
-    })).filter(s => (0, _lodash.isObject)(s)).sort((s1, s2) => s1.rel == `preload` ? -1 : 1); // given priority to preload
+    })).filter(s => (0, _lodash.isObject)(s)).sort((s1, _s2) => s1.rel == `preload` ? -1 : 1); // given priority to preload
 
     scriptsAndStyles = (0, _lodash.uniqBy)(scriptsAndStyles, item => item.name);
     const styles = scriptsAndStyles.filter(style => style.name && style.name.endsWith(`.css`));
@@ -192,9 +217,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
           ...pageData.result,
           params: { ...(0, _findPath.grabMatchParams)(this.props.location.pathname),
             ...(((_pageData$result = pageData.result) === null || _pageData$result === void 0 ? void 0 : (_pageData$result$page = _pageData$result.pageContext) === null || _pageData$result$page === void 0 ? void 0 : _pageData$result$page.__params) || {})
-          },
-          // pathContext was deprecated in v2. Renamed to pageContext
-          pathContext: pageData.result ? pageData.result.pageContext : undefined
+          }
         };
         let pageElement;
 
@@ -206,7 +229,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
           pageElement = () => null;
         }
 
-        const wrappedPage = (0, _apiRunnerSsr.default)(`wrapPageElement`, {
+        const wrappedPage = (0, _apiRunnerSsr.apiRunner)(`wrapPageElement`, {
           element: pageElement,
           props
         }, pageElement, ({
@@ -231,7 +254,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       path: "/*"
     })), /*#__PURE__*/_react.default.createElement("div", _routeAnnouncerProps.RouteAnnouncerProps));
 
-    const bodyComponent = (0, _apiRunnerSsr.default)(`wrapRootElement`, {
+    const bodyComponent = (0, _apiRunnerSsr.apiRunner)(`wrapRootElement`, {
       element: routerElement,
       pathname: pagePath
     }, routerElement, ({
@@ -243,7 +266,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       };
     }).pop(); // Let the site or plugin render the page component.
 
-    (0, _apiRunnerSsr.default)(`replaceRenderer`, {
+    await (0, _apiRunnerSsr.apiRunnerAsync)(`replaceRenderer`, {
       bodyComponent,
       replaceBodyHTMLString,
       setHeadComponents,
@@ -265,7 +288,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       }
     }
 
-    (0, _apiRunnerSsr.default)(`onRenderBody`, {
+    (0, _apiRunnerSsr.apiRunner)(`onRenderBody`, {
       setHeadComponents,
       setHtmlAttributes,
       setBodyAttributes,
@@ -274,7 +297,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       setBodyProps,
       pathname: pagePath
     });
-    (0, _apiRunnerSsr.default)(`onPreRenderHTML`, {
+    (0, _apiRunnerSsr.apiRunner)(`onPreRenderHTML`, {
       getHeadComponents,
       replaceHeadComponents,
       getPreBodyComponents,
@@ -286,7 +309,7 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
     return bodyHtml;
   };
 
-  const bodyStr = generateBodyHTML();
+  const bodyStr = await generateBodyHTML();
 
   const htmlElement = /*#__PURE__*/_react.default.createElement(Html, { ...bodyProps,
     body: bodyStr,
@@ -297,19 +320,20 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
     htmlAttributes,
     bodyAttributes,
     preBodyComponents,
-    postBodyComponents: postBodyComponents.concat([/*#__PURE__*/_react.default.createElement("script", {
+    postBodyComponents: postBodyComponents.concat([!BROWSER_ESM_ONLY && /*#__PURE__*/_react.default.createElement("script", {
       key: `polyfill`,
       src: "/polyfill.js",
       noModule: true
     }), /*#__PURE__*/_react.default.createElement("script", {
+      key: `framework`,
+      src: "/framework.js"
+    }), /*#__PURE__*/_react.default.createElement("script", {
       key: `commons`,
       src: "/commons.js"
-    })])
+    })].filter(Boolean))
   });
 
   let htmlStr = (0, _server.renderToStaticMarkup)(htmlElement);
   htmlStr = `<!DOCTYPE html>${htmlStr}`;
   callback(null, htmlStr);
-};
-
-exports.default = _default;
+}
