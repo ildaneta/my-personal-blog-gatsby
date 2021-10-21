@@ -8,9 +8,11 @@ const Avatar = () => {
       query {
         avatarImage: file(relativePath: { eq: "avatar.png" }) {
           childImageSharp {
-            fluid(maxWidth: 200) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              width: 60
+              placeholder: TRACED_SVG
+              layout: CONSTRAINED
+            )
           }
         }
       }
@@ -19,7 +21,7 @@ const Avatar = () => {
 
   return (
     <AvatarWrapper
-      fluid={avatarImage.childImageSharp.fluid}
+      image={avatarImage.childImageSharp.gatsbyImageData}
       alt="Imagem de avatar"
     />
   );
