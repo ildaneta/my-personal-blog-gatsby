@@ -26,6 +26,7 @@
     "gatsby-plugin-algolia-search": "0.5.7",
     "gatsby-plugin-catch-links": "^2.1.21",
     "gatsby-plugin-google-analytics": "^2.3.4",
+    "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-manifest": "^3.14.0",
     "gatsby-plugin-netlify-cms": "^5.1.0",
     "gatsby-plugin-offline": "^4.1.0",
@@ -54,7 +55,6 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.8.0",
     "react-instantsearch-dom": "^6.10.3",
-    "sharp": "^0.29.1",
     "styled-components": "^5.2.1",
     "styled-icons": "^10.30.0",
     "styled-media-query": "^2.1.2"
