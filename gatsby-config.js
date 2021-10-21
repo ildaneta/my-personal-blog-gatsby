@@ -10,6 +10,9 @@ module.exports = {
     author: `Ilda Neta`,
     siteURL: `https://ildaneta.dev/`,
   },
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
@@ -88,6 +91,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
