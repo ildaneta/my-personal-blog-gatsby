@@ -3,6 +3,22 @@ const path = require('path');
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
+exports.sourceNodes = ({ actions, schema }) => {
+  const { createTypes } = actions;
+
+  createTypes(
+    `
+    type MarkdownRemarkFrontmatter {
+      thumbnail: String
+    }
+
+    type markdwonRemark implements Node {
+      frontmatter: MarkdownRemarkFrontmatter
+    }
+    `
+  );
+};
+
 // To add the slug to each post
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -12,7 +28,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const slug = createFilePath({
       node,
       getNode,
-      basePath: 'pages'
+      basePath: 'pages',
     });
 
     // creating a new field with name slug with the way of URL equal the value
@@ -21,7 +37,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: 'slug',
       /* limiting the amount of characters so that we only see in URL the 
       name of post without the date */
-      value: `posts/${slug.slice(12)}`
+      value: `posts/${slug.slice(12)}`,
     });
   }
 };
@@ -68,7 +84,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     const postsPerPage = 15;
@@ -81,8 +97,8 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           slug: node.fields.slug,
           previousPost: next,
-          nextPost: previous
-        }
+          nextPost: previous,
+        },
       });
     });
 
@@ -94,8 +110,8 @@ exports.createPages = ({ graphql, actions }) => {
           limit: postsPerPage,
           skip: index * postsPerPage,
           numPages,
-          currentPage: index + 1
-        }
+          currentPage: index + 1,
+        },
       });
     });
   });
