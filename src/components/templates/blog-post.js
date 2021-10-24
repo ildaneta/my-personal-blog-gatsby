@@ -16,6 +16,7 @@ const BlogPost = ({ data, pageContext }) => {
   const description = data.markdownRemark.frontmatter.description;
   const url = data.markdownRemark.fields.slug;
   const image = data.markdownRemark.frontmatter.thumbnail;
+  const post = data.markdownRemark;
 
   const next = pageContext.nextPost;
   const previous = pageContext.previousPost;
@@ -26,7 +27,7 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO
         title={title}
         description={description}
-        thumbnail={`https://ildaneta.dev/${image}`}
+        thumbnail={post.frontmatter.thumbnail}
       />
       <s.PostHeader>
         <s.PostDate>
