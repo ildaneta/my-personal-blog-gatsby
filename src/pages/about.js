@@ -25,8 +25,8 @@ const AboutPage = () => (
     <AboutHeader>Sobre Mim</AboutHeader>
     <AboutDescription>Olá, meu nome é Ilda Neta!</AboutDescription>
     <AboutDescription>
-      Atuando há mais de 7 anos na área de tecnologia, descobri meu amor pela
-      programação, e assim atuo como desenvolvedora mobile.
+      Sou uma desenvolvedora minimalista que busca através da escrita e
+      palestras, impactar nossa sociedade.
     </AboutDescription>
 
     <AboutDescription>
@@ -39,13 +39,6 @@ const AboutPage = () => (
       Além disso, procuro estar em constante contato com nossa comunidade,
       através da produção de conteúdos, mentorias, lives e participação em talks
       de tecnologia, nacionais e internacionais.
-    </AboutDescription>
-
-    <AboutDescription>
-      Atualmente estou desenvolvendo uma nova versão para meu blog, trazendo
-      ainda mais a experiência e a usabilidade para o centro da aplicação, além
-      da implementação de novos idiomas, auxiliando pessoas que vivem em outros
-      países terem acesso aos conteúdos produzidos.
     </AboutDescription>
 
     <AboutDescription>
