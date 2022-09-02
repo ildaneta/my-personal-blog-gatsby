@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
   html, body, div, span, applet, object, iframe,
@@ -41,7 +42,8 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1;
     background: var(--background);
     font-size: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.075rem;
   }
   ol, ul {
     list-style: none;
@@ -71,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
     --colorLettersComments: #fff;
     --white: #fff;
     --rose: #f7a5a6;
-    --background: #191921;
+    --background: #282a36;
     --mediumBackground: #282a36;
     --colorLetters: #e5e3e3;
     --colorIcons: #fcf2f2;
@@ -89,11 +91,11 @@ const GlobalStyle = createGlobalStyle`
     --colorLettersComments: #363636;
     --white: #fff;
     --rose: #f7a5a6;
-    --background: #fff;
+    --background: #f9f9f9;
     --mediumBackground: #fcf2f2;
     --colorLetters: #363636;
     --colorIcons: #333;
-    --hover: #f77394;
+    --hover: #f7a5a6;
     --hoverRecommended: #f77394;
     --linkColor: #f77394;
     --searchColor: #f77394;

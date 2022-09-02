@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Ilda Neta blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ilda Neta",
   "dependencies": {
     "@styled-icons/boxicons-logos": "^10.38.0",
     "@styled-icons/boxicons-regular": "^10.38.0",

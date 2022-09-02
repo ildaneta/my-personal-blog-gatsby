@@ -1,11 +1,11 @@
-require('dotenv').config();
+require("dotenv").config();
 
-const queries = require('./src/utils/algolia_queries');
+const queries = require("./src/utils/algolia_queries");
 
 module.exports = {
   siteMetadata: {
     title: `Ilda Neta`,
-    position: `Desenvolvedora Mobile`,
+    position: `Mobile Engineer`,
     description: `Desenvolvedora mobile que busca através do compartilhamento de conhecimento, transformar nossa sociedade. `,
     author: `Ilda Neta`,
     siteURL: `https://ildaneta.dev/`,
@@ -29,7 +29,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: 'UA-120929041-1',
+        trackingId: "UA-120929041-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -37,21 +37,21 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ['/preview/**', '/do-not-track/me/too/'],
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
         // Enables Google Optimize using your container Id
-        optimizeId: 'YOUR_GOOGLE_OPTIMIZE_TRACKING_ID',
+        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
         // Enables Google Optimize Experiment ID
-        experimentId: 'YOUR_GOOGLE_EXPERIMENT_ID',
+        experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
         // Set Variation ID. 0 for original 1,2,3....
-        variationId: 'YOUR_GOOGLE_OPTIMIZE_VARIATION_ID',
+        variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
         // Defers execution of google analytics script after page load
         defer: false,
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: 'example.com',
+        cookieDomain: "example.com",
       },
     },
     {
@@ -73,13 +73,13 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images-v2',
+            resolve: "gatsby-remark-relative-images-v2",
             options: {
-              name: 'uploads',
+              name: "uploads",
             },
           },
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 960,
               linkImagesToOriginal: false,

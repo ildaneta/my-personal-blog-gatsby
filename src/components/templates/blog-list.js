@@ -1,33 +1,33 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from '../Layout';
-import SEO from '../seo.js';
-import PostItem from '../PostItem';
-import Pagination from '../Pagination';
+import Layout from "../Layout";
+import Seo from "../seo.js";
+import PostItem from "../PostItem";
+import Pagination from "../Pagination";
 
-import * as s from '../ListWrapper/style';
+import * as s from "../ListWrapper/style";
 
-const BlogList = props => {
+const BlogList = (props) => {
   const postList = props.data.allMarkdownRemark.edges;
 
   const { currentPage, numPages } = props.pageContext;
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
-  const prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`;
+  const prevPage = currentPage - 1 === 1 ? "/" : `/page/${currentPage - 1}`;
   const nextPage = `/page/${currentPage + 1}`;
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <s.ListWrapper>
         {postList.map(
           ({
             node: {
               frontmatter: { category, date, description, title, background },
               timeToRead,
-              fields: { slug }
-            }
+              fields: { slug },
+            },
           }) => (
             <PostItem
               slug={slug}

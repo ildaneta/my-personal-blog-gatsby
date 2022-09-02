@@ -1,26 +1,26 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
+import styled from "styled-components";
+import media from "styled-media-query";
 
 export const SkillsHeader = styled.h1`
   padding: 2rem 3rem 0;
   margin: 1rem auto;
   line-height: 3.2rem;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.8rem;
   font-weight: 600;
   color: var(--colorLetters);
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
       padding: 0 1rem 1rem;
     `}
 `;
 
 export const SkillsLink = styled.a`
-  ${media.greaterThan('large')`
+  ${media.greaterThan("large")`
     display: none; 
   `}
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     color: var(--linkColor);
     text-decoration: none;
     transition: opacity 0.5s;
@@ -49,7 +49,7 @@ export const SkillsList = styled.ul`
     height: 40px;
   }
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
       margin: 0 1rem 1rem;
     `}
 `;
@@ -81,25 +81,29 @@ export const SkillsLinkIcon = styled.a`
     width: 40px;
     height: 40px;
   }
-
 `;
 
 export const SkillsSubTitle = styled.h2`
   padding: 2rem 3rem 0.2rem 3rem;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.9rem;
   font-weight: 500;
   color: var(--colorLetters);
+  margin-top: 30px;
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
       padding: 2rem 1rem 1rem;
     `}
+`;
+
+export const Spacer = styled.div`
+  margin-top: 20px;
 `;
 
 export const SkillsP = styled.p`
   padding: 1rem 3rem;
 
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--colorLetters);
@@ -107,7 +111,7 @@ export const SkillsP = styled.p`
     color: var(--hover);
   }
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
       padding: 0 1rem 1rem;
     `}
 `;
@@ -120,14 +124,14 @@ export const Div = styled.div`
   &::after {
     width: 225px;
     height: 4px;
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     background: var(--backgroundIcons);
     bottom: 0;
     margin-left: 3rem;
 
-    ${media.lessThan('large')`
+    ${media.lessThan("large")`
       margin-left: 1rem;
     `}
   }

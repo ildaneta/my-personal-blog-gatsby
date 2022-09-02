@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
-import links from '../components/Skills/content';
-import Icons from '../components/Skills/icons';
+import Layout from "../components/Layout";
+import Seo from "../components/seo";
+import links from "../components/Skills/content";
+import Icons from "../components/Skills/icons";
 
 import {
   SkillsHeader,
-  SkillsLink,
   SkillsList,
   SkillsItem,
   SkillsWrapper,
@@ -15,11 +14,12 @@ import {
   SkillsP,
   Div,
   SoftSkillsWrapper,
-} from '../styles/skills';
+  Spacer,
+} from "../styles/skills";
 
 const SkillsPage = () => (
   <Layout>
-    <SEO title="Skills" />
+    <Seo title="Skills" />
     <SkillsHeader>Skills</SkillsHeader>
 
     <SkillsSubTitle>Hard Skills</SkillsSubTitle>
@@ -37,14 +37,13 @@ const SkillsPage = () => (
       })}
     </SkillsList>
 
+    <Spacer />
+
     <SkillsSubTitle>Soft Skills</SkillsSubTitle>
 
     <SoftSkillsWrapper>
       <Div>
-        <SkillsP>
-          {/* <Code /> */}
-          Empatia
-        </SkillsP>
+        <SkillsP>Empatia</SkillsP>
       </Div>
       <Div>
         <SkillsP>Liderança</SkillsP>
