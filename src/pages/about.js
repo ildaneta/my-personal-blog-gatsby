@@ -1,27 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
-import links from '../components/SocialLinks/content';
+import Layout from "../components/Layout";
+import Seo from "../components/seo";
+import links from "../components/SocialLinks/content";
 
-import Icons from '../components/SocialLinks/icons';
+import Icons from "../components/SocialLinks/icons";
 
 import {
   AboutHeader,
   AboutDescription,
   AboutSubTitle,
   AboutLinksList,
-} from '../styles/about';
+} from "../styles/about";
 
 import {
   SocialLinksItem,
   SocialLinksLink,
   IconWrapper,
-} from '../components/SocialLinks/style';
+} from "../components/SocialLinks/style";
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <Seo title="About" />
     <AboutHeader>Sobre Mim</AboutHeader>
     <AboutDescription>Olá, meu nome é Ilda Neta!</AboutDescription>
     <AboutDescription>

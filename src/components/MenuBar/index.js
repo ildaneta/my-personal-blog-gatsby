@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import getThemeColor from '../../utils/getThemeColor';
-import scrollToTop from '../../utils/scrollToTop';
+import React, { useState, useEffect } from "react";
+import getThemeColor from "../../utils/getThemeColor";
+import scrollToTop from "../../utils/scrollToTop";
 
-import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular';
-import { CodeSSlash as Skills } from '@styled-icons/remix-fill';
-import { HomeHeart as Home } from '@styled-icons/boxicons-regular';
-import { LightBulb } from '@styled-icons/octicons';
-import { Lightbulb } from '@styled-icons/fa-solid';
-import { Person } from '@styled-icons/evaicons-solid';
-import { ArrowUpward as ArrowUp } from '@styled-icons/material';
+import { SearchAlt2 as Search } from "@styled-icons/boxicons-regular";
+import { CodeSSlash as Skills } from "@styled-icons/remix-fill";
+import { HomeHeart as Home } from "@styled-icons/boxicons-regular";
+import { LightBulb } from "@styled-icons/octicons";
+import { Lightbulb } from "@styled-icons/fa-solid";
+import { Person } from "@styled-icons/evaicons-solid";
+import { ArrowUpward as ArrowUp } from "@styled-icons/material";
 
 import {
   MenuBarWrapper,
   MenuBarGroup,
   MenuBarLink,
   MenuBarItem,
-} from './style';
+} from "./style";
 
 const MenuBar = () => {
   const [theme, setTheme] = useState(null);
-  const [display, setDisplay] = useState(null);
+  const [_, setDisplay] = useState(null);
 
-  const isDarkMode = theme === 'dark';
+  const isDarkMode = theme === "dark";
 
   // the same of DidMount
   useEffect(() => {
@@ -92,7 +92,7 @@ const MenuBar = () => {
         <MenuBarItem
           title="Mudar o tema"
           onClick={() => {
-            window.__setPreferredTheme(isDarkMode ? 'light' : 'dark');
+            window.__setPreferredTheme(isDarkMode ? "light" : "dark");
           }}
           className={theme}
         >

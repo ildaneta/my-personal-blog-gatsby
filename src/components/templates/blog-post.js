@@ -1,12 +1,12 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import Layout from '../Layout';
-import SEO from '../seo.js';
-import RecommendedPosts from '../RecommendedPosts';
-import Comments from '../Comments';
+import Layout from "../Layout";
+import Seo from "../seo.js";
+import RecommendedPosts from "../RecommendedPosts";
+import Comments from "../Comments";
 
-import * as s from '../Post/style';
+import * as s from "../Post/style";
 
 const BlogPost = ({ data, pageContext }) => {
   const title = data.markdownRemark.frontmatter.title;
@@ -15,7 +15,6 @@ const BlogPost = ({ data, pageContext }) => {
   const timeToRead = data.markdownRemark.timeToRead;
   const description = data.markdownRemark.frontmatter.description;
   const url = data.markdownRemark.fields.slug;
-  const image = data.markdownRemark.frontmatter.thumbnail;
   const post = data.markdownRemark;
 
   const next = pageContext.nextPost;
@@ -24,7 +23,7 @@ const BlogPost = ({ data, pageContext }) => {
   return (
     // Integrando o post com o layout através das tags Layout e SEO
     <Layout>
-      <SEO
+      <Seo
         title={title}
         description={description}
         thumbnail={post.frontmatter.thumbnail}

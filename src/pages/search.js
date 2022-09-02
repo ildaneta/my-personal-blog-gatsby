@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/Layout';
-import SEO from '../components/seo';
-import Search from '../components/Search';
+import Layout from "../components/Layout";
+import Seo from "../components/seo";
+import Search from "../components/Search";
 
 const SearchPage = () => {
   const algolia = {
@@ -13,7 +13,7 @@ const SearchPage = () => {
 
   return (
     <Layout>
-      <SEO title="search" />
+      <Seo title="search" />
       <Search algolia={algolia} />
     </Layout>
   );
