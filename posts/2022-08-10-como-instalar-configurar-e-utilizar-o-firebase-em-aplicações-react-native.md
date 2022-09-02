@@ -11,9 +11,7 @@ background: "#CD4C51"
 ---
 ![](assets/img/water-reminder-app.png)
 
-
-
-Após começar a utilizar o Firebase em alguns projetos pessoais e profissionais, vejo como essas bibliotecas podem nos auxiliar e empoderar nossos nossos aplicativos, principalmente quando não temos a estrutura de um backend, ou quando queremos ter um login ou banco de dados de forma mais simplificada por exemplo.
+Após começar a utilizar o Firebase em alguns projetos pessoais e profissionais, vejo como essas bibliotecas podem nos auxiliar e empoderar nossos aplicativos, principalmente quando não temos a estrutura de um backend, ou quando queremos ter um login ou banco de dados de forma mais simplificada por exemplo.
 
 Por isso, decidi criar esse design/projeto exclusivamente para aprendermos a configurar o Firebase e seus pacotes em nossos projetos, além de explicar como utilizar o Auth para criarmos login com e-mail e senha, e o firestore para o armazenamento dos dados dos users.
 
@@ -109,8 +107,6 @@ Para realizar a configuração no Android, primeiramente necessitamos ir no cons
    a. Iremos baixá-lo e inserí-lo em nosso código dentro de `/android/app/`
 
    ![Arquivo google-services.json](assets/img/arquivo-google-services.json.png)
-
-
 3. Posteriormente adicionaremos o SDK do Firebase em nosso aplicativo, ou seja, configuraremos o código nativo que irá conectar a nossa aplicação com o Firebase.\
    \
    a. Primeiro vamos dentro do arquivo `/android/build.gradle` e adicionaremos dentro de `buildscript`:
@@ -277,8 +273,6 @@ Agora que nosso Firebase está instalado e devidamente configurado, instalaremos
    Se vocês quiserem, podem clonar o projeto a partir da branch `feature/screens` , assim, toda a parte de telas, componentes e navegações já estarão configuradas, e será possível implementar as telas de SignIn, SignUp e Recovery password com o que aprenderemos em seguida.
 
    Branch: [](https://github.com/ildaneta/water-reminder/tree/feature/screens)<https://github.com/ildaneta/water-reminder/tree/feature/screens>
-
-
 
 ### Utilizando o Auth e Cloud Firestore
 
