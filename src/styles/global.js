@@ -70,12 +70,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body.dark{
-    --colorLettersComments: #fff;
+    --colorLettersComments: #DFE2E5;
     --white: #fff;
     --rose: #f7a5a6;
     --background: #282a36;
     --mediumBackground: #282a36;
-    --colorLetters: #e5e3e3;
+    --colorLetters: #DFE2E5;
     --colorIcons: #fcf2f2;
     --hover: #f7a5a6;
     --hoverRecommended: #22242d;
@@ -84,7 +84,8 @@ const GlobalStyle = createGlobalStyle`
     --placeholderSearch: #dbdbdb;
     --inputColorSearch: #f7a5a6;
     --iconColor: #363636;
-    --backgroundIcons: #e5e3e3
+    --backgroundIcons: #e5e3e3;
+    --colorBorder: #DFE2E5;
   }
 
   body.light{
@@ -103,6 +104,7 @@ const GlobalStyle = createGlobalStyle`
     --inputColorSearch: #f77394;
     --iconColor: #363636;
     --backgroundIcons: #fcf2f2;
+    --colorBorder: #333;
   }
 
 `;
