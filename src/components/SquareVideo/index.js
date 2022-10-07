@@ -2,22 +2,18 @@ import React from "react";
 
 import Styled from "./styles";
 
-const SquareVideo = () => {
-  const teste =
-    "Utilizando o REM para construir layouts responsivos no React Native";
-
-  const teste2 = "React Conf Brasil 🇧🇷 2020";
+const SquareVideo = ({ title, description, imageURI, url }) => {
   return (
-    <>
-      <Styled.Container>
-        <Styled.Image src="https://github.com/ildaneta.png" />
+    <Styled.Container href={url} target="_blank">
+      <Styled.ContainerImage>
+        <Styled.Image src={imageURI} />
+      </Styled.ContainerImage>
 
-        <Styled.ContainerTitleDescription>
-          <Styled.Title>{teste2}</Styled.Title>
-          <Styled.Description>{teste}</Styled.Description>
-        </Styled.ContainerTitleDescription>
-      </Styled.Container>
-    </>
+      <Styled.ContainerTitleDescription>
+        <Styled.Title>{title}</Styled.Title>
+        <Styled.Description>{description}</Styled.Description>
+      </Styled.ContainerTitleDescription>
+    </Styled.Container>
   );
 };
 
