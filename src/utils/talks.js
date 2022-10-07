@@ -88,7 +88,7 @@ export const participations = [
     title: "Alumni #02 - Rocketseat",
     description: "Ilda Neta - Mobile Developer Banco ABC Brasil",
     imageURI:
-      "https://user-images.githubusercontent.com/21963291/194653676-987c2fd7-8044-4449-9643-bc0c7a537aa6.png",
+      "https://user-images.githubusercontent.com/21963291/194660370-f3a316c7-4b08-4e83-8905-4a0682867f08.png",
     url: "https://www.youtube.com/watch?v=U0wQjppkFdY",
     date: "29/05/2020",
   },
