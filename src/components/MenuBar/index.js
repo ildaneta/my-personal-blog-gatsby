@@ -7,8 +7,9 @@ import { CodeSSlash as Skills } from "@styled-icons/remix-fill";
 import { HomeHeart as Home } from "@styled-icons/boxicons-regular";
 import { LightBulb } from "@styled-icons/octicons";
 import { Lightbulb } from "@styled-icons/fa-solid";
-import { Person } from "@styled-icons/evaicons-solid";
+import { Person } from "@styled-icons/bootstrap/Person";
 import { ArrowUpward as ArrowUp } from "@styled-icons/material";
+import { Microphone as Talks } from "@styled-icons/heroicons-outline/Microphone";
 
 import {
   MenuBarWrapper,
@@ -23,7 +24,6 @@ const MenuBar = () => {
 
   const isDarkMode = theme === "dark";
 
-  // the same of DidMount
   useEffect(() => {
     setTheme(window.__theme);
     setDisplay(window.__display);
@@ -44,7 +44,19 @@ const MenuBar = () => {
           title="Ir para Home"
         >
           <MenuBarItem>
-            <Home className="home" />
+            <Home size={26} />
+          </MenuBarItem>
+        </MenuBarLink>
+        <MenuBarLink
+          cover
+          direction="left"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/talks"
+          title="Talks e Participações"
+        >
+          <MenuBarItem>
+            <Talks size={26} />
           </MenuBarItem>
         </MenuBarLink>
 
@@ -57,20 +69,7 @@ const MenuBar = () => {
           title="Sobre mim"
         >
           <MenuBarItem>
-            <Person className="aboutMe" />
-          </MenuBarItem>
-        </MenuBarLink>
-
-        <MenuBarLink
-          cover
-          direction="left"
-          bg={getThemeColor()}
-          duration={0.6}
-          to="/search/"
-          title="Pesquisar"
-        >
-          <MenuBarItem>
-            <Search className="search" />
+            <Person size={26} />
           </MenuBarItem>
         </MenuBarLink>
 
@@ -83,7 +82,20 @@ const MenuBar = () => {
           title="Skills"
         >
           <MenuBarItem>
-            <Skills className="skills" />
+            <Skills size={26} />
+          </MenuBarItem>
+        </MenuBarLink>
+
+        <MenuBarLink
+          cover
+          direction="left"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/search/"
+          title="Pesquisar"
+        >
+          <MenuBarItem>
+            <Search size={26} />
           </MenuBarItem>
         </MenuBarLink>
       </MenuBarGroup>
@@ -96,15 +108,11 @@ const MenuBar = () => {
           }}
           className={theme}
         >
-          {isDarkMode ? (
-            <LightBulb className="light" />
-          ) : (
-            <Lightbulb className="light" className="lightBulb" />
-          )}
+          {isDarkMode ? <LightBulb size={26} /> : <Lightbulb size={26} />}
         </MenuBarItem>
 
         <MenuBarItem title="Ir para o topo" onClick={scrollToTop}>
-          <ArrowUp />
+          <ArrowUp size={26} />
         </MenuBarItem>
       </MenuBarGroup>
     </MenuBarWrapper>

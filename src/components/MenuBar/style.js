@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import styled from "styled-components";
+import media from "styled-media-query";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export const MenuBarWrapper = styled.aside`
   display: flex;
@@ -16,7 +16,8 @@ export const MenuBarWrapper = styled.aside`
   border-left: 1px solid var(--rose);
 
   transition: background 0.5s;
-  ${media.lessThan('large')`
+
+  ${media.lessThan("large")`
     border-top: 1px solid var(--borders);
     bottom: 0;
     flex-direction: row;
@@ -36,7 +37,7 @@ export const MenuBarGroup = styled.div`
     height: 27px;
   }
 
-  ${media.lessThan('large')`
+  ${media.lessThan("large")`
     flex-direction: row;
   `}
 `;
@@ -48,11 +49,6 @@ export const MenuBarLink = styled(AniLink)`
     span {
       color: var(--colorLetters);
     }
-  }
-
-  .skills {
-    width: 27px;
-    height: 27px;
   }
 `;
 
@@ -77,44 +73,19 @@ export const MenuBarItem = styled.span`
     color: var(--hover);
   }
 
-  .search {
-    width: 27px;
-    height: 27px;
-  }
-
-  .aboutMe {
-    width: 30px;
-    height: 27px;
-  }
-
-  .light {
-    width: 25px;
-    height: 25px;
-    align-items: center;
-    display: flex;
-  }
-
-  .cv {
-    width: 23px;
-    height: 23px;
-  }
-
-  .home {
-    width: 28px;
-    height: 28px;
-  }
-
   &.display {
-    ${media.lessThan('large')`
+    ${media.lessThan("large")`
       display: none;
     `}
   }
-  ${media.greaterThan('large')`
+
+  ${media.greaterThan("large")`
     &:hover {
       color: var(--hover);
     }
-  `}
-  ${media.lessThan('large')`
+  `};
+
+  ${media.lessThan("large")`
     padding: .9rem;
     position: relative;
     width: 3.2rem;
