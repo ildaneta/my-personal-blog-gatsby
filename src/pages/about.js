@@ -31,7 +31,7 @@ const AboutPage = () => (
 
     <AboutDescription>
       Atuo com foco na experiência e usuabilidade dos usuários, pensando sempre
-      em como levar interfaces lindas, responsivas e sempre com o foco no
+      em como criar interfaces lindas, responsivas e sempre com o foco no
       usuário.
     </AboutDescription>
 
