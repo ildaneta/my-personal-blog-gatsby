@@ -1,20 +1,21 @@
 const links = [
   {
-    label: 'Home',
-    url: '/'
+    label: "Home",
+    url: "/",
   },
   {
-    label: 'Sobre Mim',
-    url: '/about'
+    label: "Talks e Participações",
+    url: "/talks",
   },
   {
-    label: 'Skills',
-    url: '/skills'
-  }
-  // {
-  //   label: 'Curriculum',
-  //   url: '/cv'
-  // }
+    label: "Sobre Mim",
+    url: "/about",
+  },
+
+  {
+    label: "Skills",
+    url: "/skills",
+  },
 ];
 
 export default links;
