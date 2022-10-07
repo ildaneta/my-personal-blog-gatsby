@@ -43,11 +43,12 @@ const Title = styled.text`
 const Description = styled.text`
   font-family: "Montserrat", sans-serif;
   padding-top: 10px;
+  font-weight: 300;
   font-size: 1.1rem;
   color: var(--colorLetters);
   letter-spacing: 1px;
   line-height: 25px;
-  font-weight: 100;
+  font-weight: 300;
 `;
 
 const Image = styled.img`
