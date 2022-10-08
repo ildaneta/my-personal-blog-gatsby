@@ -5,7 +5,6 @@ const Container = styled.a`
   padding: 15px;
   margin: 20px;
   width: 500px;
-  height: 630px;
   align-items: center;
   justify-content: center;
   border: 0.05rem solid var(--colorBorder);
@@ -14,8 +13,6 @@ const Container = styled.a`
 
   ${media.lessThan("huge")`
     width: 350px;
-    height: 500px;
-    margin: 20px;
   `};
 
   &:hover {
@@ -23,8 +20,6 @@ const Container = styled.a`
     text-decoration-color: var(--colorLetters);
   }
 `;
-
-const ContainerImage = styled.div``;
 
 const ContainerTitleDescription = styled.div`
   display: flex;
@@ -64,5 +59,4 @@ export default {
   ContainerTitleDescription,
   Title,
   Description,
-  ContainerImage,
 };

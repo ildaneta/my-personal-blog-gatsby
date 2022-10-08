@@ -59,7 +59,7 @@ export const participations = [
   {
     id: "2",
     title: "Conexão Dev E18 - Catapulta Club",
-    description: "Como iniciar desenvolvimento mobile com React Native",
+    description: "Como iniciar no desenvolvimento mobile com React Native",
     imageURI:
       "https://user-images.githubusercontent.com/21963291/194630879-4d5d5262-d35f-4d3a-af4e-15d9d03ceee2.png",
     url: "https://www.youtube.com/watch?v=xvb15wFcOss",
@@ -67,10 +67,10 @@ export const participations = [
   },
   {
     id: "3",
-    title: "FalaDev - Rocketseat",
+    title: "Fala Dev - Rocketseat",
     description: "React Native - Boas práticas e construção de interfaces",
     imageURI:
-      "https://user-images.githubusercontent.com/21963291/194655077-0d1e90b2-f01d-4e00-8d6b-9e03d9e336b7.png",
+      "https://user-images.githubusercontent.com/21963291/194726327-8f030e8e-a33b-4783-a086-3cf3f3e32ff2.png",
     url: "https://www.youtube.com/watch?v=brBlwk_pRDI&list=PL85ITvJ7FLoivA_1YoBrRJbNWajIoR7Os&index=22",
     date: "18/06/2021",
   },
@@ -86,9 +86,9 @@ export const participations = [
   {
     id: "5",
     title: "Alumni #02 - Rocketseat",
-    description: "Ilda Neta - Mobile Developer Banco ABC Brasil",
+    description: "Ilda Neta - Mobile Developer",
     imageURI:
-      "https://user-images.githubusercontent.com/21963291/194660370-f3a316c7-4b08-4e83-8905-4a0682867f08.png",
+      "https://user-images.githubusercontent.com/21963291/194726291-a0aeac97-ad35-40d4-868f-820ddc4df09b.png",
     url: "https://www.youtube.com/watch?v=U0wQjppkFdY",
     date: "29/05/2020",
   },
@@ -104,7 +104,7 @@ export const participations = [
   {
     id: "7",
     title: "Cubos Bits",
-    description: "O que significa Bit?",
+    description: "O que significa BIT?",
     imageURI:
       "https://user-images.githubusercontent.com/21963291/194651640-41fe3ce8-c6a9-4d7e-bb9a-49bdb3087f6a.png",
     url: "https://www.youtube.com/watch?v=2HRqr8Zrl14",

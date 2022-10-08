@@ -5,9 +5,7 @@ import Styled from "./styles";
 const SquareVideo = ({ title, description, imageURI, url }) => {
   return (
     <Styled.Container href={url} target="_blank">
-      <Styled.ContainerImage>
-        <Styled.Image src={imageURI} />
-      </Styled.ContainerImage>
+      <Styled.Image src={imageURI} />
 
       <Styled.ContainerTitleDescription>
         <Styled.Title>{title}</Styled.Title>
