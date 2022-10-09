@@ -69,6 +69,17 @@ const GlobalStyle = createGlobalStyle`
     height: auto;
   }
 
+  :root {
+    --colorNeutral1: #121212;
+    --colorNeutral2: #222;
+    --colorNeutral3: #333;
+    --colorNeutral4: #555;
+    --colorNeutral5: #888;
+    --colorNeutral6: #E5E5E5;
+    --colorNeutral7: #F1F1F1;
+    --colorNeutral8: #FDFDFD;
+  }
+
   body.dark{
     --colorLettersComments: #DFE2E5;
     --white: #fff;
@@ -86,15 +97,15 @@ const GlobalStyle = createGlobalStyle`
     --iconColor: #363636;
     --backgroundIcons: #e5e3e3;
     --colorBorder: #DFE2E5;
+    
   }
 
   body.light{
     --colorLettersComments: #363636;
     --white: #fff;
     --rose: #f7a5a6;
-    --background: #f9f9f9;
+    
     --mediumBackground: #fcf2f2;
-    --colorLetters: #363636;
     --colorIcons: #333;
     --hover: #f7a5a6;
     --hoverRecommended: #f77394;
@@ -105,6 +116,11 @@ const GlobalStyle = createGlobalStyle`
     --iconColor: #363636;
     --backgroundIcons: #fcf2f2;
     --colorBorder: #333;
+
+
+    --colorLetters: var(--colorNeutral2);
+    --sideBarBackground: var(--colorNeutral7);
+    --background: var(--colorNeutral8);
   }
 
 `;
