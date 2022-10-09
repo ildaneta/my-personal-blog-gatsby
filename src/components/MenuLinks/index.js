@@ -1,13 +1,13 @@
-import React from 'react';
-import links from './content';
-import getThemeColor from '../../utils/getThemeColor';
+import React from "react";
+import links from "../../utils/content";
+import getThemeColor from "../../utils/getThemeColor";
 
 import {
   MenuLinksWrapper,
   MenuLinksList,
   MenuLinksItem,
-  MenuLinksLink
-} from './style';
+  MenuLinksLink,
+} from "./style";
 
 const MenuLinks = () => (
   <MenuLinksWrapper>
