@@ -16,6 +16,10 @@ const links = [
     label: "Skills",
     url: "/skills",
   },
+  {
+    label: "New",
+    url: "/new",
+  },
 ];
 
 export default links;
