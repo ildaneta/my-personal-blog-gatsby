@@ -7,10 +7,9 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
-
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
 
   html, body, div, span, applet, object, iframe,
@@ -39,11 +38,9 @@ const GlobalStyle = createGlobalStyle`
     display: block;
   }
   body {
-    line-height: 1;
     background: var(--background);
-    font-size: 100%;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 0.075rem;
+    letter-spacing: 0.03125rem;
   }
   ol, ul {
     list-style: none;
