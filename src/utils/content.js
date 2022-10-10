@@ -1,4 +1,4 @@
-const links = [
+const menuLinks = [
   {
     label: "Home",
     url: "/",
@@ -22,4 +22,4 @@ const links = [
   },
 ];
 
-export default links;
+export default menuLinks;

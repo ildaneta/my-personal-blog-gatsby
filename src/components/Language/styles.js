@@ -17,10 +17,11 @@ const Text = styled.text`
   font-weight: 600;
   letter-spacing: 0.5px;
   font-size: 1rem;
+  color: var(--colorLetters);
 
   ${media.lessThan("medium")`
     font-size: 0.875rem;
-  `}
+  `};
 `;
 
 export default {

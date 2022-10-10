@@ -1,5 +1,5 @@
 import React from "react";
-import links from "../../utils/content";
+import menuLinks from "../../utils/content";
 import getThemeColor from "../../utils/getThemeColor";
 
 import {
@@ -12,7 +12,7 @@ import {
 const MenuLinks = () => (
   <MenuLinksWrapper>
     <MenuLinksList>
-      {links.map((link, index) => {
+      {menuLinks.map((link, index) => {
         return (
           <MenuLinksItem key={index}>
             <MenuLinksLink
