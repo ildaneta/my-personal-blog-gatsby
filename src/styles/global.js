@@ -75,25 +75,32 @@ const GlobalStyle = createGlobalStyle`
     --colorNeutral6: #E5E5E5;
     --colorNeutral7: #F1F1F1;
     --colorNeutral8: #FDFDFD;
+    --colorNeutral9: #DFE2E5;
+    --colorNeutral10: #5F5F5F;
   }
 
   body.dark{
     --colorLettersComments: #DFE2E5;
     --white: #fff;
     --rose: #f7a5a6;
-    --background: #282a36;
     --mediumBackground: #282a36;
-    --colorLetters: #DFE2E5;
     --colorIcons: #fcf2f2;
     --hover: #f7a5a6;
     --hoverRecommended: #22242d;
     --linkColor: #f7a5a6;
     --searchColor: #dbdbdb;
-    --placeholderSearch: #dbdbdb;
     --inputColorSearch: #f7a5a6;
     --iconColor: #363636;
     --backgroundIcons: #e5e3e3;
-    --colorBorder: #DFE2E5;
+    --colorBorder: #DFE2E5; 
+
+
+    --colorLetters: var(--colorNeutral6);
+    --placeholderSearch: var(--colorNeutral9);
+    --sidebarBackground: var(--colorNeutral1);
+    --background: var(--colorNeutral3);
+    --iconsColor: var(--colorNeutral1);
+    --backgroundIconsColor: var(--colorNeutral9);
     
   }
 
@@ -108,7 +115,6 @@ const GlobalStyle = createGlobalStyle`
     --hoverRecommended: #f77394;
     --linkColor: #f77394;
     --searchColor: #f77394;
-    --placeholderSearch: #333;
     --inputColorSearch: #f77394;
     --iconColor: #363636;
     --backgroundIcons: #fcf2f2;
@@ -116,8 +122,11 @@ const GlobalStyle = createGlobalStyle`
 
 
     --colorLetters: var(--colorNeutral2);
-    --sideBarBackground: var(--colorNeutral7);
+    --placeholderSearch: var(--colorNeutral3);
+    --sidebarBackground: var(--colorNeutral7);
     --background: var(--colorNeutral8);
+    --iconsColor: var(--colorNeutral2);
+    --backgroundIconsColor: var(--colorNeutral3);
   }
 
 `;
