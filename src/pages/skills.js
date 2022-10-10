@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/Layout";
 import Seo from "../components/seo";
-import links from "../components/Skills/content";
+import menuLinks from "../components/Skills/content";
 import Icons from "../components/Skills/icons";
 
 import {
@@ -24,7 +24,7 @@ const SkillsPage = () => (
 
     <SkillsSubTitle>Hard Skills</SkillsSubTitle>
     <SkillsList>
-      {links.map((link, index) => {
+      {menuLinks.map((link) => {
         const Icon = Icons[link.label];
 
         return (

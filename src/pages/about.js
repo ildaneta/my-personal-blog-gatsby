@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/Layout";
 import Seo from "../components/seo";
-import links from "../components/SocialLinks/content";
+import menuLinks from "../components/SocialLinks/content";
 
 import Icons from "../components/SocialLinks/icons";
 
@@ -55,7 +55,7 @@ const AboutPage = () => (
     <AboutSubTitle>Entre em contato comigo</AboutSubTitle>
 
     <AboutLinksList>
-      {links.map((link, index) => {
+      {menuLinks.map((link, index) => {
         const Icon = Icons[link.label];
 
         return (
