@@ -1,21 +1,20 @@
-import React from 'react';
-import links from './content';
+import React from "react";
+import menuLinks from "./content";
 
-import Icons from './icons';
+import Icons from "./icons";
 import {
   SocialLinksWrapper,
   SocialLinksList,
   SocialLinksItem,
   SocialLinksLink,
-  IconWrapper
-} from './style';
+  IconWrapper,
+} from "./style";
 
 const SocialLinks = () => (
   <SocialLinksWrapper>
     <SocialLinksList>
-      {links.map((link, index) => {
+      {menuLinks.map((link, index) => {
         const Icon = Icons[link.label];
-        console.log(Icon);
 
         return (
           <SocialLinksItem key={index}>

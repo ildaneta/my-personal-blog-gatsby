@@ -10,7 +10,7 @@ const Circle = styled.div`
   display: flex;
   width: 25px;
   height: 25px;
-  background-color: var(--colorNeutral3);
+  background-color: var(--backgroundIconsColor);
   justify-content: center;
   align-items: center;
   border-radius: 50%;

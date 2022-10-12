@@ -1,6 +1,6 @@
 import React from "react";
 
-import menuLinks from "../../utils/content";
+import menuLinks from "../../utils/content2";
 
 import Styled from "./styles";
 
