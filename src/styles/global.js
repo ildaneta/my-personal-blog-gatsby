@@ -92,15 +92,15 @@ const GlobalStyle = createGlobalStyle`
     --inputColorSearch: #f7a5a6;
     --iconColor: #363636;
     --backgroundIcons: #e5e3e3;
-    --colorBorder: #DFE2E5; 
-
-
+    
+    
     --colorLetters: var(--colorNeutral6);
     --placeholderSearch: var(--colorNeutral9);
     --sidebarBackground: var(--colorNeutral1);
     --background: var(--colorNeutral3);
     --iconsColor: var(--colorNeutral1);
     --backgroundIconsColor: var(--colorNeutral9);
+    --colorBorder: var(--colorNeutral9); 
     
   }
 
@@ -118,15 +118,15 @@ const GlobalStyle = createGlobalStyle`
     --inputColorSearch: #f77394;
     --iconColor: #363636;
     --backgroundIcons: #fcf2f2;
-    --colorBorder: #333;
-
-
+    
+    
     --colorLetters: var(--colorNeutral2);
     --placeholderSearch: var(--colorNeutral3);
     --sidebarBackground: var(--colorNeutral7);
     --background: var(--colorNeutral8);
     --iconsColor: var(--colorNeutral2);
     --backgroundIconsColor: var(--colorNeutral3);
+    --colorBorder: var(--colorNeutral3);
   }
 
 `;
