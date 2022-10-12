@@ -108,11 +108,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Ilda Neta`,
-        short_name: `Ilda neta`,
+        short_name: `Ilda Neta`,
         start_url: `/`,
-        background_color: `#191921;`,
-        theme_color: `#191921;`,
+        background_color: `#333`,
+        theme_color: `#333`,
         display: `minimal-ui`,
+
         // favicon
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
