@@ -4,10 +4,12 @@ import SquareVideo from "../components/SquareVideo";
 import { talks, participations } from "../utils/talks";
 
 import Styled from "../styles/talks";
+import Seo from "../components/seo";
 
 const Talks = () => {
   return (
     <Layout>
+      <Seo title="Talks" />
       <Styled.Container>
         <Styled.ContainerTitle>
           <Styled.Title>Talks</Styled.Title>
