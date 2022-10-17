@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, title, thumbnail }) {
+function Seo({ description, lang, meta, title, thumbnail }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,7 +20,7 @@ function SEO({ description, lang, meta, title, thumbnail }) {
   );
 
   // const url = site.siteMetadata.siteURL;
-  const ogImage = thumbnail || 'https://ildaneta.dev/assets/img/share.png';
+  const ogImage = thumbnail || "https://ildaneta.dev/assets/img/share.png";
   const metaDescription = description || site.siteMetadata.description;
 
   return (
@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title, thumbnail }) {
       meta={[
         {
           name: `aplication-name`,
-          content: 'Ilda Neta Blog',
+          content: "Ilda Neta Blog",
         },
         {
           name: `description`,
@@ -76,17 +76,17 @@ function SEO({ description, lang, meta, title, thumbnail }) {
   );
 }
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   lang: `pt`,
   meta: [],
   description: ``,
 };
 
-SEO.propTypes = {
+Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 };
 
-export default SEO;
+export default Seo;
