@@ -16,14 +16,13 @@ const Input = styled.input`
   background-color: var(--sidebarBackground);
   color: var(--colorLetters);
   font-size: 0.875rem;
-  font-family: "Montserrat";
   font-weight: 500;
+  line-height: 18px;
 
   &::placeholder {
     color: var(--placeholderSearch);
     font-size: 0.875rem;
-    font-family: "Montserrat";
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &:focus {
