@@ -39,19 +39,21 @@ const ContainerIconsText = styled.nav`
 const ContainerMenu = styled.div`
   display: flex;
   background-color: blue;
+  background-color: var(--sidebarBackground);
 
   ${media.greaterThan("medium")`
     display: none
   `}
 `;
 
-const ContainerMenu2 = styled.button`
+const ContainerMenuIcon = styled.button`
   border-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   margin-left: -10px;
+  background-color: var(--sidebarBackground);
 `;
 
 const ContainerMenuOpened = styled.div`
@@ -67,6 +69,7 @@ const ContainerMenuOpened = styled.div`
 
 const Label = styled.text`
   font-size: 0.5rem;
+  color: var(--colorLetters);
 `;
 
 const TextContact = styled.text`
@@ -109,7 +112,7 @@ export default {
   ContainerIconsText,
   TextContact,
   ContainerMenu,
-  ContainerMenu2,
+  ContainerMenuIcon,
   Label,
   ContainerMenuOpened,
   Logo,

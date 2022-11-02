@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
     --sidebarBackground: var(--colorNeutral1);
     --background: var(--colorNeutral3);
     --iconsColor: var(--colorNeutral1);
-    --backgroundIconsColor: var(--colorNeutral9);
+    --backgroundIconsColor: var(--colorNeutral7);
     --colorBorder: var(--colorNeutral9); 
     
   }
