@@ -18,8 +18,6 @@ const Sidebar2 = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const { theme } = useThemeContext();
 
-  console.log("theme", theme);
-
   return (
     <>
       <Styled.Container>
