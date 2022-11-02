@@ -7,12 +7,18 @@ import { Menu as MenuMobile } from "@styled-icons/heroicons-outline/Menu";
 import { Close } from "@styled-icons/ionicons-outline/Close";
 
 import IldaNetaLogo from "../../images/ildaneta.svg";
+import IldaNetaLogoLight from "../../images/ildaneta-light.svg";
 
 import Styled from "./styles";
 import MenuLinks2 from "../MenuLinks2";
+import { useThemeContext } from "../../context/Theme";
+import colors from "../../styles/colors";
 
 const Sidebar2 = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
+  const { theme } = useThemeContext();
+
+  console.log("theme", theme);
 
   return (
     <>
@@ -25,15 +31,25 @@ const Sidebar2 = () => {
 
         <Styled.ContainerMenu>
           {isMenuOpened ? (
-            <Styled.ContainerMenu2 onClick={() => setIsMenuOpened(false)}>
+            <Styled.ContainerMenuIcon onClick={() => setIsMenuOpened(false)}>
               <Styled.Label>Fechar</Styled.Label>
-              <Close size={30} color="#222" />
-            </Styled.ContainerMenu2>
+              <Close
+                size={30}
+                color={
+                  theme === "dark" ? colors.colorNeutral6 : colors.colorNeutral2
+                }
+              />
+            </Styled.ContainerMenuIcon>
           ) : (
-            <Styled.ContainerMenu2 onClick={() => setIsMenuOpened(true)}>
+            <Styled.ContainerMenuIcon onClick={() => setIsMenuOpened(true)}>
               <Styled.Label>Menu</Styled.Label>
-              <MenuMobile size={26} color="#222" />
-            </Styled.ContainerMenu2>
+              <MenuMobile
+                size={26}
+                color={
+                  theme === "dark" ? colors.colorNeutral6 : colors.colorNeutral2
+                }
+              />
+            </Styled.ContainerMenuIcon>
           )}
         </Styled.ContainerMenu>
 
@@ -42,7 +58,11 @@ const Sidebar2 = () => {
         </div>
 
         <Styled.Logo className={!isMenuOpened && "hideLogo"}>
-          <img src={IldaNetaLogo} />
+          {theme === "dark" ? (
+            <img src={IldaNetaLogoLight} />
+          ) : (
+            <img src={IldaNetaLogo} />
+          )}
         </Styled.Logo>
 
         <div className={"hideSearch"}>
