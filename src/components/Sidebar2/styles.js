@@ -54,6 +54,7 @@ const ContainerMenuIcon = styled.button`
   justify-content: flex-start;
   margin-left: -10px;
   background-color: var(--sidebarBackground);
+  cursor: pointer;
 `;
 
 const ContainerMenuOpened = styled.div`
