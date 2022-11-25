@@ -57,9 +57,9 @@ const Sidebar2 = () => {
 
         <Styled.Logo className={!isMenuOpened && "hideLogo"}>
           {theme === "dark" ? (
-            <img src={IldaNetaLogoLight} />
+            <img src={IldaNetaLogoLight} alt="Ilda Neta logo color light" />
           ) : (
-            <img src={IldaNetaLogo} />
+            <img src={IldaNetaLogo} alt="Ilda Neta logo color dark" />
           )}
         </Styled.Logo>
 

@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState, useContext } from "react";
 const ThemeContext = createContext({});
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const [_, setDisplay] = useState(null);
   const [isToggled, setIsToggled] = useState(null);
 

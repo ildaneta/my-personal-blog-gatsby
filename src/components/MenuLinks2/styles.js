@@ -4,7 +4,6 @@ import media from "styled-media-query";
 
 const Container = styled.nav`
   font-weight: 600;
-  width: 80%;
   display: flex;
   margin-top: 20px;
 
