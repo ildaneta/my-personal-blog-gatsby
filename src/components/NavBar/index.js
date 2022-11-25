@@ -20,7 +20,10 @@ const NavBar = () => {
   return (
     <Styled.Container>
       <Styled.ContainerLogo>
-        <img src={theme === "light" ? IldaNetaLogo : IldaNetaLogoLight} />
+        <img
+          src={theme == "dark" ? IldaNetaLogoLight : IldaNetaLogo}
+          alt="Ilda Neta logo"
+        />
       </Styled.ContainerLogo>
 
       <div className="hideMenuLinks">
