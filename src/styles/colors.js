@@ -10,4 +10,5 @@ export default {
   colorNeutral8: "#FDFDFD",
   colorNeutral9: "#DFE2E5",
   colorNeutral10: "#5F5F5F",
+  colorNeutral11: "#C1C1C1",
 };
