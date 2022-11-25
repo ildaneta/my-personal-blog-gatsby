@@ -16,9 +16,7 @@ const SocialLinks2 = () => {
       <a href="https://github.com/ildaneta" target="_blank" title="Github">
         <Github
           size={25}
-          color={
-            theme === "light" ? colors.colorNeutral3 : colors.colorNeutral7
-          }
+          color={theme === "dark" ? colors.colorNeutral7 : colors.colorNeutral1}
         />
       </a>
 
@@ -36,6 +34,7 @@ const SocialLinks2 = () => {
         href="https://www.linkedin.com/in/ildaneta/"
         target="_blank"
         title="LinkedIn"
+        rel="noopener noreferrer"
       >
         <Styled.Circle>
           <Linkedin
