@@ -13,14 +13,24 @@ const SocialLinks2 = () => {
 
   return (
     <Styled.ContainerIcons>
-      <a href="https://github.com/ildaneta" target="_blank" title="Github">
+      <a
+        href="https://github.com/ildaneta"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Github"
+      >
         <Github
           size={25}
           color={theme === "dark" ? colors.colorNeutral7 : colors.colorNeutral1}
         />
       </a>
 
-      <a href="mailto:iildaneta@gmail.com" target="_blank" title="E-mail">
+      <a
+        href="mailto:iildaneta@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="E-mail"
+      >
         <Styled.Circle>
           <Email
             size={18}

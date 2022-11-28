@@ -19,6 +19,11 @@ const Container = styled.section`
 
 const ContainerLogo = styled.div`
   display: flex;
+  width: 260px;
+
+  ${media.lessThan("medium")`
+    width: 240px;
+  `}
 `;
 
 const ContainerTema = styled.div`

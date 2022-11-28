@@ -8,17 +8,17 @@ import Styled from "./styles";
 
 const Layout2 = ({ children }) => {
   return (
-    <div>
+    <Styled.LayoutWrapper>
       <GlobalStyle />
-      <Styled.Container>
-        <Sidebar2 />
 
-        <NavBar />
-        {children}
+      <Sidebar2 />
 
-        <Footer />
-      </Styled.Container>
-    </div>
+      <NavBar />
+
+      <Styled.Container>{children}</Styled.Container>
+
+      <Footer />
+    </Styled.LayoutWrapper>
   );
 };
 
