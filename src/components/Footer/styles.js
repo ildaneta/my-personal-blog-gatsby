@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import colors from "../../styles/colors";
+import media from "styled-media-query";
 
 const Container = styled.footer`
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin: 20px 0;
+  padding-bottom: 1rem;
+
+  ${media.lessThan("medium")`
+    padding-bottom: 0px;
+  `}
 `;
 
 const Divider = styled.div`
@@ -18,12 +23,20 @@ const ContainerLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  ${media.lessThan("medium")`
+    margin-bottom: 8px;
+  `}
 `;
 
 const ContainerSocialLinks = styled.div`
   margin: 20px 0;
   display: flex;
   justify-content: center;
+
+  ${media.lessThan("medium")`
+    margin-top: 8px;
+  `}
 `;
 
 const WrapperSocialLinks = styled.div`
@@ -39,6 +52,12 @@ const ContainerText = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
+
+  ${media.lessThan("large")`
+    padding: 0 1rem;
+    text-align: center;
+    margin-bottom: 10px
+  `}
 `;
 
 const WrapperFirstText = styled.div`
