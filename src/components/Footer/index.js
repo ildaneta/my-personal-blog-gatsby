@@ -31,14 +31,16 @@ const Footer = () => {
               display: "flex",
               alignItems: "center",
               color:
-                theme == "light" ? colors.colorNeutral4 : colors.colorNeutral11,
+                theme === "light"
+                  ? colors.colorNeutral4
+                  : colors.colorNeutral11,
             }}
           >
             2019・2022
             <Copyright
               size={14}
               color={
-                theme == "light" ? colors.colorNeutral4 : colors.colorNeutral11
+                theme === "light" ? colors.colorNeutral4 : colors.colorNeutral11
               }
               style={{ marginLeft: 5 }}
             />

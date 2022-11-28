@@ -10,7 +10,7 @@ const Toggle = () => {
       <Styled.Toggle
         type="checkbox"
         onChange={toggleTheme}
-        checked={theme == "dark" ? true : false}
+        checked={theme === "dark" ? true : false}
         defaultChecked={false}
       />
       <Styled.Slider />

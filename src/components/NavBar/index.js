@@ -21,7 +21,7 @@ const NavBar = () => {
     <Styled.Container>
       <Styled.ContainerLogo>
         <img
-          src={theme == "dark" ? IldaNetaLogoLight : IldaNetaLogo}
+          src={theme === "dark" ? IldaNetaLogoLight : IldaNetaLogo}
           alt="Ilda Neta logo"
         />
       </Styled.ContainerLogo>
