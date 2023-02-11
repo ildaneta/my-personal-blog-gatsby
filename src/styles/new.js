@@ -7,6 +7,7 @@ const ContainerAboutMe = styled.section`
   padding: 0 135px;
   justify-content: space-between;
   margin-top: 40px;
+  margin-bottom: 55px;
   width: 100%;
 
   ${media.lessThan("large")`
@@ -44,6 +45,8 @@ const Illustration = styled.img`
 `;
 
 const ContainerAboutMeText = styled.div`
+  margin-bottom: 20px;
+
   ${media.lessThan("large")`
     margin-top: 10px
   `};
