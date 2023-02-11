@@ -111,3 +111,15 @@ export const participations = [
     date: "23/01/2020",
   },
 ];
+
+export const podcasts = [
+  {
+    id: "1",
+    title: "Dev sem fronteiras #69 - Alura",
+    description: "Desenvolvedora Mobile em Corunha, Espanha",
+    imageURI:
+      "https://user-images.githubusercontent.com/21963291/218282176-d8cf3c60-8b2d-4461-aba9-9d3004eecde9.png",
+    url: "https://open.spotify.com/episode/4bUYHTzgksioy4RMFUXlyI",
+    date: "04/01/2023",
+  },
+];
