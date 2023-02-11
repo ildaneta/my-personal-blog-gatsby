@@ -40,6 +40,10 @@ export const ProfileAuthor = styled.h1`
   ${media.lessThan("large")`
     font-size: 1.3rem;
     margin: 0 0 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
   `}
 `;
 
@@ -59,6 +63,7 @@ export const ProfilePosition = styled.small`
   ${media.lessThan("large")`
     font-size: 1rem;
     margin-top: 0.2rem;
+    width: 300px;
   `}
 `;
 
@@ -73,4 +78,22 @@ export const ProfileDescription = styled.p`
   ${media.lessThan("large")`
     display: none;
   `}
+`;
+
+export const ImageAvatar = styled.img`
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+  ${media.lessThan("large")`
+    width: 60px;
+    height: 60px;
+  `}
+`;
+
+export const ContainerImageAvatar = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 `;
