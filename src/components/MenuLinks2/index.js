@@ -10,8 +10,6 @@ const MenuLinks2 = () => {
       {menuLinks.map((link) => (
         <Styled.MenuItem key={link.label}>
           <Styled.MenuLabel
-            cover
-            direction="right"
             to={link.url}
             title={link.label}
             activeClassName="active"
