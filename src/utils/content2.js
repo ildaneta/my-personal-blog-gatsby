@@ -1,11 +1,11 @@
 const menuLinks = [
   {
     label: "Home",
-    url: "/",
+    url: "/new",
   },
   {
     label: "Sobre",
-    url: "/about",
+    url: "/aboutme",
   },
   {
     label: "Artigos",
@@ -14,10 +14,6 @@ const menuLinks = [
   {
     label: "Talks",
     url: "/talks",
-  },
-  {
-    label: "New",
-    url: "/new",
   },
 ];
 
