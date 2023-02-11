@@ -38,7 +38,6 @@ const BlogPost = ({ data, pageContext }) => {
       <s.MainContent>
         <div dangerouslySetInnerHTML={{ __html: html }}></div>
       </s.MainContent>
-      <RecommendedPosts next={next} previous={previous} />
       <Comments url={url} title={title} />
     </Layout>
   );
