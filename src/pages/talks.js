@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import SquareVideo from "../components/SquareVideo";
-import { talks, participations } from "../utils/talks";
+import { talks, participations, podcasts } from "../utils/talks";
 
 import Styled from "../styles/talks";
 import Seo from "../components/seo";
@@ -23,6 +23,24 @@ const Talks = () => {
               title={talk.title}
               url={talk.url}
               imageURI={talk.imageURI}
+            />
+          ))}
+        </Styled.ContainerTalks>
+
+        <Styled.Divider />
+
+        <Styled.ContainerTitle>
+          <Styled.Title>Podcasts</Styled.Title>
+        </Styled.ContainerTitle>
+
+        <Styled.ContainerTalks>
+          {podcasts.map((podcast) => (
+            <SquareVideo
+              key={podcast.id}
+              description={podcast.description}
+              title={podcast.title}
+              url={podcast.url}
+              imageURI={podcast.imageURI}
             />
           ))}
         </Styled.ContainerTalks>
